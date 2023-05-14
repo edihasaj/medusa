@@ -28,6 +28,8 @@ export default (app) => {
 export const allowedStoreProductTypeFields = [
   "id",
   "value",
+  "thumbnail",
+  "metadata",
   "created_at",
   "updated_at",
 ]
@@ -35,10 +37,14 @@ export const allowedStoreProductTypeFields = [
 export const defaultStoreProductTypeFields = [
   "id",
   "value",
+  "thumbnail",
+  "metadata",
   "created_at",
   "updated_at",
 ]
+
 export const defaultStoreProductTypeRelations = []
+export const includeStoreProductTypeRelations = ["images"]
 
 /**
  * @schema StoreProductTypesListRes
