@@ -98,7 +98,7 @@ import { IsType } from "../../../../utils/validators/is-type"
  *               type: array
  *               items:
  *                 allOf:
- *                   - $ref: "#/components/schemas/product_option"
+ *                   - $ref: "#/components/schemas/ProductOption"
  *                   - type: object
  *             count:
  *               type: integer

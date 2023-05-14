@@ -2,6 +2,7 @@ import { IsNumber, IsOptional, IsString } from "class-validator"
 
 import {
   DateComparisonOperator,
+  FindPaginationParams,
   StringComparisonOperator,
 } from "../../../../types/common"
 import { Type } from "class-transformer"

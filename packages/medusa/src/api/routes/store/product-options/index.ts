@@ -14,7 +14,7 @@ export default (app) => {
     "/",
     transformQuery(StoreGetProductOptionsParams, {
       defaultRelations: defaultStoreProductOptionRelations,
-      allowedFields: defaultStoreProductOptionFields,
+      defaultFields: defaultStoreProductOptionFields,
       isList: true,
     }),
     middlewares.wrap(require("./list-product-options").default)

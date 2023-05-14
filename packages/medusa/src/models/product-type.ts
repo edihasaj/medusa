@@ -61,7 +61,7 @@ export class ProductType extends SoftDeletableEntity {
  *     description: "Images of the Product Type."
  *     type: array
  *     items:
- *       $ref: "#/components/schemas/image"
+ *       $ref: "#/components/schemas/Image"
  *   thumbnail:
  *     description: "A URL to an image file that can be used to identify the Product Type."
  *     type: string
