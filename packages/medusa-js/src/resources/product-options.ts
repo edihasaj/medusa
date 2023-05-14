@@ -3,8 +3,8 @@ import { ResponsePromise } from "../typings"
 import BaseResource from "./base"
 import {
   StoreGetProductOptionsParams,
-  StoreProductOptionsListRes,
-} from "@medusajs/medusa/dist/api/routes/store/product-options"
+  StoreProductOptionsListRes
+} from "@medusajs/medusa/dist/api/routes/store/product-options";
 
 class ProductOptionsResource extends BaseResource {
   list(
