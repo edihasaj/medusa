@@ -24,14 +24,14 @@ export const useAdminVariants = (
     Error,
     ReturnType<VariantQueryKeys["list"]>
   >
-) => {
+): AdminVariantsListRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminVariantKeys.list(query),
     () => client.admin.variants.list(query),
     options
   )
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as AdminVariantsListRes
 }
 
 export const useAdminVariant = (
@@ -42,14 +42,14 @@ export const useAdminVariant = (
     Error,
     ReturnType<VariantQueryKeys["detail"]>
   >
-) => {
+): AdminVariantsRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminVariantKeys.detail(id),
     () => client.admin.variants.retrieve(id, query),
     options
   )
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as AdminVariantsRes
 }
 
 export const useAdminVariantsInventory = (

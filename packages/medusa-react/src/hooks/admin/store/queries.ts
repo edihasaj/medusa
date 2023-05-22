@@ -53,12 +53,12 @@ export const useAdminStore = (
     Error,
     ReturnType<StoreQueryKeys["details"]>
   >
-) => {
+): AdminExtendedStoresRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminStoreKeys.details(),
     () => client.admin.store.retrieve(),
     options
   )
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as AdminExtendedStoresRes
 }

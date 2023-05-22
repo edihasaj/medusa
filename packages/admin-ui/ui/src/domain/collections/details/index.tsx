@@ -20,6 +20,8 @@ import ViewProductsTable from "../../../components/templates/collection-product-
 import useNotification from "../../../hooks/use-notification"
 import Medusa from "../../../services/api"
 import { getErrorMessage } from "../../../utils/error-messages"
+import ProductCollectionThumbnailSection from "../../../components/organisms/product-collection-thumbnail-section"
+import ProductCollectionMediaSection from "../../../components/organisms/product-collection-media-section"
 
 const CollectionDetails = () => {
   const { id } = useParams()
@@ -66,7 +68,7 @@ const CollectionDetails = () => {
       payload.metadata = payloadMetadata // deleting metadata will not work as it's not supported by the core
     }
 
-    updateCollection.mutate(payload, {
+    updateCollection.mutate(payload as unknown as object, {
       onSuccess: () => {
         setShowEdit(false)
         refetch()
@@ -107,77 +109,91 @@ const CollectionDetails = () => {
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex h-full flex-col">
         <BackButton
           className="mb-xsmall"
           path="/a/products?view=collections"
           label="Back to Collections"
         />
-        <div className="rounded-rounded py-large px-xlarge border-grey-20 bg-grey-0 mb-large border">
-          {isLoading || !collection ? (
-            <div className="flex h-12 w-full items-center">
-              <Spinner variant="secondary" size="large" />
-            </div>
-          ) : (
-            <div>
-              <div>
-                <div className="flex items-center justify-between">
-                  <h2 className="inter-xlarge-semibold mb-2xsmall">
-                    {collection.title}
-                  </h2>
-                  <Actionables
-                    forceDropdown
-                    actions={[
-                      {
-                        label: "Edit Collection",
-                        onClick: () => setShowEdit(true),
-                        icon: <EditIcon size="20" />,
-                      },
-                      {
-                        label: "Delete",
-                        onClick: () => setShowDelete(!showDelete),
-                        variant: "danger",
-                        icon: <TrashIcon size="20" />,
-                      },
-                    ]}
-                  />
+
+        <div className="gap-x-base grid grid-cols-12">
+          <div className="gap-y-xsmall col-span-8 flex flex-col">
+            <div className="rounded-rounded py-large px-xlarge border-grey-20 bg-grey-0 mb-large border">
+              {isLoading || !collection ? (
+                <div className="flex h-12 w-full items-center">
+                  <Spinner variant="secondary" size="large" />
                 </div>
-                <p className="inter-small-regular text-grey-50">
-                  /{collection.handle}
-                </p>
-              </div>
-              {collection.metadata && (
-                <div className="mt-large gap-y-base flex flex-col">
-                  <h3 className="inter-base-semibold">Metadata</h3>
+              ) : (
+                <div>
                   <div>
-                    <JSONView data={collection.metadata} />
+                    <div className="flex items-center justify-between">
+                      <h2 className="inter-xlarge-semibold mb-2xsmall">
+                        {collection.title}
+                      </h2>
+                      <Actionables
+                        forceDropdown
+                        actions={[
+                          {
+                            label: "Edit Collection",
+                            onClick: () => setShowEdit(true),
+                            icon: <EditIcon size="20" />,
+                          },
+                          {
+                            label: "Delete",
+                            onClick: () => setShowDelete(!showDelete),
+                            variant: "danger",
+                            icon: <TrashIcon size="20" />,
+                          },
+                        ]}
+                      />
+                    </div>
+                    <p className="inter-small-regular text-grey-50">
+                      /{collection.handle}
+                    </p>
                   </div>
+                  {collection.metadata && (
+                    <div className="mt-large gap-y-base flex flex-col">
+                      <h3 className="inter-base-semibold">Metadata</h3>
+                      <div>
+                        <JSONView data={collection.metadata} />
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
+
+            <Section
+              title="Products"
+              actions={[
+                {
+                  label: "Edit Products",
+                  icon: <EditIcon size="20" />,
+                  onClick: () => setShowAddProducts(!showAddProducts),
+                },
+              ]}
+            >
+              <p className="text-grey-50 inter-base-regular mt-xsmall mb-base">
+                To start selling, all you need is a name, price, and image.
+              </p>
+              {collection && (
+                <ViewProductsTable
+                  key={updates} // force re-render when collection is updated
+                  collectionId={collection.id}
+                  refetchCollection={refetch}
+                />
+              )}
+            </Section>
+          </div>
+          {collection && (
+            <div className="gap-y-xsmall col-span-4 flex flex-col">
+              <ProductCollectionThumbnailSection
+                productCollection={collection}
+              />
+              <ProductCollectionMediaSection productCollection={collection} />
+            </div>
           )}
         </div>
-        <Section
-          title="Products"
-          actions={[
-            {
-              label: "Edit Products",
-              icon: <EditIcon size="20" />,
-              onClick: () => setShowAddProducts(!showAddProducts),
-            },
-          ]}
-        >
-          <p className="text-grey-50 inter-base-regular mt-xsmall mb-base">
-            To start selling, all you need is a name, price, and image.
-          </p>
-          {collection && (
-            <ViewProductsTable
-              key={updates} // force re-render when collection is updated
-              collectionId={collection.id}
-              refetchCollection={refetch}
-            />
-          )}
-        </Section>
       </div>
       {showEdit && (
         <CollectionModal

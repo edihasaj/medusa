@@ -1,6 +1,6 @@
 {
   "name": "@medusajs/medusa-js",
-  "version": "4.0.1",
+  "version": "4.0.1-next3",
   "description": "Client for Medusa Commerce Rest API",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -26,13 +26,11 @@
     "node": ">=12.0.0"
   },
   "dependencies": {
+    "@medusajs/medusa": "file:medusajs-medusa-1.10.1-next3.tgz",
     "axios": "^0.24.0",
     "qs": "^6.10.3",
     "retry-axios": "^2.6.0",
     "uuid": "^9.0.0"
-  },
-  "peerDependencies": {
-    "@medusajs/medusa": "1.10.1"
   },
   "repository": {
     "type": "git",
@@ -43,7 +41,6 @@
     "url": "https://github.com/medusajs/medusa/issues"
   },
   "devDependencies": {
-    "@medusajs/medusa": "1.10.1",
     "@types/uuid": "^9.0.0",
     "cross-env": "^7.0.3",
     "jest": "^27.4.7",

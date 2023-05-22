@@ -24,14 +24,14 @@ export const useShippingOptions = (
     Error,
     ReturnType<ShippingOptionQueryKey["list"]>
   >
-) => {
+): StoreShippingOptionsListRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     shippingOptionKey.list(query),
     async () => client.shippingOptions.list(query),
     options
   )
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as StoreShippingOptionsListRes
 }
 
 export const useCartShippingOptions = (
@@ -41,12 +41,12 @@ export const useCartShippingOptions = (
     Error,
     ReturnType<ShippingOptionQueryKey["cart"]>
   >
-) => {
+): StoreShippingOptionsListRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     shippingOptionKey.cart(cartId),
     async () => client.shippingOptions.listCartOptions(cartId),
     options
   )
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as StoreShippingOptionsListRes
 }
