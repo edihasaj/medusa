@@ -51,14 +51,14 @@ export const useAdminPriceListProducts = (
     Error,
     ReturnType<PriceListQueryKeys["detailProducts"]>
   >
-) => {
+): AdminProductsListRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminPriceListKeys.detailProducts(id, query),
     () => client.admin.priceLists.listProducts(id, query),
     options
   )
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as AdminProductsListRes
 }
 
 export const useAdminPriceList = (

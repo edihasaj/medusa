@@ -1,4 +1,4 @@
-import {IsArray, IsObject, IsOptional, IsString} from "class-validator"
+import { IsArray, IsObject, IsOptional, IsString } from "class-validator"
 import { Request, Response } from "express"
 import { EntityManager } from "typeorm"
 import ProductCollectionService from "../../../../services/product-collection"
@@ -100,7 +100,7 @@ export default async (req: Request, res: Response) => {
  *   handle:
  *     type: string
  *     description:  An optional handle to be used in slugs, if none is provided we will kebab-case the title.
-*    description:
+ *   description:
  *     type: string
  *     description:  An optional description of the Collection.
  *   images:

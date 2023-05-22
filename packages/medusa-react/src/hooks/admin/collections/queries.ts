@@ -26,6 +26,7 @@ export const useAdminCollections = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminCollectionKeys.list(query),
+    // @ts-ignore
     () => client.admin.collections.list(query),
     options
   )
@@ -43,6 +44,7 @@ export const useAdminCollection = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminCollectionKeys.detail(id),
+    // @ts-ignore
     () => client.admin.collections.retrieve(id),
     options
   )

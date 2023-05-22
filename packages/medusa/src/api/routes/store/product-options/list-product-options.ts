@@ -1,14 +1,18 @@
 import { Type } from "class-transformer"
 import { IsNumber, IsOptional, IsString } from "class-validator"
 import ProductOptionService from "../../../../services/product-option"
-import { StringComparisonOperator } from "../../../../types/common"
+import {
+  FindPaginationParams,
+  StringComparisonOperator,
+} from "../../../../types/common"
 import { IsType } from "../../../../utils/validators/is-type"
 
 /**
  * @oas [get] /product-options
  * operationId: GetProductOptions
- * summary: List Product Options
+ * summary: "List Product Options"
  * description: "Retrieves a list of Product Options."
+ * x-authenticated: true
  * parameters:
  *   - (query) q {string} Query used for searching product options by title
  *   - in: query
@@ -71,6 +75,9 @@ import { IsType } from "../../../../utils/validators/is-type"
  *   - (query) limit=100 {integer} Limit the number of product options returned.
  *   - (query) expand {string} (Comma separated) Which fields should be expanded in each order of the result.
  *   - (query) fields {string} (Comma separated) Which fields should be included in each order of the result.
+ * x-codegen:
+ *   method: list
+ *   queryParams: StoreGetProductOptionsParams
  * x-codeSamples:
  *   - lang: JavaScript
  *     label: JS Client
@@ -85,40 +92,30 @@ import { IsType } from "../../../../utils/validators/is-type"
  *     label: cURL
  *     source: |
  *       curl --location --request GET 'https://medusa-url.com/store/product-options'
+ * security:
+ *   - api_token: []
+ *   - cookie_auth: []
  * tags:
  *   - ProductOption
  * responses:
- *   200:
- *     description: OK
- *     content:
- *       application/json:
- *         schema:
- *           properties:
- *             products:
- *               type: array
- *               items:
- *                 allOf:
- *                   - $ref: "#/components/schemas/product_option"
- *                   - type: object
- *             count:
- *               type: integer
- *               description: The total number of items available
- *             offset:
- *               type: integer
- *               description: The number of items skipped before these items
- *             limit:
- *               type: integer
- *               description: The number of items per page
- *   "400":
- *     $ref: "#/components/responses/400_error"
- *   "404":
- *     $ref: "#/components/responses/not_found_error"
- *   "409":
- *     $ref: "#/components/responses/invalid_state_error"
- *   "422":
- *     $ref: "#/components/responses/invalid_request_error"
- *   "500":
- *     $ref: "#/components/responses/500_error"
+ *  "200":
+ *    description: OK
+ *    content:
+ *      application/json:
+ *        schema:
+ *          $ref: "#/components/schemas/StoreProductTypesListRes"
+ *  "400":
+ *    $ref: "#/components/responses/400_error"
+ *  "401":
+ *    $ref: "#/components/responses/unauthorized"
+ *  "404":
+ *    $ref: "#/components/responses/not_found_error"
+ *  "409":
+ *    $ref: "#/components/responses/invalid_state_error"
+ *  "422":
+ *    $ref: "#/components/responses/invalid_request_error"
+ *  "500":
+ *    $ref: "#/components/responses/500_error"
  */
 export default async (req, res) => {
   const optionService: ProductOptionService = req.scope.resolve(
@@ -141,20 +138,7 @@ export default async (req, res) => {
   })
 }
 
-export class StoreGetProductOptionsPaginationParams {
-  @IsNumber()
-  @IsOptional()
-  @Type(() => Number)
-  limit? = 10
-
-  @IsNumber()
-  @IsOptional()
-  @Type(() => Number)
-  offset? = 0
-}
-
-// eslint-disable-next-line max-len
-export class StoreGetProductOptionsParams extends StoreGetProductOptionsPaginationParams {
+export class StoreGetProductOptionsParams extends FindPaginationParams {
   @IsType([String, [String], StringComparisonOperator])
   @IsOptional()
   id?: string | string[] | StringComparisonOperator

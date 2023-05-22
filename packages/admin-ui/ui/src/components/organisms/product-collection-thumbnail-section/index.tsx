@@ -1,6 +1,5 @@
-import { Product } from "@medusajs/medusa"
+import { ProductCollection } from "@medusajs/medusa"
 import clsx from "clsx"
-import useEditProductActions from "../../../hooks/use-edit-product-actions"
 import useNotification from "../../../hooks/use-notification"
 import useToggleState from "../../../hooks/use-toggle-state"
 import { getErrorMessage } from "../../../utils/error-messages"
@@ -8,15 +7,17 @@ import TwoStepDelete from "../../atoms/two-step-delete"
 import Button from "../../fundamentals/button"
 import Section from "../../organisms/section"
 import ThumbnailModal from "./thumbnail-modal"
+import useEditProductCollectionActions from "../../../hooks/use-edit-product-collection-actions"
 
 type Props = {
-  product: Product
+  productCollection: ProductCollection
 }
 
-const ProductThumbnailSection = ({ product }: Props) => {
-  const { onUpdate, updating } = useEditProductActions(product.id)
+const ProductCollectionThumbnailSection = ({ productCollection }: Props) => {
+  const { onUpdate, updating } = useEditProductCollectionActions(
+    productCollection.id
+  )
   const { state, toggle, close } = useToggleState()
-
   const notification = useNotification()
 
   const handleDelete = () => {
@@ -48,9 +49,9 @@ const ProductThumbnailSection = ({ product }: Props) => {
               type="button"
               onClick={toggle}
             >
-              {product.thumbnail ? "Edit" : "Upload"}
+              {productCollection.thumbnail ? "Edit" : "Upload"}
             </Button>
-            {product.thumbnail && (
+            {productCollection.thumbnail && (
               <TwoStepDelete onDelete={handleDelete} deleting={updating} />
             )}
           </div>
@@ -58,14 +59,14 @@ const ProductThumbnailSection = ({ product }: Props) => {
       >
         <div
           className={clsx("gap-xsmall mt-base grid grid-cols-3", {
-            hidden: !product.thumbnail,
+            hidden: !productCollection.thumbnail,
           })}
         >
-          {product.thumbnail && (
+          {productCollection.thumbnail && (
             <div className="flex aspect-square items-center justify-center">
               <img
-                src={product.thumbnail}
-                alt={`Thumbnail for ${product.title}`}
+                src={productCollection.thumbnail}
+                alt={`Thumbnail for ${productCollection.title}`}
                 className="rounded-rounded max-h-full max-w-full object-contain"
               />
             </div>
@@ -73,9 +74,13 @@ const ProductThumbnailSection = ({ product }: Props) => {
         </div>
       </Section>
 
-      <ThumbnailModal product={product} open={state} onClose={close} />
+      <ThumbnailModal
+        productCollection={productCollection}
+        open={state}
+        onClose={close}
+      />
     </>
   )
 }
 
-export default ProductThumbnailSection
+export default ProductCollectionThumbnailSection

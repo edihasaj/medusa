@@ -1,14 +1,14 @@
-import { Product } from "@medusajs/medusa"
+import { ProductCollection } from "@medusajs/medusa"
 import useToggleState from "../../../hooks/use-toggle-state"
 import { ActionType } from "../../molecules/actionables"
 import Section from "../../organisms/section"
 import MediaModal from "./media-modal"
 
 type Props = {
-  product: Product
+  productCollection: ProductCollection
 }
 
-const ProductMediaSection = ({ product }: Props) => {
+const ProductCollectionMediaSection = ({ productCollection }: Props) => {
   const { state, close, toggle } = useToggleState()
 
   const actions: ActionType[] = [
@@ -21,9 +21,9 @@ const ProductMediaSection = ({ product }: Props) => {
   return (
     <>
       <Section title="Media" actions={actions}>
-        {product.images && product.images?.length > 0 && (
+        {productCollection.images && productCollection.images?.length > 0 && (
           <div className="gap-xsmall mt-base grid grid-cols-3">
-            {product.images.map((image, index) => {
+            {productCollection.images?.map((image, index) => {
               return (
                 <div
                   key={image.id}
@@ -41,9 +41,13 @@ const ProductMediaSection = ({ product }: Props) => {
         )}
       </Section>
 
-      <MediaModal product={product} open={state} onClose={close} />
+      <MediaModal
+        productCollection={productCollection}
+        open={state}
+        onClose={close}
+      />
     </>
   )
 }
 
-export default ProductMediaSection
+export default ProductCollectionMediaSection

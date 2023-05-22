@@ -18,7 +18,7 @@ import { defaultStoreCollectionRelations } from "./index"
  *        schema:
  *          properties:
  *            collection:
- *              $ref: "#/components/schemas/product_collection"
+ *              $ref: "#/components/schemas/ProductCollection"
  */
 
 export default async (req, res) => {

@@ -3,17 +3,10 @@ import { ResponsePromise } from "../typings"
 import BaseResource from "./base"
 import {
   StoreGetProductOptionsParams,
-  StoreProductOptionsListRes,
-} from "@medusajs/medusa/dist/api/routes/store/product-options"
+  StoreProductOptionsListRes
+} from "@medusajs/medusa/dist/api/routes/store/product-options";
 
 class ProductOptionsResource extends BaseResource {
-  /**
-   * @description Retrieves a list of product options
-   * @param {StoreGetProductOptionsParams} query is optional. Can contain a limit and offset for the
-   * returned list
-   * @param customHeaders
-   * @return {ResponsePromise<StoreProductOptionsListRes>}
-   */
   list(
     query?: StoreGetProductOptionsParams,
     customHeaders: Record<string, any> = {}
