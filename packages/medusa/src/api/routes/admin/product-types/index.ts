@@ -18,7 +18,7 @@ export default (app) => {
     "/",
     transformQuery(AdminGetProductTypesParams, {
       defaultRelations: defaultAdminProductTypeRelations,
-      allowedFields: defaultAdminProductTypeFields,
+      defaultFields: defaultAdminProductTypeFields,
       isList: true,
     }),
     middlewares.wrap(require("./list-product-types").default)

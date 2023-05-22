@@ -1,6 +1,7 @@
 import moment from "moment"
 import { useMemo } from "react"
 import Tooltip from "../../atoms/tooltip"
+import ImagePlaceholder from "../../fundamentals/image-placeholder"
 
 const useCollectionTableColumn = () => {
   const columns = useMemo(
@@ -9,7 +10,36 @@ const useCollectionTableColumn = () => {
         Header: "Title",
         accessor: "title",
         Cell: ({ row: { original } }) => {
+          return (
+            <div className="flex items-center">
+              <div className="my-1.5 mr-4 flex h-[40px] w-[30px] items-center">
+                {original.thumbnail ? (
+                  <img
+                    src={original.thumbnail}
+                    className="rounded-soft h-full object-cover"
+                    alt={original.title}
+                  />
+                ) : (
+                  <ImagePlaceholder />
+                )}
+              </div>
+              {original.title}
+            </div>
+          )
+        },
+      },
+      {
+        Header: "Title",
+        accessor: "title",
+        Cell: ({ row: { original } }) => {
           return <div className="flex items-center">{original.title}</div>
+        },
+      },
+      {
+        Header: "Description",
+        accessor: "description",
+        Cell: ({ row: { original } }) => {
+          return <div className="flex items-center">{original.description}</div>
         },
       },
       {

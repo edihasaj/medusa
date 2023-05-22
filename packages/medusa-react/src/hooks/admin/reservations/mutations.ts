@@ -10,7 +10,7 @@ import {
   useQueryClient,
 } from "@tanstack/react-query"
 
-import { Response } from "@medusajs/medusa-js/src"
+import { Response } from "@medusajs/medusa-js"
 import { adminReservationsKeys } from "./queries"
 import { buildOptions } from "../../utils/buildOptions"
 import { useMedusa } from "../../../contexts"

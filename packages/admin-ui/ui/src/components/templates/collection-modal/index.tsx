@@ -28,6 +28,7 @@ type CollectionModalProps = {
 type CollectionModalFormData = {
   title: string
   handle: string | undefined
+  description: string | null
   metadata: MetadataFormType
 }
 
@@ -45,6 +46,7 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
     defaultValues: {
       title: collection?.title,
       handle: collection?.handle,
+      description: collection?.description,
       metadata: {
         entries: Object.entries(collection?.metadata || {}).map(
           ([key, value]) => ({
@@ -63,6 +65,7 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
       reset({
         title: collection.title,
         handle: collection.handle,
+        description: collection.description,
         metadata: {
           entries: Object.entries(collection.metadata || {}).map(
             ([key, value]) => ({
@@ -160,6 +163,11 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
                   tooltip={
                     <IconTooltip content="URL Slug for the collection. Will be auto generated if left blank." />
                   }
+                />
+                <InputField
+                  label="Description"
+                  placeholder="This is a collection of sunglasses"
+                  {...register("description")}
                 />
               </div>
             </div>

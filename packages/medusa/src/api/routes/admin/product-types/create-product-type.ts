@@ -71,7 +71,7 @@ import ProductTypeService from "../../../../services/product-type"
  *        schema:
  *          properties:
  *            collection:
- *              $ref: "#/components/schemas/product_type"
+ *              $ref: "#/components/schemas/ProductType"
  *  "400":
  *    $ref: "#/components/responses/400_error"
  *  "401":

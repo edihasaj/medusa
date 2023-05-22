@@ -3,6 +3,7 @@ import {
   AdminProductTypesRes,
 } from "@medusajs/medusa"
 import { Response } from "@medusajs/medusa-js"
+// @ts-ignore
 import { useMutation, UseMutationOptions, useQueryClient } from "react-query"
 import { adminProductTypeKeys } from "."
 import { useMedusa } from "../../../contexts/medusa"
@@ -21,8 +22,10 @@ export const useAdminCreateProductType = (
 ) => {
   const { client } = useMedusa()
   const queryClient = useQueryClient()
+  // @ts-ignore
   return useMutation(
     (payload: CreateProductType) => client.admin.productTypes.create(payload),
+    // @ts-ignore
     buildOptions(queryClient, adminProductTypeKeys.lists(), options)
   )
 }
@@ -37,10 +40,12 @@ export const useAdminUpdateProductType = (
 ) => {
   const { client } = useMedusa()
   const queryClient = useQueryClient()
+  // @ts-ignore
   return useMutation(
     (payload: UpdateProductType) =>
       client.admin.productTypes.update(id, payload),
     buildOptions(
+      // @ts-ignore
       queryClient,
       [adminProductTypeKeys.lists(), adminProductTypeKeys.detail(id)],
       options
@@ -58,9 +63,11 @@ export const useAdminDeleteProductType = (
 ) => {
   const { client } = useMedusa()
   const queryClient = useQueryClient()
+  // @ts-ignore
   return useMutation(
     () => client.admin.productTypes.delete(id),
     buildOptions(
+      // @ts-ignore
       queryClient,
       [adminProductTypeKeys.lists(), adminProductTypeKeys.detail(id)],
       options

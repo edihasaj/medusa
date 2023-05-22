@@ -13,6 +13,7 @@ class ProductOptionService extends TransactionBaseService {
   protected readonly optionRepository_: typeof ProductOptionRepository
 
   constructor({ manager, productOptionRepository }) {
+    // eslint-disable-next-line prefer-rest-params
     super(arguments[0])
 
     this.manager_ = manager
@@ -29,7 +30,7 @@ class ProductOptionService extends TransactionBaseService {
     productOptionId: string,
     config: FindConfig<ProductOption> = {}
   ): Promise<ProductOption> {
-    const optionRepository = this.manager_.getCustomRepository(
+    const optionRepository = this.activeManager_.withRepository(
       this.optionRepository_
     )
 
@@ -58,7 +59,9 @@ class ProductOptionService extends TransactionBaseService {
     } = {},
     config: FindConfig<ProductOption> = { skip: 0, take: 20 }
   ): Promise<[ProductOption[], number]> {
-    const typeRepo = this.manager_.getCustomRepository(this.optionRepository_)
+    const optionRepository = this.activeManager_.withRepository(
+      this.optionRepository_
+    )
 
     let q
     if (isString(selector.q)) {
@@ -69,10 +72,14 @@ class ProductOptionService extends TransactionBaseService {
     const query = buildQuery(selector, config)
 
     if (q) {
-      query.where.title = ILike(`%${q}%`)
+      if ("title" in query.where) {
+        query.where.title = ILike(`%${q}%`)
+      } else {
+        query.where.values = ILike(`%${q}%`)
+      }
     }
 
-    return await typeRepo.findAndCount(query)
+    return await optionRepository.findAndCount(query)
   }
 }
 

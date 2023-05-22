@@ -24,14 +24,14 @@ export const useProducts = (
     Error,
     ReturnType<ProductQueryKey["list"]>
   >
-) => {
+): StoreProductsListRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     productKeys.list(query),
     () => client.products.list(query),
     options
   )
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as StoreProductsListRes
 }
 
 export const useProduct = (
@@ -41,7 +41,7 @@ export const useProduct = (
     Error,
     ReturnType<ProductQueryKey["detail"]>
   >
-) => {
+): StoreProductsRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     productKeys.detail(id),
@@ -49,5 +49,5 @@ export const useProduct = (
     options
   )
 
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as StoreProductsRes
 }

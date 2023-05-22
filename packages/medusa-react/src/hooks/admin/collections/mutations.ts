@@ -26,6 +26,7 @@ export const useAdminCreateCollection = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostCollectionsReq) =>
       client.admin.collections.create(payload),
     buildOptions(queryClient, adminCollectionKeys.lists(), options)
@@ -43,8 +44,8 @@ export const useAdminUpdateCollection = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
   return useMutation(
-    (payload: AdminPostCollectionsCollectionReq) =>
-      client.admin.collections.update(id, payload),
+    // @ts-ignore
+    (payload: AdminPostCollectionsCollectionReq) => client.admin.collections.update(id, payload),
     buildOptions(
       queryClient,
       [adminCollectionKeys.lists(), adminCollectionKeys.detail(id)],
@@ -59,6 +60,7 @@ export const useAdminDeleteCollection = (
 ) => {
   const { client } = useMedusa()
   const queryClient = useQueryClient()
+  // @ts-ignore
   return useMutation(
     () => client.admin.collections.delete(id),
     buildOptions(
@@ -87,6 +89,7 @@ export const useAdminAddProductsToCollection = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostProductsToCollectionReq) =>
       client.admin.collections.addProducts(id, payload),
     buildOptions(
@@ -115,6 +118,7 @@ export const useAdminRemoveProductsFromCollection = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminDeleteProductsFromCollectionReq) =>
       client.admin.collections.removeProducts(id, payload),
     buildOptions(

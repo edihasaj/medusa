@@ -33,7 +33,7 @@ import { defaultStoreProductOptionRelations } from "./index"
  *        schema:
  *          properties:
  *            collection:
- *              $ref: "#/components/schemas/product_option"
+ *              $ref: "#/components/schemas/ProductOption"
  *  "400":
  *    $ref: "#/components/responses/400_error"
  *  "404":

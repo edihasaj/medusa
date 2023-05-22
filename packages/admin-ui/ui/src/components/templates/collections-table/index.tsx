@@ -156,9 +156,9 @@ const CollectionsTable: React.FC = () => {
           </Table.Body>
         ) : (
           <Table.Body {...getTableBodyProps()}>
-            {rows.map((row) => {
+            {rows.map((row, key) => {
               prepareRow(row)
-              return <CollectionRow row={row} />
+              return <CollectionRow row={row} key={key} />
             })}
           </Table.Body>
         )}
@@ -180,7 +180,7 @@ const CollectionRow = ({ row }) => {
     >
       {row.cells.map((cell, index) => {
         return (
-          <Table.Cell {...cell.getCellProps()}>
+          <Table.Cell {...cell.getCellProps()} key={index}>
             {cell.render("Cell", { index })}
           </Table.Cell>
         )

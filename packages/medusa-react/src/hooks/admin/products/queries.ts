@@ -23,14 +23,14 @@ export const useAdminProducts = (
     Error,
     ReturnType<ProductQueryKeys["list"]>
   >
-) => {
+): AdminProductsListRes => {
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminProductKeys.list(query),
     () => client.admin.products.list(query),
     options
   )
-  return { ...data, ...rest } as const
+  return { ...data, ...rest } as AdminProductsListRes
 }
 
 export const useAdminProduct = (
