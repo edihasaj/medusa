@@ -1,5 +1,5 @@
 {
-  "version": "8.0.0",
+  "version": "8.0.0-next4",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -25,7 +25,6 @@
     "test": "echo \"Tests disabled temporarily\""
   },
   "peerDependencies": {
-    "@medusajs/medusa": "1.11.0",
     "@tanstack/react-query": "^4.22.0",
     "react": "^16.8 || ^17.0 || ^18.0",
     "react-dom": "^16.8 || ^17.0 || ^18.0"
@@ -34,7 +33,7 @@
   "author": "Zakaria S. El Asri",
   "devDependencies": {
     "@babel/core": "^7.16.0",
-    "@medusajs/medusa": "1.11.0",
+    "@medusajs/medusa": "file:medusajs-medusa-1.11.0-next.tgz",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
     "@storybook/addons": "^6.3.12",
@@ -61,7 +60,7 @@
     "tsup": "^6.5.0"
   },
   "dependencies": {
-    "@medusajs/medusa-js": "5.0.0"
+    "@medusajs/medusa-js": "file:medusajs-medusa-js-5.0.0-next.tgz"
   },
   "msw": {
     "workerDirectory": "public"

@@ -4,7 +4,7 @@ import {
 } from "@medusajs/medusa"
 import { Response } from "@medusajs/medusa-js"
 // @ts-ignore
-import { useMutation, UseMutationOptions, useQueryClient } from "react-query"
+import { useMutation, UseMutationOptions, useQueryClient } from "@tanstack/react-query"
 import { adminProductTypeKeys } from "."
 import { useMedusa } from "../../../contexts/medusa"
 import { buildOptions } from "../../utils/buildOptions"
