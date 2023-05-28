@@ -39,6 +39,9 @@ export class ProductCollection extends SoftDeletableEntity {
   @Column({ nullable: true })
   thumbnail: string
 
+  @Column({ nullable: true })
+  type: string | null
+
   @DbAwareColumn({ type: "jsonb", nullable: true })
   metadata: Record<string, unknown>
 

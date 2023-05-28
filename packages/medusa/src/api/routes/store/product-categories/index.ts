@@ -44,6 +44,7 @@ export default (app) => {
 export const defaultStoreProductCategoryRelations = [
   "parent_category",
   "category_children",
+  "images",
 ]
 
 export const defaultStoreCategoryScope = {
@@ -60,6 +61,7 @@ export const defaultStoreProductCategoryFields = [
   "created_at",
   "updated_at",
   "rank",
+  "thumbnail",
 ]
 
 export const allowedStoreProductCategoryFields = [
@@ -71,6 +73,7 @@ export const allowedStoreProductCategoryFields = [
   "created_at",
   "updated_at",
   "rank",
+  "thumbnail",
 ]
 
 /**

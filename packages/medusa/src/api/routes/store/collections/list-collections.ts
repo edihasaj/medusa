@@ -124,6 +124,10 @@ export class StoreGetCollectionsParams {
   handle?: string[]
 
   @IsOptional()
+  @IsArray()
+  type?: string[]
+
+  @IsOptional()
   @IsInt()
   @Type(() => Number)
   limit?: number = 10

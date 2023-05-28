@@ -66,6 +66,7 @@ export const defaultAdminCollectionsFields = [
   "handle",
   "description",
   "thumbnail",
+  "type",
   "created_at",
   "updated_at",
 ]

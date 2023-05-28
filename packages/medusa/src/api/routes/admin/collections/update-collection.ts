@@ -136,6 +136,10 @@ export class AdminPostCollectionsCollectionReq {
   @IsOptional()
   thumbnail?: string
 
+  @IsString()
+  @IsOptional()
+  type?: string
+
   @IsObject()
   @IsOptional()
   metadata?: Record<string, unknown>
