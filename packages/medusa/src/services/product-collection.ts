@@ -348,6 +348,7 @@ class ProductCollectionService extends TransactionBaseService {
 
       delete where.title
       delete where.handle
+      delete where.type
       delete where.created_at
       delete where.updated_at
 
@@ -359,6 +360,10 @@ class ProductCollectionService extends TransactionBaseService {
         {
           ...where,
           handle: ILike(`%${q}%`),
+        },
+        {
+          ...where,
+          type: ILike(`%${q}%`),
         },
       ]
     }

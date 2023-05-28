@@ -16,6 +16,7 @@ import { Type } from "class-transformer"
  *   - (query) offset=0 {integer} The number of collections to skip before the results.
  *   - (query) title {string} The title of collections to return.
  *   - (query) handle {string} The handle of collections to return.
+ *   - (query) type {string} The type of collections to return.
  *   - (query) q {string} a search term to search titles and handles.
  *   - (query) discount_condition_id {string} The discount condition id on which to filter the product collections.
  *   - in: query
@@ -193,4 +194,8 @@ export class AdminGetCollectionsParams extends AdminGetCollectionsPaginationPara
   @IsString()
   @IsOptional()
   discount_condition_id?: string
+
+  @IsOptional()
+  @IsString()
+  type?: string
 }

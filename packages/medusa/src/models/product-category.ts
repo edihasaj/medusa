@@ -1,7 +1,7 @@
 import { generateEntityId } from "../utils/generate-entity-id"
 import { BaseEntity } from "../interfaces/models/base-entity"
 import { kebabCase } from "lodash"
-import { Product } from "."
+import { Image, Product } from ".";
 import {
   BeforeInsert,
   Column,
@@ -71,6 +71,23 @@ export class ProductCategory extends BaseEntity {
     },
   })
   products: Product[]
+
+  @ManyToMany(() => Image, { cascade: ["insert"] })
+  @JoinTable({
+    name: "product_category_images",
+    joinColumn: {
+      name: "product_category_id",
+      referencedColumnName: "id",
+    },
+    inverseJoinColumn: {
+      name: "image_id",
+      referencedColumnName: "id",
+    },
+  })
+  images: Image[]
+
+  @Column({ nullable: true })
+  thumbnail: string
 
   @BeforeInsert()
   private beforeInsert(): void {
@@ -148,6 +165,14 @@ export class ProductCategory extends BaseEntity {
  *     type: array
  *     items:
  *       $ref: "#/components/schemas/Product"
+ *   images:
+ *     description: "Images of the Product Collection"
+ *     type: array
+ *     items:
+ *       $ref: "#/components/schemas/Image"
+ *   thumbnail:
+ *     description: "A URL to an image file that can be used to identify the Product Collection."
+ *     type: string
  *   created_at:
  *     description: The date with timezone at which the resource was created.
  *     type: string

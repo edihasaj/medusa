@@ -34,6 +34,7 @@ export const allowedFields = [
   "handle",
   "products",
   "metadata",
+  "type",
   "created_at",
   "updated_at",
   "deleted_at",

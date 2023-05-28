@@ -4,8 +4,8 @@ import {
   IsOptional,
   IsString,
   IsBoolean,
-  ValidateIf,
-} from "class-validator"
+  ValidateIf, IsArray
+} from "class-validator";
 import { isDefined } from "medusa-core-utils"
 import { ProductCategory } from "../models"
 
@@ -17,6 +17,8 @@ type ProductCategoryInput = {
   parent_category_id?: string | null
   parent_category?: ProductCategory | null
   rank?: number
+  images?: string[]
+  thumbnail?: string
 }
 
 export type CreateProductCategoryInput = ProductCategoryInput & {
@@ -51,6 +53,14 @@ export class AdminProductCategoriesReqBase {
     return value === "null" ? null : value
   })
   parent_category_id?: string | null
+
+  @IsArray()
+  @IsOptional()
+  images?: string[]
+
+  @IsString()
+  @IsOptional()
+  thumbnail?: string
 }
 
 export class ProductBatchProductCategory {

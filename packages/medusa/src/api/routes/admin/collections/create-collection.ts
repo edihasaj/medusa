@@ -114,6 +114,9 @@ export default async (req: Request, res: Response) => {
  *   thumbnail:
  *     description: The thumbnail to use for the Product Collection.
  *     type: string
+ *   type:
+ *     description: The type to use for the Product Collection.
+ *     type: string
  *   metadata:
  *     description: An optional set of key-value pairs to hold additional information.
  *     type: object
@@ -138,6 +141,10 @@ export class AdminPostCollectionsReq {
   @IsString()
   @IsOptional()
   thumbnail?: string
+
+  @IsString()
+  @IsOptional()
+  type?: string
 
   @IsObject()
   @IsOptional()

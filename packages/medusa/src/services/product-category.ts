@@ -17,11 +17,13 @@ import {
   UpdateProductCategoryInput,
 } from "../types/product-category"
 import { buildQuery, nullableValue } from "../utils"
+import ImageRepository from "../repositories/image";
 
 type InjectedDependencies = {
   manager: EntityManager
   eventBusService: EventBusService
   productCategoryRepository: typeof ProductCategoryRepository
+  imageRepository: typeof ImageRepository
 }
 
 /**
@@ -30,6 +32,7 @@ type InjectedDependencies = {
 class ProductCategoryService extends TransactionBaseService {
   protected readonly productCategoryRepo_: typeof ProductCategoryRepository
   protected readonly eventBusService_: EventBusService
+  protected readonly imageRepository_: typeof ImageRepository
 
   static Events = {
     CREATED: "product-category.created",
@@ -40,12 +43,14 @@ class ProductCategoryService extends TransactionBaseService {
   constructor({
     productCategoryRepository,
     eventBusService,
+    imageRepository,
   }: InjectedDependencies) {
     // eslint-disable-next-line prefer-rest-params
     super(arguments[0])
 
     this.eventBusService_ = eventBusService
     this.productCategoryRepo_ = productCategoryRepository
+    this.imageRepository_ = imageRepository
   }
 
   /**
@@ -189,18 +194,40 @@ class ProductCategoryService extends TransactionBaseService {
   ): Promise<ProductCategory> {
     return await this.atomicPhase_(async (manager) => {
       const pcRepo = manager.withRepository(this.productCategoryRepo_)
+      const imageRepo = manager.withRepository(this.imageRepository_)
+
       const siblingCount = await pcRepo.countBy({
         parent_category_id: nullableValue(
           productCategoryInput.parent_category_id
         ),
       })
 
-      productCategoryInput.rank = siblingCount
+      const productCategoryInputToSave = {
+        name: productCategoryInput.name,
+        handle: productCategoryInput.handle,
+        is_internal: productCategoryInput.is_internal,
+        is_active: productCategoryInput.is_active,
+        parent_category_id: productCategoryInput.parent_category_id,
+        parent_category: productCategoryInput.parent_category,
+        rank: productCategoryInput.rank,
+        thumbnail: productCategoryInput.thumbnail,
+      }
 
-      await this.transformParentIdToEntity(productCategoryInput)
+      productCategoryInputToSave.rank = siblingCount
 
-      let productCategory = pcRepo.create(productCategoryInput)
+      await this.transformParentIdToEntity(productCategoryInputToSave)
+
+      let productCategory = pcRepo.create(productCategoryInputToSave)
       productCategory = await pcRepo.save(productCategory)
+
+      const { images, ...rest } = productCategoryInput
+      if (!rest.thumbnail && images && images.length) {
+        rest.thumbnail = images[0]
+      }
+
+      if (images?.length) {
+        productCategory.images = await imageRepo.upsertImages(images)
+      }
 
       await this.eventBusService_
         .withTransaction(manager)
@@ -223,11 +250,14 @@ class ProductCategoryService extends TransactionBaseService {
     productCategoryInput: UpdateProductCategoryInput
   ): Promise<ProductCategory> {
     return await this.atomicPhase_(async (manager) => {
-      let productCategory = await this.retrieve(productCategoryId)
+      let productCategory = await this.retrieve(productCategoryId, {
+        relations: ["images"],
+      })
 
       const productCategoryRepo = manager.withRepository(
         this.productCategoryRepo_
       )
+      const imageRepo = manager.withRepository(this.imageRepository_)
 
       const conditions = this.fetchReorderConditions(
         productCategory,
@@ -236,6 +266,14 @@ class ProductCategoryService extends TransactionBaseService {
 
       if (conditions.shouldChangeRank || conditions.shouldChangeParent) {
         productCategoryInput.rank = tempReorderRank
+      }
+
+      if (!productCategory.thumbnail && !productCategoryInput.thumbnail && productCategoryInput.images?.length) {
+        productCategory.thumbnail = productCategoryInput.images[0]
+      }
+
+      if (productCategoryInput.images?.length) {
+        productCategory.images = await imageRepo.upsertImages(productCategoryInput.images)
       }
 
       await this.transformParentIdToEntity(productCategoryInput)

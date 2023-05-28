@@ -118,6 +118,14 @@ export default async (req: Request, res: Response) => {
  *   parent_category_id:
  *     type: string
  *     description: The ID of the parent product category
+ *   images:
+ *     description: Images of the Product Collection.
+ *     type: array
+ *     items:
+ *       type: string
+ *   thumbnail:
+ *     description: The thumbnail to use for the Product Collection.
+ *     type: string
  */
 // eslint-disable-next-line max-len
 export class AdminPostProductCategoriesReq extends AdminProductCategoriesReqBase {

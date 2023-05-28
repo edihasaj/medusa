@@ -131,11 +131,13 @@ export * from "./delete-products-batch"
 export const defaultAdminProductCategoryRelations = [
   "parent_category",
   "category_children",
+  "images",
 ]
 
 export const allowedAdminProductCategoryRelations = [
   "parent_category",
   "category_children",
+  "images",
 ]
 
 export const defaultProductCategoryFields = [
@@ -149,6 +151,7 @@ export const defaultProductCategoryFields = [
   "parent_category_id",
   "created_at",
   "updated_at",
+  "thumbnail",
 ]
 
 /**
