@@ -7,8 +7,8 @@ const useCollectionTableColumn = () => {
   const columns = useMemo(
     () => [
       {
-        Header: "Title",
-        accessor: "title",
+          Header: "Title",
+          accessor: "title",
         Cell: ({ row: { original } }) => {
           return (
             <div className="flex items-center">
@@ -29,24 +29,17 @@ const useCollectionTableColumn = () => {
         },
       },
       {
-        Header: "Title",
-        accessor: "title",
-        Cell: ({ row: { original } }) => {
-          return <div className="flex items-center">{original.title}</div>
-        },
-      },
-      {
-        Header: "Description",
-        accessor: "description",
-        Cell: ({ row: { original } }) => {
-          return <div className="flex items-center">{original.description}</div>
-        },
-      },
-      {
         Header: "Handle",
         accessor: "handle",
         Cell: ({ cell: { value } }) => <div>/{value}</div>,
       },
+        {
+            Header: "Type",
+            accessor: "type",
+            Cell: ({ row: { original } }) => {
+                return <div className="flex items-center">{original.type}</div>
+            },
+        },
       {
         Header: "Created At",
         accessor: "created_at",

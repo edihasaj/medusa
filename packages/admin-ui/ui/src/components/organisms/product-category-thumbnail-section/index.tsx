@@ -1,4 +1,4 @@
-import { ProductCollection } from "@medusajs/medusa"
+import {ProductCategory, ProductCollection} from "@medusajs/medusa"
 import clsx from "clsx"
 import useNotification from "../../../hooks/use-notification"
 import useToggleState from "../../../hooks/use-toggle-state"
@@ -8,14 +8,15 @@ import Button from "../../fundamentals/button"
 import Section from "../../organisms/section"
 import ThumbnailModal from "./thumbnail-modal"
 import useEditProductCollectionActions from "../../../hooks/use-edit-product-collection-actions"
+import useEditProductCategoryActions from "../../../hooks/use-edit-product-category-actions";
 
 type Props = {
-    productCollection: ProductCollection
+    category: ProductCategory
 }
 
-const ProductCollectionThumbnailSection = ({ productCollection }: Props) => {
-    const { onUpdate, updating } = useEditProductCollectionActions(
-        productCollection.id
+const ProductCategoryThumbnailSection = ({ category }: Props) => {
+    const { onUpdate, updating } = useEditProductCategoryActions(
+        category.id
     )
     const { state, toggle, close } = useToggleState()
     const notification = useNotification()
@@ -49,9 +50,9 @@ const ProductCollectionThumbnailSection = ({ productCollection }: Props) => {
                             type="button"
                             onClick={toggle}
                         >
-                            {productCollection.thumbnail ? "Edit" : "Upload"}
+                            {category.thumbnail ? "Edit" : "Upload"}
                         </Button>
-                        {productCollection.thumbnail && (
+                        {category.thumbnail && (
                             <TwoStepDelete onDelete={handleDelete} deleting={updating} />
                         )}
                     </div>
@@ -59,14 +60,14 @@ const ProductCollectionThumbnailSection = ({ productCollection }: Props) => {
             >
                 <div
                     className={clsx("gap-xsmall mt-base grid grid-cols-3", {
-                        hidden: !productCollection.thumbnail,
+                        hidden: !category.thumbnail,
                     })}
                 >
-                    {productCollection.thumbnail && (
+                    {category.thumbnail && (
                         <div className="flex aspect-square items-center justify-center">
                             <img
-                                src={productCollection.thumbnail}
-                                alt={`Thumbnail for ${productCollection.title}`}
+                                src={category.thumbnail}
+                                alt={`Thumbnail for ${category.name}`}
                                 className="rounded-rounded max-h-full max-w-full object-contain"
                             />
                         </div>
@@ -75,7 +76,7 @@ const ProductCollectionThumbnailSection = ({ productCollection }: Props) => {
             </Section>
 
             <ThumbnailModal
-                productCollection={productCollection}
+                category={category}
                 open={state}
                 onClose={close}
             />
@@ -83,4 +84,4 @@ const ProductCollectionThumbnailSection = ({ productCollection }: Props) => {
     )
 }
 
-export default ProductCollectionThumbnailSection
+export default ProductCategoryThumbnailSection

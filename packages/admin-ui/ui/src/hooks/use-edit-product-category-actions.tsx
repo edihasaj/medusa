@@ -1,7 +1,7 @@
 import {
-  useAdminDeleteProduct,
+  useAdminDeleteProduct, useAdminDeleteProductCategory,
   useAdminProduct,
-  useAdminUpdateCollection,
+  useAdminUpdateCollection, useAdminUpdateProductCategory,
 } from "medusa-react"
 
 import { useNavigate } from "react-router-dom"
@@ -10,23 +10,23 @@ import useImperativeDialog from "./use-imperative-dialog"
 import useNotification from "./use-notification"
 import { AdminPostCollectionsCollectionReq } from "@medusajs/medusa"
 
-const useEditProductCollectionActions = (collectionId: string) => {
+const useEditProductCategoryActions = (collectionId: string) => {
   const dialog = useImperativeDialog()
   const navigate = useNavigate()
   const notification = useNotification()
   const { mutate: update, isLoading: updating } =
-    useAdminUpdateCollection(collectionId)
-  const deleteProduct = useAdminDeleteProduct(collectionId)
+    useAdminUpdateProductCategory(collectionId)
+  const deleteProductCategory = useAdminDeleteProductCategory(collectionId)
 
   const onDelete = async () => {
     const shouldDelete = await dialog({
-      heading: "Delete Product collection",
-      text: "Are you sure you want to delete this product collection",
+      heading: "Delete Product category",
+      text: "Are you sure you want to delete this product category",
     })
     if (shouldDelete) {
-      deleteProduct.mutate(undefined, {
+      deleteProductCategory.mutate(undefined, {
         onSuccess: () => {
-          notification("Success", "Product collection deleted successfully", "success")
+          notification("Success", "Product category deleted successfully", "success")
           navigate("/a/products?view=collections")
         },
         onError: (err) => {
@@ -39,7 +39,7 @@ const useEditProductCollectionActions = (collectionId: string) => {
   const onUpdate = (
     payload: Partial<AdminPostCollectionsCollectionReq>,
     onSuccess: () => void,
-    successMessage = "Product collection was successfully updated"
+    successMessage = "Product category was successfully updated"
   ) => {
     update(
       payload,
@@ -59,8 +59,8 @@ const useEditProductCollectionActions = (collectionId: string) => {
     onDelete,
     onUpdate,
     updating: updating,
-    deleting: deleteProduct.isLoading,
+    deleting: deleteProductCategory.isLoading,
   }
 }
 
-export default useEditProductCollectionActions
+export default useEditProductCategoryActions

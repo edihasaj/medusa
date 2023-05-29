@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 import { ProductCategory } from "@medusajs/medusa"
-import { useAdminUpdateProductCategory } from "medusa-react"
+import {useAdminProductCategory, useAdminUpdateProductCategory} from "medusa-react"
 
 import Button from "../../../components/fundamentals/button"
 import CrossIcon from "../../../components/fundamentals/icons/cross-icon"
@@ -13,6 +13,10 @@ import useNotification from "../../../hooks/use-notification"
 import { Option } from "../../../types/shared"
 import { getErrorMessage } from "../../../utils/error-messages"
 import TreeCrumbs from "../components/tree-crumbs"
+import ProductCollectionThumbnailSection from "../../../components/organisms/product-collection-thumbnail-section";
+import ProductCollectionMediaSection from "../../../components/organisms/product-collection-media-section";
+import ProductCategoryThumbnailSection from "../../../components/organisms/product-category-thumbnail-section";
+import ProductCategoryMediaSection from "../../../components/organisms/product-category-media-section";
 
 const visibilityOptions: Option[] = [
   {
@@ -31,6 +35,7 @@ type EditProductCategoriesSideModalProps = {
   activeCategory: ProductCategory
   close: () => void
   isVisible: boolean
+  categories?: ProductCategory[]
 }
 
 /**
@@ -58,7 +63,7 @@ function EditProductCategoriesSideModal(
       setName(activeCategory.name)
       setHandle(activeCategory.handle)
       setDescription(activeCategory.description)
-      setIsActive(activeCategory.is_active)
+      setIsActive(activeCategory.is_active.valueOf())
       setIsPublic(!activeCategory.is_internal)
     }
   }, [activeCategory])
@@ -81,12 +86,8 @@ function EditProductCategoriesSideModal(
     }
   }
 
-  const onClose = () => {
-    close()
-  }
-
   return (
-    <SideModal close={onClose} isVisible={!!isVisible}>
+    <SideModal close={close} isVisible={!!isVisible}>
       <div className="flex h-full flex-col justify-between">
         {/* === HEADER === */}
         <div className="flex items-center justify-between p-6">
@@ -105,7 +106,7 @@ function EditProductCategoriesSideModal(
         {/* === DIVIDER === */}
         <div className="block h-[1px] bg-gray-200" />
 
-        {activeCategory && (
+        {activeCategory && categories && (
           <div className="mt-[25px] px-6">
             <TreeCrumbs nodes={categories} currentNode={activeCategory} />
           </div>
@@ -145,26 +146,39 @@ function EditProductCategoriesSideModal(
 
           <NextSelect
             label="Status"
+            className="mb-6"
             options={statusOptions}
             value={statusOptions[isActive ? 0 : 1]}
             onChange={(o) => setIsActive(o.value === "active")}
           />
 
           <NextSelect
-            className="my-6"
+            className="mb-2"
             label="Visibility"
             options={visibilityOptions}
             value={visibilityOptions[isPublic ? 0 : 1]}
             onChange={(o) => setIsPublic(o.value === "public")}
           />
+
+          {/* === DIVIDER === */}
+          <div className="block my-4 h-[1px] bg-gray-200" />
+
+          {activeCategory && (
+              <div className="gap-y-xsmall col-span-4 flex flex-col">
+                <ProductCategoryThumbnailSection
+                    category={activeCategory}
+                />
+                <ProductCategoryMediaSection category={activeCategory} />
+              </div>
+          )}
         </div>
 
         {/* === DIVIDER === */}
         <div className="block h-[1px] bg-gray-200" />
 
         {/* === FOOTER === */}
-        <div className="flex justify-end gap-2 p-3">
-          <Button size="small" variant="ghost" onClick={onClose}>
+        <div className="flex justify-end gap-2 p-3 my-5">
+          <Button size="small" variant="ghost" onClick={close}>
             Cancel
           </Button>
           <Button size="small" variant="primary" onClick={onSave}>

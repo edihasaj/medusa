@@ -17,7 +17,7 @@ import {
   UpdateProductCategoryInput,
 } from "../types/product-category"
 import { buildQuery, nullableValue } from "../utils"
-import ImageRepository from "../repositories/image";
+import ImageRepository from "../repositories/image"
 
 type InjectedDependencies = {
   manager: EntityManager
@@ -259,6 +259,8 @@ class ProductCategoryService extends TransactionBaseService {
       )
       const imageRepo = manager.withRepository(this.imageRepository_)
 
+      const { images, ...rest } = productCategoryInput
+
       const conditions = this.fetchReorderConditions(
         productCategory,
         productCategoryInput
@@ -268,20 +270,22 @@ class ProductCategoryService extends TransactionBaseService {
         productCategoryInput.rank = tempReorderRank
       }
 
-      if (!productCategory.thumbnail && !productCategoryInput.thumbnail && productCategoryInput.images?.length) {
-        productCategory.thumbnail = productCategoryInput.images[0]
+      if (
+        !productCategory.thumbnail &&
+        !productCategoryInput.thumbnail &&
+        images?.length
+      ) {
+        productCategory.thumbnail = images[0]
       }
 
-      if (productCategoryInput.images?.length) {
-        productCategory.images = await imageRepo.upsertImages(productCategoryInput.images)
+      if (images?.length) {
+        productCategory.images = await imageRepo.upsertImages(images)
       }
 
       await this.transformParentIdToEntity(productCategoryInput)
 
-      for (const key in productCategoryInput) {
-        if (isDefined(productCategoryInput[key])) {
-          productCategory[key] = productCategoryInput[key]
-        }
+      for (const [key, value] of Object.entries(rest)) {
+        productCategory[key] = value
       }
 
       productCategory = await productCategoryRepo.save(productCategory)

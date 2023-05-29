@@ -33,6 +33,7 @@ const statusOptions = [
 type CreateProductCategoryProps = {
   closeModal: () => void
   parentCategory?: ProductCategory
+    categories?: ProductCategory[]
 }
 
 /**

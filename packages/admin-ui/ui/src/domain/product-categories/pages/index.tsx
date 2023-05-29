@@ -112,12 +112,12 @@ function ProductCategoryPage() {
             />
           )}
 
-          <EditProductCategoriesSideModal
-            close={hideEditModal}
-            activeCategory={activeCategory}
-            isVisible={!!activeCategory && isEditModalVisible}
-            categories={flattenedCategories}
-          />
+          {activeCategory && <EditProductCategoriesSideModal
+              close={hideEditModal}
+              activeCategory={activeCategory}
+              isVisible={!!activeCategory && isEditModalVisible}
+              categories={flattenedCategories}
+          />}
         </div>
       </div>
     </ProductCategoriesContext.Provider>

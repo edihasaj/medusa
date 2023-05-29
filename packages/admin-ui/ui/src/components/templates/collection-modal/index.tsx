@@ -29,6 +29,7 @@ type CollectionModalFormData = {
   title: string
   handle: string | undefined
   description: string | null
+  type: string | null
   metadata: MetadataFormType
 }
 
@@ -47,6 +48,7 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
       title: collection?.title,
       handle: collection?.handle,
       description: collection?.description,
+      type: collection?.type,
       metadata: {
         entries: Object.entries(collection?.metadata || {}).map(
           ([key, value]) => ({
@@ -66,6 +68,7 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
         title: collection.title,
         handle: collection.handle,
         description: collection.description,
+        type: collection.type,
         metadata: {
           entries: Object.entries(collection.metadata || {}).map(
             ([key, value]) => ({
@@ -91,6 +94,8 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
         {
           title: data.title,
           handle: data.handle,
+          description: data.description || undefined,
+          type: data.type || undefined,
           metadata: getSubmittableMetadata(data.metadata),
         },
         {
@@ -112,6 +117,8 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
         {
           title: data.title,
           handle: data.handle,
+          description: data.description || undefined,
+          type: data.type || undefined,
           metadata: getSubmittableMetadata(data.metadata),
         },
         {
@@ -164,10 +171,17 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
                     <IconTooltip content="URL Slug for the collection. Will be auto generated if left blank." />
                   }
                 />
+              </div>
+              <div className="gap-x-base flex items-center mt-5">
                 <InputField
                   label="Description"
                   placeholder="This is a collection of sunglasses"
                   {...register("description")}
+                />
+                <InputField
+                  label="Type"
+                  placeholder="This is a type of collection"
+                  {...register("type")}
                 />
               </div>
             </div>

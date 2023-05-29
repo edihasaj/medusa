@@ -129,15 +129,15 @@ export * from "./add-products-batch"
 export * from "./delete-products-batch"
 
 export const defaultAdminProductCategoryRelations = [
-  "parent_category",
   "category_children",
   "images",
+  "parent_category",
 ]
 
 export const allowedAdminProductCategoryRelations = [
-  "parent_category",
   "category_children",
   "images",
+  "parent_category",
 ]
 
 export const defaultProductCategoryFields = [

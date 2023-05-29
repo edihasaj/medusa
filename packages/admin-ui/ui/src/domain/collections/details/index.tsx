@@ -46,10 +46,14 @@ const CollectionDetails = () => {
     const payload: {
       title: string
       handle?: string
+      description?: string
+      type?: string
       metadata?: object
     } = {
       title: data.title,
       handle: data.handle,
+      description: data.description,
+      type: data.type,
     }
 
     if (metadata) {
@@ -149,6 +153,12 @@ const CollectionDetails = () => {
                     </div>
                     <p className="inter-small-regular text-grey-50">
                       /{collection.handle}
+                    </p>
+                    <p className={"mt-4"}>
+                      <b>Description:</b> {collection.description}
+                    </p>
+                    <p>
+                      <b>Type:</b> {collection.type}
                     </p>
                   </div>
                   {collection.metadata && (

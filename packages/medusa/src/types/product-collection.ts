@@ -4,6 +4,7 @@ export type CreateProductCollection = {
   description?: string
   images?: string[]
   thumbnail?: string
+  type?: string
   metadata?: Record<string, unknown>
 }
 
@@ -13,5 +14,6 @@ export type UpdateProductCollection = {
   description?: string
   images?: string[]
   thumbnail?: string
+  type?: string
   metadata?: Record<string, unknown>
 }
