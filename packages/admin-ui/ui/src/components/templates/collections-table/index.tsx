@@ -131,8 +131,8 @@ const CollectionsTable: React.FC = () => {
         {...getTableProps()}
       >
         <Table.Head>
-          {headerGroups?.map((headerGroup) => (
-            <Table.HeadRow {...headerGroup.getHeaderGroupProps()}>
+          {headerGroups?.map((headerGroup, index) => (
+            <Table.HeadRow {...headerGroup.getHeaderGroupProps()} key={index}>
               {headerGroup.headers.map((col) => (
                 <Table.HeadCell
                   className="min-w-[100px]"

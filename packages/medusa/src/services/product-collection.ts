@@ -142,6 +142,7 @@ class ProductCollectionService extends TransactionBaseService {
       const productCollectionToSave = {
         title: collection.title,
         handle: collection.handle,
+        type: collection.type,
         description: collection.description,
         thumbnail: collection.thumbnail,
         metadata: collection.metadata,

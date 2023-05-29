@@ -47,7 +47,7 @@ function SideModal(props: SideModalProps) {
                 top: 0,
                 zIndex: 200,
               }}
-              className="overflow-hidden rounded border"
+              className="overflow-auto rounded border"
               animate={{ right: 0 }}
               exit={{ right: -MODAL_WIDTH }}
             >

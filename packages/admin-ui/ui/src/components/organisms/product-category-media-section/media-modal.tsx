@@ -1,4 +1,4 @@
-import { ProductCollection } from "@medusajs/medusa"
+import {ProductCategory, ProductCollection} from "@medusajs/medusa"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"
@@ -9,9 +9,10 @@ import MediaForm, { MediaFormType } from "../../forms/product/media-form"
 import Button from "../../fundamentals/button"
 import Modal from "../../molecules/modal"
 import useEditProductCollectionActions from "../../../hooks/use-edit-product-collection-actions"
+import useEditProductCategoryActions from "../../../hooks/use-edit-product-category-actions";
 
 type Props = {
-  productCollection: ProductCollection
+  category: ProductCategory
   open: boolean
   onClose: () => void
 }
@@ -20,12 +21,12 @@ type MediaFormWrapper = {
   media: MediaFormType
 }
 
-const MediaModal = ({ productCollection, open, onClose }: Props) => {
-  const { onUpdate, updating } = useEditProductCollectionActions(
-    productCollection.id
+const MediaModal = ({ category, open, onClose }: Props) => {
+  const { onUpdate, updating } = useEditProductCategoryActions(
+      category.id
   )
   const form = useForm<MediaFormWrapper>({
-    defaultValues: getDefaultValues(productCollection),
+    defaultValues: getDefaultValues(category),
   })
 
   const {
@@ -37,11 +38,11 @@ const MediaModal = ({ productCollection, open, onClose }: Props) => {
   const notification = useNotification()
 
   useEffect(() => {
-    reset(getDefaultValues(productCollection))
-  }, [productCollection, reset])
+    reset(getDefaultValues(category))
+  }, [category, reset])
 
   const onReset = () => {
-    reset(getDefaultValues(productCollection))
+    reset(getDefaultValues(category))
     onClose()
   }
 
@@ -85,7 +86,7 @@ const MediaModal = ({ productCollection, open, onClose }: Props) => {
             <div>
               <h2 className="inter-large-semibold mb-2xsmall">Media</h2>
               <p className="inter-base-regular text-grey-50 mb-large">
-                Add images to your product collection.
+                Add images to your product category.
               </p>
               <div>
                 <MediaForm form={nestedForm(form, "media")} />
@@ -120,13 +121,13 @@ const MediaModal = ({ productCollection, open, onClose }: Props) => {
 }
 
 const getDefaultValues = (
-  productCollection: ProductCollection
+    category: ProductCategory
 ): MediaFormWrapper => {
   return {
     media: {
       images:
-        ("images" in productCollection &&
-          productCollection.images?.map((image) => ({
+        ("images" in category &&
+            category.images?.map((image) => ({
             url: image.url,
             selected: false,
           }))) ||

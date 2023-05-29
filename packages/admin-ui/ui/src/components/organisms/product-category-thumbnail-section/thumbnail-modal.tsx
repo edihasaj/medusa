@@ -1,4 +1,4 @@
-import { ProductCollection } from "@medusajs/medusa"
+import {ProductCategory, ProductCollection} from "@medusajs/medusa"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"
@@ -13,7 +13,7 @@ import Modal from "../../molecules/modal"
 import useEditProductCollectionActions from "../../../hooks/use-edit-product-collection-actions"
 
 type Props = {
-  productCollection: ProductCollection
+  category: ProductCategory
   open: boolean
   onClose: () => void
 }
@@ -22,12 +22,12 @@ type ThumbnailFormWrapper = {
   thumbnail: ThumbnailFormType
 }
 
-const ThumbnailModal = ({ productCollection, open, onClose }: Props) => {
+const ThumbnailModal = ({ category, open, onClose }: Props) => {
   const { onUpdate, updating } = useEditProductCollectionActions(
-      productCollection.id
+      category.id
   )
   const form = useForm<ThumbnailFormWrapper>({
-    defaultValues: getDefaultValues(productCollection),
+    defaultValues: getDefaultValues(category),
   })
 
   const {
@@ -39,11 +39,11 @@ const ThumbnailModal = ({ productCollection, open, onClose }: Props) => {
   const notification = useNotification()
 
   useEffect(() => {
-    reset(getDefaultValues(productCollection))
-  }, [productCollection, reset])
+    reset(getDefaultValues(category))
+  }, [category, reset])
 
   const onReset = () => {
-    reset(getDefaultValues(productCollection))
+    reset(getDefaultValues(category))
     onClose()
   }
 
@@ -121,14 +121,14 @@ const ThumbnailModal = ({ productCollection, open, onClose }: Props) => {
 }
 
 const getDefaultValues = (
-    productCollection: ProductCollection
+    category: ProductCategory
 ): ThumbnailFormWrapper => {
   return {
     thumbnail: {
-      images: productCollection.thumbnail
+      images: category.thumbnail
           ? [
             {
-              url: productCollection.thumbnail,
+              url: category.thumbnail,
             },
           ]
           : [],
