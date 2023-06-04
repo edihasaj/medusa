@@ -2,7 +2,7 @@
   "name": "@applifyer/admin-ui",
   "author": "Kasper Kristensen <kasper@medusajs.com>",
   "license": "MIT",
-  "version": "1.8.7",
+  "version": "1.8.7-next",
   "repository": {
     "type": "git",
     "url": "https://github.com/medusajs/medusa.git",
@@ -30,7 +30,7 @@
     "test": "echo \"Tests disabled temporarily\""
   },
   "dependencies": {
-    "@applifyer/medusa-react": "9.0.0",
+    "@applifyer/medusa-react": "9.0.0-next",
     "@hookform/error-message": "^2.0.1",
     "@radix-ui/react-accordion": "^1.0.1",
     "@radix-ui/react-avatar": "^1.0.1",
