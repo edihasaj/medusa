@@ -5,7 +5,7 @@ import Nestable from "react-nestable"
 import "react-nestable/dist/styles/index.css"
 import "../styles/product-categories.css"
 
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 import { adminProductCategoryKeys, useMedusa } from "@applifyer/medusa-react"
 
 import { useQueryClient } from "@tanstack/react-query"

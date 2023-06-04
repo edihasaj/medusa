@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import { useAdminOrders } from "@applifyer/medusa-react"
 import { useState } from "react"
 import { useTable, usePagination } from "react-table"

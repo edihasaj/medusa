@@ -26,7 +26,7 @@ Creating a Notification Provider is as simple as creating a TypeScript or JavaS
 For example, create the file `src/services/email-sender.ts` with the following content:
 
 ```ts title=src/services/email-sender.ts
-import { AbstractNotificationService } from "@medusajs/medusa"
+import { AbstractNotificationService } from "@applifyer/medusa"
 import { EntityManager } from "typeorm"
 
 class EmailSenderService extends AbstractNotificationService {
@@ -108,7 +108,7 @@ Continuing on with the previous example, if you want to use the [`OrderService`]
 import { 
   AbstractNotificationService, 
   OrderService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 class EmailSenderService extends AbstractNotificationService {
   protected manager_: EntityManager

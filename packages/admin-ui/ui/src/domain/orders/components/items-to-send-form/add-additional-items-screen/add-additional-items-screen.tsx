@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import { PricedVariant } from "@medusajs/medusa/dist/types/pricing"
 import {
   getCoreRowModel,

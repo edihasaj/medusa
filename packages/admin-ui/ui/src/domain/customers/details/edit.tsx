@@ -1,4 +1,4 @@
-import { Customer } from "@medusajs/medusa"
+import { Customer } from "@applifyer/medusa"
 import { useAdminUpdateCustomer } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"

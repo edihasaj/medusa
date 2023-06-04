@@ -1,6 +1,6 @@
 import { Connection } from "typeorm"
 import faker from "faker"
-import { ProductTypeTaxRate, TaxRate } from "@medusajs/medusa"
+import { ProductTypeTaxRate, TaxRate } from "@applifyer/medusa"
 
 type RateFactoryData = {
   region_id: string

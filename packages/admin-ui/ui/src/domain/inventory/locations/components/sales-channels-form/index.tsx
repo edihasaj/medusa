@@ -1,4 +1,4 @@
-import { SalesChannel, StockLocationExpandedDTO } from "@medusajs/medusa"
+import { SalesChannel, StockLocationExpandedDTO } from "@applifyer/medusa"
 import { useFieldArray } from "react-hook-form"
 import SalesChannelsModal from "../../../../../components/forms/product/sales-channels-modal"
 import Button from "../../../../../components/fundamentals/button"

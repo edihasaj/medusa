@@ -11,7 +11,7 @@ import {
   AdminPostInventoryItemsItemLocationLevelsReq,
   AdminPostInventoryItemsParams,
   AdminPostInventoryItemsReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import BaseResource from "../base"
 import { ResponsePromise } from "../../typings"

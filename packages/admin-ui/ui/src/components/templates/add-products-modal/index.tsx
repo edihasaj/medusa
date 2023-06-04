@@ -1,4 +1,4 @@
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import { useAdminProducts } from "@applifyer/medusa-react"
 import * as React from "react"
 import Button from "../../fundamentals/button"

@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import {
   getCoreRowModel,
   getExpandedRowModel,

@@ -1,4 +1,4 @@
-import { ClaimItem, LineItem, Order, Return } from "@medusajs/medusa"
+import { ClaimItem, LineItem, Order, Return } from "@applifyer/medusa"
 import { AddressPayload } from "../../../../components/templates/address-form"
 import { Subset } from "../../../../types/shared"
 import { isoAlpha2Countries } from "../../../../utils/countries"

@@ -1,4 +1,4 @@
-import { Region } from "@medusajs/medusa"
+import { Region } from "@applifyer/medusa"
 import { useAdminShippingOptions } from "@applifyer/medusa-react"
 import Section from "../../../../../components/organisms/section"
 import useToggleState from "../../../../../hooks/use-toggle-state"

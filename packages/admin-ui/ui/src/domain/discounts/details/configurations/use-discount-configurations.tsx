@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 import { ActionType } from "../../../../components/molecules/actionables"
 import ClockIcon from "../../../../components/fundamentals/icons/clock-icon"
-import { Discount } from "@medusajs/medusa"
+import { Discount } from "@applifyer/medusa"
 import TrashIcon from "../../../../components/fundamentals/icons/trash-icon"
 import { getErrorMessage } from "../../../../utils/error-messages"
 import moment from "moment"

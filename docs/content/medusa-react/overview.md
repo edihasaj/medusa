@@ -93,7 +93,7 @@ To fetch data from the Medusa backend (in other words, perform `GET` requests), 
 For example, to fetch products from your Medusa backend:
 
 ```tsx title=src/Products.ts
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import { useProducts } from "@applifyer/medusa-react"
 
 const Products = () => {
@@ -211,7 +211,7 @@ For example:
 
 ```tsx title=src/Products.ts
 import { formatVariantPrice } from "@applifyer/medusa-react"
-import { Product, ProductVariant } from "@medusajs/medusa"
+import { Product, ProductVariant } from "@applifyer/medusa"
 
 const Products = () => {
   // ...
@@ -251,7 +251,7 @@ For example:
 
 ```tsx title=src/Products.ts
 import { computeVariantPrice } from "@applifyer/medusa-react"
-import { Product, ProductVariant } from "@medusajs/medusa"
+import { Product, ProductVariant } from "@applifyer/medusa"
 
 const Products = () => {
   // ...

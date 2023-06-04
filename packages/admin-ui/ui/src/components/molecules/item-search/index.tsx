@@ -1,7 +1,7 @@
 import {
   AdminGetInventoryItemsParams,
   DecoratedInventoryItemDTO,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { ControlProps, OptionProps, SingleValue } from "react-select"
 
 import Control from "../select/next-select/components/control"

@@ -1,4 +1,4 @@
-import { SalesChannel } from "@medusajs/medusa"
+import { SalesChannel } from "@applifyer/medusa"
 import { useAdminSalesChannels } from "@applifyer/medusa-react"
 import React from "react"
 import Tooltip from "../../atoms/tooltip"

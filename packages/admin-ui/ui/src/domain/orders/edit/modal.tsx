@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react"
-import { Order, OrderEdit, ProductVariant } from "@medusajs/medusa"
+import { Order, OrderEdit, ProductVariant } from "@applifyer/medusa"
 import {
   useAdminCreateOrderEdit,
   useAdminDeleteOrderEdit,

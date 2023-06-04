@@ -1,5 +1,5 @@
 import OptionsProvider, { useOptionsContext } from "./options-provider"
-import { Product, ProductVariant, VariantInventory } from "@medusajs/medusa"
+import { Product, ProductVariant, VariantInventory } from "@applifyer/medusa"
 
 import { ActionType } from "../../molecules/actionables"
 import AddVariantModal from "./add-variant-modal"

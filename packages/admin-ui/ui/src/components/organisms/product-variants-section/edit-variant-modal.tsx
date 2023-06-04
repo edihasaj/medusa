@@ -1,4 +1,4 @@
-import { Product, ProductVariant } from "@medusajs/medusa"
+import { Product, ProductVariant } from "@applifyer/medusa"
 import EditFlowVariantForm, {
   EditFlowVariantFormType,
 } from "../../forms/product/variant-form/edit-flow-variant-form"

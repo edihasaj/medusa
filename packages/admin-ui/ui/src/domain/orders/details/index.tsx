@@ -4,7 +4,7 @@ import {
   Fulfillment,
   LineItem,
   Swap,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import {
   useAdminCancelOrder,
   useAdminCapturePayment,

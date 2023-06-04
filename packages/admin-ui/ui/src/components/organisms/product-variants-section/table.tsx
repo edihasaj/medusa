@@ -1,6 +1,6 @@
 import { Column, useTable } from "react-table"
 
-import { ProductVariant } from "@medusajs/medusa"
+import { ProductVariant } from "@applifyer/medusa"
 import { useMemo, useState } from "react"
 import { useFeatureFlag } from "../../../providers/feature-flag-provider"
 import BuildingsIcon from "../../fundamentals/icons/buildings-icon"

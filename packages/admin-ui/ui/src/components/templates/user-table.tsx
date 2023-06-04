@@ -1,4 +1,4 @@
-import { Invite, User } from "@medusajs/medusa"
+import { Invite, User } from "@applifyer/medusa"
 import copy from "copy-to-clipboard"
 import { useAdminStore } from "@applifyer/medusa-react"
 import React, { useEffect, useMemo, useState } from "react"

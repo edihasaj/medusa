@@ -1,4 +1,4 @@
-import { Product, ProductType, ShippingOption } from "@medusajs/medusa"
+import { Product, ProductType, ShippingOption } from "@applifyer/medusa"
 import React, { useEffect, useMemo } from "react"
 import {
   ColumnInstance,

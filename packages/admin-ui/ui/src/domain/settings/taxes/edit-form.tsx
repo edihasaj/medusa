@@ -1,4 +1,4 @@
-import { AdminPostTaxRatesTaxRateReq, TaxRate } from "@medusajs/medusa"
+import { AdminPostTaxRatesTaxRateReq, TaxRate } from "@applifyer/medusa"
 import { useAdminUpdateRegion, useAdminUpdateTaxRate } from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"

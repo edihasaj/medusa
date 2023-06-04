@@ -1,4 +1,4 @@
-import { Region } from "@medusajs/medusa"
+import { Region } from "@applifyer/medusa"
 import { useAdminDeleteRegion } from "@applifyer/medusa-react"
 import React from "react"
 import { useNavigate } from "react-router-dom"

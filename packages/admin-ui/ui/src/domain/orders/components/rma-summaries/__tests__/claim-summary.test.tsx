@@ -1,4 +1,4 @@
-import { Order, ShippingOption } from "@medusajs/medusa"
+import { Order, ShippingOption } from "@applifyer/medusa"
 import { renderHook, screen } from "@testing-library/react"
 import { useForm } from "react-hook-form"
 import { fixtures } from "../../../../../../test/fixtures"

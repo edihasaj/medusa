@@ -5,7 +5,7 @@ import {
   Order,
   LineItem as RawLineItem,
   StockLocationDTO,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import LayeredModal, {
   LayeredModalContext,
 } from "../../../../components/molecules/modal/layered-modal"

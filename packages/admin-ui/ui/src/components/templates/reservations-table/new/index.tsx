@@ -6,7 +6,7 @@ import ReservationForm, {
   GeneralFormType,
 } from "../components/reservation-form"
 
-import { AdminPostReservationsReq } from "@medusajs/medusa"
+import { AdminPostReservationsReq } from "@applifyer/medusa"
 import Button from "../../../fundamentals/button"
 import CrossIcon from "../../../fundamentals/icons/cross-icon"
 import FocusModal from "../../../molecules/modal/focus-modal"

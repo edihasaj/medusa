@@ -1,4 +1,4 @@
-import { MoneyAmount, ProductVariant } from "@medusajs/medusa"
+import { MoneyAmount, ProductVariant } from "@applifyer/medusa"
 import { createColumnHelper } from "@tanstack/react-table"
 import { useAdminDeleteVariant, useAdminStore } from "@applifyer/medusa-react"
 import { useMemo } from "react"

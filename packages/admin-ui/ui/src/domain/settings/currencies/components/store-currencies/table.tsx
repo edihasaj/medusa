@@ -1,4 +1,4 @@
-import { Currency } from "@medusajs/medusa"
+import { Currency } from "@applifyer/medusa"
 import React, { useEffect } from "react"
 import { TableInstance } from "react-table"
 import Table from "../../../../../components/molecules/table"

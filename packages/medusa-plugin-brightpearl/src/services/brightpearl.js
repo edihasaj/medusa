@@ -2,7 +2,7 @@ import { MedusaError, humanizeAmount } from "medusa-core-utils"
 import {
   ReservationType,
   updateInventoryAndReservations,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import { BaseService } from "medusa-interfaces"
 import Brightpearl from "../utils/brightpearl"

@@ -1,5 +1,5 @@
 const path = require("path")
-import { ReturnReason, ShippingMethod } from "@medusajs/medusa"
+import { ReturnReason, ShippingMethod } from "@applifyer/medusa"
 import { createReturnableOrder } from "../claims"
 
 const setupServer = require("../../../helpers/setup-server")

@@ -1,4 +1,4 @@
-import { PriceList } from "@medusajs/medusa"
+import { PriceList } from "@applifyer/medusa"
 import { useEffect, useState } from "react"
 import {
   Column,

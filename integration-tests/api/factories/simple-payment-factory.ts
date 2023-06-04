@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm"
-import { Payment } from "@medusajs/medusa"
+import { Payment } from "@applifyer/medusa"
 
 export type PaymentFactoryData = {
   provider_id?: string

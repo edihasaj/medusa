@@ -4,7 +4,7 @@ import {
   AdminGetVariantsVariantInventoryRes,
   DraftOrder,
   VariantInventory,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import Badge from "../../../../components/fundamentals/badge"
 import ImagePlaceholder from "../../../../components/fundamentals/image-placeholder"
 import BodyCard from "../../../../components/organisms/body-card"

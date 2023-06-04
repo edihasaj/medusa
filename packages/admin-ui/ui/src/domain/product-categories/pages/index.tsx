@@ -1,6 +1,6 @@
 import { createContext, useState } from "react"
 
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 import { useAdminProductCategories } from "@applifyer/medusa-react"
 
 import Spacer from "../../../components/atoms/spacer"

@@ -1,4 +1,4 @@
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import { useAdminPriceListProducts } from "@applifyer/medusa-react"
 import * as React from "react"
 import Accordion from "../../../../components/organisms/accordion"

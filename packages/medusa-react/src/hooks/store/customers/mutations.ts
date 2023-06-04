@@ -2,7 +2,7 @@ import {
   StoreCustomersRes,
   StorePostCustomersCustomerReq,
   StorePostCustomersReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { useMutation, UseMutationOptions } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts/medusa"
 

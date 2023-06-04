@@ -1,4 +1,4 @@
-import { StoreRegionsListRes, StoreRegionsRes } from "@medusajs/medusa"
+import { StoreRegionsListRes, StoreRegionsRes } from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"

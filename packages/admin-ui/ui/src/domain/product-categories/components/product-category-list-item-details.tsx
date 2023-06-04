@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import clsx from "clsx"
 
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 import { useAdminDeleteProductCategory } from "@applifyer/medusa-react"
 
 import { ProductCategoriesContext } from "../pages"

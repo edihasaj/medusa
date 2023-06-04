@@ -128,7 +128,7 @@ You can then load this new resource within other resources. For example, to load
 <!-- eslint-disable prefer-rest-params -->
 
 ```ts title=src/services/custom-service.ts
-import { TransactionBaseService } from "@medusajs/medusa"
+import { TransactionBaseService } from "@applifyer/medusa"
 
 class CustomService extends TransactionBaseService {
 
@@ -163,7 +163,7 @@ For example:
 import { Lifetime } from "awilix"
 import { 
   ProductService as MedusaProductService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 // extending ProductService from the core
 class ProductService extends MedusaProductService {

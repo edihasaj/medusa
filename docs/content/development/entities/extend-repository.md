@@ -40,7 +40,7 @@ A data source is Typeorm’s connection settings that allows you to connect to y
 Here’s an example of the implementation of the extended Product repository:
 
 ```ts title=src/repositories/product.ts
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import { 
   dataSource,
 } from "@medusajs/medusa/dist/loaders/database"
@@ -89,7 +89,7 @@ Here’s an example of using it in an endpoint:
 
 ```ts
 import ProductRepository from "./path/to/product.ts"
-import EntityManager from "@medusajs/medusa"
+import EntityManager from "@applifyer/medusa"
 
 export default () => {
   // ...

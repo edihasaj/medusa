@@ -1,4 +1,4 @@
-import { Product, ProductOption } from "@medusajs/medusa"
+import { Product, ProductOption } from "@applifyer/medusa"
 import { useAdminProducts } from "@applifyer/medusa-react"
 import React, { createContext, useContext, useMemo } from "react"
 

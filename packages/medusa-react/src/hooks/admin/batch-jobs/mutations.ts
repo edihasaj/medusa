@@ -1,4 +1,4 @@
-import { AdminBatchJobRes, AdminPostBatchesReq } from "@medusajs/medusa"
+import { AdminBatchJobRes, AdminPostBatchesReq } from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,

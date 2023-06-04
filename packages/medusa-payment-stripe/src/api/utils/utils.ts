@@ -3,7 +3,7 @@ import {
   CartService,
   IdempotencyKeyService,
   PostgresError,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { AwilixContainer } from "awilix"
 import { MedusaError } from "medusa-core-utils"
 import { EOL } from "os"

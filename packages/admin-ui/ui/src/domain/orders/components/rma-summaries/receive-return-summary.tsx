@@ -1,4 +1,4 @@
-import { Order, Return } from "@medusajs/medusa"
+import { Order, Return } from "@applifyer/medusa"
 import { useMemo } from "react"
 import { UseFormReturn, useWatch } from "react-hook-form"
 import { nestedForm } from "../../../../utils/nested-form"

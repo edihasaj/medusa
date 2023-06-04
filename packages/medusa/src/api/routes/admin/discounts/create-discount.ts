@@ -47,7 +47,7 @@ import { FindParams } from "../../../../types/common"
  *     label: JS Client
  *     source: |
  *       import Medusa from "@medusajs/medusa-js"
- *       import { AllocationType, DiscountRuleType } from "@medusajs/medusa"
+ *       import { AllocationType, DiscountRuleType } from "@applifyer/medusa"
  *       const medusa = new Medusa({ baseUrl: MEDUSA_BACKEND_URL, maxRetries: 3 })
  *       // must be previously logged in or use api token
  *       medusa.admin.discounts.create({

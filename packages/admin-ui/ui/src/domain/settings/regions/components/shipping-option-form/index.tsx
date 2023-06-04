@@ -1,4 +1,4 @@
-import { Region } from "@medusajs/medusa"
+import { Region } from "@applifyer/medusa"
 import { Controller, UseFormReturn } from "react-hook-form"
 import IncludesTaxTooltip from "../../../../../components/atoms/includes-tax-tooltip"
 import Switch from "../../../../../components/atoms/switch"

@@ -1,4 +1,4 @@
-import { Address } from "@medusajs/medusa"
+import { Address } from "@applifyer/medusa"
 import {
   useAdminDeleteDraftOrder,
   useAdminDraftOrder,

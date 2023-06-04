@@ -1,6 +1,6 @@
 import { Connection } from "typeorm"
 import faker from "faker"
-import { ShippingOption, ShippingOptionPriceType, ShippingProfile, ShippingProfileType, } from "@medusajs/medusa"
+import { ShippingOption, ShippingOptionPriceType, ShippingProfile, ShippingProfileType, } from "@applifyer/medusa"
 
 export type ShippingOptionFactoryData = {
   id?: string

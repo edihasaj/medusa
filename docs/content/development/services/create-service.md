@@ -14,7 +14,7 @@ To create a service, create a TypeScript or JavaScript file in `src/services` to
 For example, if you want to create a service `helloService`, create the file `hello.ts` in `src/services` with the following content:
 
 ```ts title=/src/services/hello.ts
-import { TransactionBaseService } from "@medusajs/medusa"
+import { TransactionBaseService } from "@applifyer/medusa"
 import { EntityManager } from "typeorm"
 
 class HelloService extends TransactionBaseService {
@@ -45,7 +45,7 @@ There are three lifetime types:
 You can set the lifetime of your service by setting the `LIFE_TIME` static property:
 
 ```ts title=/src/services/hello.ts
-import { TransactionBaseService } from "@medusajs/medusa"
+import { TransactionBaseService } from "@applifyer/medusa"
 import { Lifetime } from "awilix"
 
 class HelloService extends TransactionBaseService {

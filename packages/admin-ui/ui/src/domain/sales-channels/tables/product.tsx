@@ -1,4 +1,4 @@
-import { Product, SalesChannel } from "@medusajs/medusa"
+import { Product, SalesChannel } from "@applifyer/medusa"
 import clsx from "clsx"
 import {
   useAdminAddProductsToSalesChannel,

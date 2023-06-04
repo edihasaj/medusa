@@ -1,4 +1,4 @@
-import { AbstractPaymentService } from "@medusajs/medusa"
+import { AbstractPaymentService } from "@applifyer/medusa"
 
 class TestPayService extends AbstractPaymentService {
   static identifier = "test-pay"

@@ -1,4 +1,4 @@
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import clsx from "clsx"
 import type { Identifier, XYCoord } from "dnd-core"
 import { useContext, useMemo, useRef } from "react"

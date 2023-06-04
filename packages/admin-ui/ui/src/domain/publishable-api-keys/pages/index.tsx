@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import { PublishableApiKey, SalesChannel } from "@medusajs/medusa"
+import { PublishableApiKey, SalesChannel } from "@applifyer/medusa"
 import {
   useAdminAddPublishableKeySalesChannelsBatch,
   useAdminCreatePublishableApiKey,

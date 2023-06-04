@@ -1,5 +1,5 @@
 import { PaymentIntentDataByStatus } from "../../__fixtures__/data"
-import { PaymentProcessorContext, PaymentSessionStatus } from "@medusajs/medusa"
+import { PaymentProcessorContext, PaymentSessionStatus } from "@applifyer/medusa"
 import PaypalProvider from "../paypal-provider"
 import {
   authorizePaymentSuccessData,

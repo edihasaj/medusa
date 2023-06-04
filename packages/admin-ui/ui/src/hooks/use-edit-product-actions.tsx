@@ -3,7 +3,7 @@ import {
   AdminPostProductsProductVariantsReq,
   AdminPostProductsProductVariantsVariantReq,
   Product,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import {
   useAdminCreateVariant,
   useAdminDeleteProduct,

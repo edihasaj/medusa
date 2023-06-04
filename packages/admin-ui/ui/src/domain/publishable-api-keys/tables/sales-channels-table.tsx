@@ -5,7 +5,7 @@ import {
   useTable,
 } from "react-table"
 import React, { forwardRef, useEffect, useImperativeHandle } from "react"
-import { SalesChannel } from "@medusajs/medusa"
+import { SalesChannel } from "@applifyer/medusa"
 
 import Table from "../../../components/molecules/table"
 import TableContainer from "../../../components/organisms/table-container"

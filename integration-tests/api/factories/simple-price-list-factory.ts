@@ -4,7 +4,7 @@ import {
   PriceList,
   PriceListStatus,
   PriceListType,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import faker from "faker"
 import { DataSource } from "typeorm"
 import { simpleCustomerGroupFactory } from "./simple-customer-group-factory"

@@ -8,7 +8,7 @@ import {
   GetUploadedFileType,
   IFileService,
   UploadStreamDescriptorType,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import stream from "stream"
 import { PutObjectRequest } from "aws-sdk/clients/s3"
 import { ClientConfiguration } from "aws-sdk/clients/s3"

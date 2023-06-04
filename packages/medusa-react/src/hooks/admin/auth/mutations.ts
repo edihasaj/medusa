@@ -1,4 +1,4 @@
-import { AdminAuthRes, AdminPostAuthReq } from "@medusajs/medusa"
+import { AdminAuthRes, AdminPostAuthReq } from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,

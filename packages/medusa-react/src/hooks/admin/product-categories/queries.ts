@@ -3,7 +3,7 @@ import {
   AdminProductCategoriesListRes,
   AdminGetProductCategoryParams,
   AdminProductCategoriesCategoryRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 

@@ -1,4 +1,4 @@
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import clsx from "clsx"
 import { Column, HeaderGroup, Row } from "react-table"
 import ImagePlaceholder from "../../fundamentals/image-placeholder"

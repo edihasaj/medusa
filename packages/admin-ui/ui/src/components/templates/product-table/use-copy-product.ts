@@ -1,4 +1,4 @@
-import { AdminPostProductsReq, Product } from "@medusajs/medusa"
+import { AdminPostProductsReq, Product } from "@applifyer/medusa"
 import { omit } from "lodash"
 import { useAdminCreateProduct } from "@applifyer/medusa-react"
 import { useNavigate } from "react-router-dom"

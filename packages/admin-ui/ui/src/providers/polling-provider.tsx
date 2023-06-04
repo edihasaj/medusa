@@ -1,4 +1,4 @@
-import { AdminGetBatchParams, BatchJob } from "@medusajs/medusa"
+import { AdminGetBatchParams, BatchJob } from "@applifyer/medusa"
 import { useAdminBatchJobs } from "@applifyer/medusa-react"
 import React, { PropsWithChildren, useCallback, useMemo } from "react"
 

@@ -1,7 +1,7 @@
 import { EOL } from "os"
 import { StripeTest } from "../__fixtures__/stripe-test"
 import { PaymentIntentDataByStatus } from "../../__fixtures__/data"
-import { PaymentSessionStatus } from "@medusajs/medusa"
+import { PaymentSessionStatus } from "@applifyer/medusa"
 import {
   authorizePaymentSuccessData,
   cancelPaymentFailData,

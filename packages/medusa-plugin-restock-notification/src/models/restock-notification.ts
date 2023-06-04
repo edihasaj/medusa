@@ -10,7 +10,7 @@ import {
   ManyToOne,
   JoinColumn,
 } from "typeorm"
-import { ProductVariant } from "@medusajs/medusa"
+import { ProductVariant } from "@applifyer/medusa"
 
 @Entity()
 export class RestockNotification {

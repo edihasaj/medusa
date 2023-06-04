@@ -4,7 +4,7 @@ import {
   MoneyAmount,
   ProductOptionValue,
   ProductVariant,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 export type ProductVariantFactoryData = {
   product_id: string

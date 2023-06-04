@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom"
 import { getErrorMessage } from "../utils/error-messages"
 import useImperativeDialog from "./use-imperative-dialog"
 import useNotification from "./use-notification"
-import { AdminPostCollectionsCollectionReq } from "@medusajs/medusa"
+import { AdminPostCollectionsCollectionReq } from "@applifyer/medusa"
 
 const useEditProductCategoryActions = (collectionId: string) => {
   const dialog = useImperativeDialog()

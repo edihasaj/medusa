@@ -4,7 +4,7 @@ import {
   ProductVariant,
   ReturnReason,
   StockLocationDTO,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { useAdminStockLocations } from "@applifyer/medusa-react"
 import {
   useAdminCreateSwap,

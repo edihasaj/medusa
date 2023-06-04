@@ -2,7 +2,7 @@ import {
   AdminPostProductsProductVariantsVariantReq,
   Product,
   ProductVariant,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import React, { useContext, useEffect, useMemo } from "react"
 import EditFlowVariantForm, {
   EditFlowVariantFormType,

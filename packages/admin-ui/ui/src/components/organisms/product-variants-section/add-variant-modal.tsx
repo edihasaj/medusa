@@ -1,4 +1,4 @@
-import { AdminPostProductsProductVariantsReq, Product } from "@medusajs/medusa"
+import { AdminPostProductsProductVariantsReq, Product } from "@applifyer/medusa"
 import { useEffect } from "react"
 import EditFlowVariantForm, {
   EditFlowVariantFormType,

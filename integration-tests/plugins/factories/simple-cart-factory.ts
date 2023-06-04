@@ -13,7 +13,7 @@ import {
   simpleShippingMethodFactory,
 } from "./simple-shipping-method-factory"
 
-import { Cart } from "@medusajs/medusa"
+import { Cart } from "@applifyer/medusa"
 import faker from "faker"
 
 export type CartFactoryData = {

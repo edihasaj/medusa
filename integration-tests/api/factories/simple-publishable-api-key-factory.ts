@@ -1,7 +1,7 @@
 import faker from "faker"
 import { DataSource } from "typeorm"
 
-import { PublishableApiKey } from "@medusajs/medusa"
+import { PublishableApiKey } from "@applifyer/medusa"
 
 export type PublishableApiKeyData = {
   id?: string

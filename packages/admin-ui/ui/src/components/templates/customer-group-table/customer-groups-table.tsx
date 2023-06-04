@@ -1,4 +1,4 @@
-import { CustomerGroup } from "@medusajs/medusa"
+import { CustomerGroup } from "@applifyer/medusa"
 import { useAdminCustomerGroups } from "@applifyer/medusa-react"
 import { useNavigate } from "react-router-dom"
 import {

@@ -7,7 +7,7 @@ import {
   PaymentProcessorError,
   PaymentProcessorSessionResponse,
   PaymentSessionStatus,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import {
   ErrorCodes,
   ErrorIntentStatus,

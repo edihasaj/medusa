@@ -1,4 +1,4 @@
-import { ShippingOption } from "@medusajs/medusa"
+import { ShippingOption } from "@applifyer/medusa"
 import { useAdminUpdateShippingOption } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"

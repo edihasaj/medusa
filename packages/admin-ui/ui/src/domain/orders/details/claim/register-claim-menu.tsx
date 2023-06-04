@@ -1,4 +1,4 @@
-import { ClaimReason, Order, StockLocationDTO } from "@medusajs/medusa"
+import { ClaimReason, Order, StockLocationDTO } from "@applifyer/medusa"
 import { useAdminStockLocations, useAdminCreateClaim } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { Controller, useForm, useWatch } from "react-hook-form"

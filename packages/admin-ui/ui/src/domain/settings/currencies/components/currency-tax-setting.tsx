@@ -1,4 +1,4 @@
-import { Currency } from "@medusajs/medusa"
+import { Currency } from "@applifyer/medusa"
 import { useQueryClient } from "@tanstack/react-query"
 import { adminStoreKeys, useAdminUpdateCurrency } from "@applifyer/medusa-react"
 import { useEffect } from "react"

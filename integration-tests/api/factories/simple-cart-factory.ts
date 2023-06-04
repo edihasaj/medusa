@@ -1,4 +1,4 @@
-import { Cart } from "@medusajs/medusa"
+import { Cart } from "@applifyer/medusa"
 import faker from "faker"
 import { DataSource } from "typeorm"
 import {

@@ -34,7 +34,7 @@ For example, to extend the Product service:
 ```ts title=src/services/product.ts
 import { 
   ProductService as MedusaProductService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 class ProductService extends MedusaProductService {
   // TODO add customizations
@@ -53,7 +53,7 @@ You can also change the lifetime of the service:
 import { Lifetime } from "awilix"
 import { 
   ProductService as MedusaProductService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 class ProductService extends MedusaProductService {
   // The default life time for a core service is SINGLETON

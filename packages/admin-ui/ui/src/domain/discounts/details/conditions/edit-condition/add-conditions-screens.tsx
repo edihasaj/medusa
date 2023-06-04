@@ -1,4 +1,4 @@
-import { DiscountCondition } from "@medusajs/medusa"
+import { DiscountCondition } from "@applifyer/medusa"
 import React from "react"
 import { LayeredModalContext } from "../../../../../components/molecules/modal/layered-modal"
 import AddCollectionConditionsScreen from "./add-condition-resources/collections/add-collections"

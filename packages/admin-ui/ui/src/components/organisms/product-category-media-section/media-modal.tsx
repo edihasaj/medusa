@@ -1,4 +1,4 @@
-import {ProductCategory, ProductCollection} from "@medusajs/medusa"
+import {ProductCategory, ProductCollection} from "@applifyer/medusa"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"

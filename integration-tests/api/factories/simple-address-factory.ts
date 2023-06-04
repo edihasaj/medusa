@@ -1,6 +1,6 @@
 import { DataSource } from "typeorm"
 import faker from "faker"
-import { Address } from "@medusajs/medusa"
+import { Address } from "@applifyer/medusa"
 
 export type AddressFactoryData = {
   first_name?: string

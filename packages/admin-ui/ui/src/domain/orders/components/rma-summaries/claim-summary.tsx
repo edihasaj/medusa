@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import { useMemo } from "react"
 import { UseFormReturn, useWatch } from "react-hook-form"
 import IconTooltip from "../../../../components/molecules/icon-tooltip"

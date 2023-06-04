@@ -18,7 +18,7 @@ import {
   Entity, 
   PrimaryColumn,
 } from "typeorm"
-import { BaseEntity } from "@medusajs/medusa"
+import { BaseEntity } from "@applifyer/medusa"
 import { generateEntityId } from "@medusajs/medusa/dist/utils"
 
 @Entity()
@@ -42,7 +42,7 @@ To generate an ID for your entity that matches the IDs generated for Medusa’s 
 If you want the entity to also be soft deletable then it should extend `SoftDeletableEntity` instead:
 
 ```ts
-import { SoftDeletableEntity } from "@medusajs/medusa"
+import { SoftDeletableEntity } from "@applifyer/medusa"
 
 @Entity()
 export class Post extends SoftDeletableEntity {
@@ -135,7 +135,7 @@ You should see that your migration have executed.
 You can access your custom entity data in the database in services or subscribers using the repository. For example, here’s a service that lists all posts:
 
 ```ts
-import { TransactionBaseService } from "@medusajs/medusa"
+import { TransactionBaseService } from "@applifyer/medusa"
 
 class PostService extends TransactionBaseService {
   constructor({ postRepository, manager }) {

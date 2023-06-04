@@ -1,4 +1,4 @@
-import { Product, ProductOption, ProductStatus, ProductType, ShippingProfile, ShippingProfileType, } from "@medusajs/medusa"
+import { Product, ProductOption, ProductStatus, ProductType, ShippingProfile, ShippingProfileType, } from "@applifyer/medusa"
 import { ProductVariantFactoryData, simpleProductVariantFactory, } from "./simple-product-variant-factory"
 
 import { Connection } from "typeorm"

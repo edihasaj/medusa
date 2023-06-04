@@ -1,4 +1,4 @@
-import { AbstractFileService } from "@medusajs/medusa"
+import { AbstractFileService } from "@applifyer/medusa"
 import * as fs from "fs"
 import mkdirp from "mkdirp"
 import { resolve } from "path"

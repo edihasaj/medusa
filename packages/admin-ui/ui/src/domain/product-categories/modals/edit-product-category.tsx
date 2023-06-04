@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 import {useAdminProductCategory, useAdminUpdateProductCategory} from "@applifyer/medusa-react"
 
 import Button from "../../../components/fundamentals/button"

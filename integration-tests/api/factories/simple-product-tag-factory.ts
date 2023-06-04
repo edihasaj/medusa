@@ -1,4 +1,4 @@
-import { ProductTag } from "@medusajs/medusa"
+import { ProductTag } from "@applifyer/medusa"
 import faker from "faker"
 import { Connection } from "typeorm"
 

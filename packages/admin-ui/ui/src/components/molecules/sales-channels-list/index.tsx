@@ -1,4 +1,4 @@
-import { SalesChannel } from "@medusajs/medusa"
+import { SalesChannel } from "@applifyer/medusa"
 import Tooltip from "../../atoms/tooltip"
 import IconBadge from "../../fundamentals/icon-badge"
 import ChannelsIcon from "../../fundamentals/icons/channels-icon"

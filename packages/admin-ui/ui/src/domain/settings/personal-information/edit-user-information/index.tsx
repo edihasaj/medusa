@@ -1,4 +1,4 @@
-import { User } from "@medusajs/medusa"
+import { User } from "@applifyer/medusa"
 import { useMemo } from "react"
 import Avatar from "../../../../components/atoms/avatar"
 import Button from "../../../../components/fundamentals/button"

@@ -1,4 +1,4 @@
-import { PriceList } from "@medusajs/medusa"
+import { PriceList } from "@applifyer/medusa"
 import clsx from "clsx"
 import { useAdminCustomerGroups } from "@applifyer/medusa-react"
 import React, { useState } from "react"

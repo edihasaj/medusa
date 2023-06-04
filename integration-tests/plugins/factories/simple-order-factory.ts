@@ -8,7 +8,7 @@ import {
   SalesChannel,
   Discount,
   isString,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import {
   DiscountFactoryData,

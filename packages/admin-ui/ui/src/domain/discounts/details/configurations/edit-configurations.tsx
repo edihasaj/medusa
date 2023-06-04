@@ -1,4 +1,4 @@
-import { Discount } from "@medusajs/medusa"
+import { Discount } from "@applifyer/medusa"
 import { useAdminUpdateDiscount } from "@applifyer/medusa-react"
 import React, { useEffect } from "react"
 import { useForm } from "react-hook-form"

@@ -1,4 +1,4 @@
-import { MoneyAmount, ProductVariant, Store } from "@medusajs/medusa"
+import { MoneyAmount, ProductVariant, Store } from "@applifyer/medusa"
 import { useQueryClient } from "@tanstack/react-query"
 import {
   adminProductKeys,

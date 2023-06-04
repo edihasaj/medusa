@@ -1,4 +1,4 @@
-import { Product, ProductVariant, Region } from "@medusajs/medusa"
+import { Product, ProductVariant, Region } from "@applifyer/medusa"
 import clsx from "clsx"
 import React, { useContext, useEffect, useState } from "react"
 import { Controller } from "react-hook-form"

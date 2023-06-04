@@ -1,4 +1,4 @@
-import { AdminPostStockLocationsReq, SalesChannel } from "@medusajs/medusa"
+import { AdminPostStockLocationsReq, SalesChannel } from "@applifyer/medusa"
 import GeneralForm, { GeneralFormType } from "../components/general-form"
 import MetadataForm, {
   MetadataFormType,

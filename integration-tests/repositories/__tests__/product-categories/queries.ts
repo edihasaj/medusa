@@ -1,5 +1,5 @@
 import path from "path"
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 import { initDb, useDb } from "../../../helpers/use-db"
 import { simpleProductCategoryFactory } from '../../factories'
 import { ProductCategoryRepository } from "@medusajs/medusa/dist/repositories/product-category"

@@ -2,7 +2,7 @@ import {
   AdminCreateUserRequest,
   AdminPostInvitesReq,
   AdminUpdateUserRequest,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 export interface HTTPResponse {
   status: number

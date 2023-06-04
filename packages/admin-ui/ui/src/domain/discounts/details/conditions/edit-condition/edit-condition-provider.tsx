@@ -1,4 +1,4 @@
-import { Discount, DiscountCondition } from "@medusajs/medusa"
+import { Discount, DiscountCondition } from "@applifyer/medusa"
 import {
   useAdminAddDiscountConditionResourceBatch,
   useAdminDeleteDiscountConditionResourceBatch,

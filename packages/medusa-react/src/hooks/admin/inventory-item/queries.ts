@@ -4,7 +4,7 @@ import {
   AdminInventoryItemsListWithVariantsAndLocationLevelsRes,
   AdminInventoryItemsLocationLevelsRes,
   AdminInventoryItemsRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import { Response } from "@applifyer/medusa-js"
 import { UseQueryOptionsWrapper } from "../../../types"

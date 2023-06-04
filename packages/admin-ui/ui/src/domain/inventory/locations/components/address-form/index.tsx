@@ -1,4 +1,4 @@
-import { Country } from "@medusajs/medusa"
+import { Country } from "@applifyer/medusa"
 import { StockLocationAddressDTO } from "@medusajs/types"
 import { useAdminRegions } from "@applifyer/medusa-react"
 import { useEffect, useMemo, useState } from "react"

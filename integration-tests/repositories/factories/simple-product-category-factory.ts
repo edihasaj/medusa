@@ -1,5 +1,5 @@
 import { Connection } from "typeorm"
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 
 export const simpleProductCategoryFactory = async (
   connection: Connection,

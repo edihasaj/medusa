@@ -1,4 +1,4 @@
-import { LineItem } from "@medusajs/medusa"
+import { LineItem } from "@applifyer/medusa"
 import { ReservationItemDTO } from "@medusajs/types"
 
 import ImagePlaceholder from "../../../../components/fundamentals/image-placeholder"

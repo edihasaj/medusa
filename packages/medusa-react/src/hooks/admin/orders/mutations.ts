@@ -6,7 +6,7 @@ import {
   AdminPostOrdersOrderReturnsReq,
   AdminPostOrdersOrderShipmentReq,
   AdminPostOrdersOrderShippingMethodsReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,

@@ -1,4 +1,4 @@
-import { Product, Region, ShippingOption } from "@medusajs/medusa"
+import { Product, Region, ShippingOption } from "@applifyer/medusa"
 import {
   useAdminRegion,
   useAdminShippingOption,

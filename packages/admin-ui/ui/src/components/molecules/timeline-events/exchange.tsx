@@ -1,4 +1,4 @@
-import { ReturnItem } from "@medusajs/medusa"
+import { ReturnItem } from "@applifyer/medusa"
 import {
   useAdminCancelReturn,
   useAdminCancelSwap,

@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import { useEffect, useMemo, useRef, useState } from "react"
 
-import { SalesChannel } from "@medusajs/medusa"
+import { SalesChannel } from "@applifyer/medusa"
 import {
   useAdminDeleteSalesChannel,
   useAdminSalesChannels,

@@ -2,7 +2,7 @@ import {
   AdminGetVariantsVariantInventoryRes,
   Order,
   VariantInventory,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { DisplayTotal, PaymentDetails } from "../templates"
 import React, { useContext, useMemo } from "react"
 

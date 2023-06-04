@@ -1,4 +1,4 @@
-import { LineItem, OrderEdit, OrderItemChange } from "@medusajs/medusa"
+import { LineItem, OrderEdit, OrderItemChange } from "@applifyer/medusa"
 import {
   useAdminCancelOrderEdit,
   useAdminConfirmOrderEdit,

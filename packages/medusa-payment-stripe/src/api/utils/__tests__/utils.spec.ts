@@ -1,4 +1,4 @@
-import { PostgresError } from "@medusajs/medusa"
+import { PostgresError } from "@applifyer/medusa"
 import Stripe from "stripe"
 import { EOL } from "os"
 

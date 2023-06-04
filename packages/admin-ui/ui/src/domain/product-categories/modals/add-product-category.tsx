@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 import {
   adminProductCategoryKeys,
   useAdminCreateProductCategory,

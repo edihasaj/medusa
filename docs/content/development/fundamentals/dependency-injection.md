@@ -716,7 +716,7 @@ In classes such as services, strategies, or subscribers, you can load resources 
 For example:
 
 ```ts
-import { OrderService } from "@medusajs/medusa"
+import { OrderService } from "@applifyer/medusa"
 
 class OrderSubscriber {
   protected orderService: OrderService

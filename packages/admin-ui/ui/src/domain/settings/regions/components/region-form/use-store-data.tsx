@@ -1,4 +1,4 @@
-import { FulfillmentProvider, PaymentProvider, Store } from "@medusajs/medusa"
+import { FulfillmentProvider, PaymentProvider, Store } from "@applifyer/medusa"
 import { useAdminStore } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { countries } from "../../../../../utils/countries"

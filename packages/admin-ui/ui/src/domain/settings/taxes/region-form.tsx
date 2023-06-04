@@ -1,4 +1,4 @@
-import { Region } from "@medusajs/medusa"
+import { Region } from "@applifyer/medusa"
 import { useAdminStoreTaxProviders, useAdminUpdateRegion } from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 import { Controller, useForm } from "react-hook-form"

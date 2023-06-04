@@ -1,7 +1,7 @@
 import {
   AdminInviteDeleteRes,
   AdminPostInvitesInviteAcceptReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { AdminPostInvitesPayload, Response } from "@applifyer/medusa-js"
 import {
   useMutation,

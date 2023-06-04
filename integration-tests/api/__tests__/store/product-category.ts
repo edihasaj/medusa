@@ -1,4 +1,4 @@
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 import path from "path"
 
 import startServerWithEnvironment from "../../../helpers/start-server-with-environment"

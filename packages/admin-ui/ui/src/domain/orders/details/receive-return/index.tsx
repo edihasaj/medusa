@@ -7,7 +7,7 @@ import {
   Order,
   Return,
   StockLocationDTO,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { useAdminOrder, useAdminReceiveReturn, useMedusa } from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 import { useForm, useWatch } from "react-hook-form"

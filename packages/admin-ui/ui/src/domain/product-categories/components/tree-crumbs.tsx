@@ -1,5 +1,5 @@
 import React from "react"
-import { ProductCategory } from "@medusajs/medusa"
+import { ProductCategory } from "@applifyer/medusa"
 import { getAncestors } from "../utils"
 
 type TreeCrumbsProps = React.HtmlHTMLAttributes<HTMLDivElement> & {

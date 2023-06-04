@@ -1,4 +1,4 @@
-import { Store } from "@medusajs/medusa"
+import { Store } from "@applifyer/medusa"
 import Button from "../../../../../components/fundamentals/button"
 import useToggleState from "../../../../../hooks/use-toggle-state"
 import EditCurrenciesModal from "./edit-currencies-modal"

@@ -1,4 +1,4 @@
-import { CustomerGroup } from "@medusajs/medusa"
+import { CustomerGroup } from "@applifyer/medusa"
 import { difference } from "lodash"
 import {
   useAdminAddCustomersToCustomerGroup,

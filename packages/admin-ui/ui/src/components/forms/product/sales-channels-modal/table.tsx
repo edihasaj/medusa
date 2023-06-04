@@ -1,4 +1,4 @@
-import { SalesChannel } from "@medusajs/medusa"
+import { SalesChannel } from "@applifyer/medusa"
 import clsx from "clsx"
 import React, { useMemo } from "react"
 import { TableInstance } from "react-table"

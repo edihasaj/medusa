@@ -1,4 +1,4 @@
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import { useCallback, useContext, useEffect } from "react"
 import {
   FieldArrayWithId,

@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import { useAdminRegion } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { useWatch } from "react-hook-form"

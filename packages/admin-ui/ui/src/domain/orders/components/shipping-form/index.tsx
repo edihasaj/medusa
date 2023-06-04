@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import { PricedShippingOption } from "@medusajs/medusa/dist/types/pricing"
 import clsx from "clsx"
 import { useAdminShippingOptions } from "@applifyer/medusa-react"

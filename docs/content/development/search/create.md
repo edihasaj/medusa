@@ -103,7 +103,7 @@ For example:
 
 ```ts title=src/services/my-search.ts
 // ...
-import { ProductService } from "@medusajs/medusa"
+import { ProductService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   productService: ProductService

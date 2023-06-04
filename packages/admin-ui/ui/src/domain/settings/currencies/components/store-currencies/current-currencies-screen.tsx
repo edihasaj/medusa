@@ -1,4 +1,4 @@
-import { Currency } from "@medusajs/medusa"
+import { Currency } from "@applifyer/medusa"
 import clsx from "clsx"
 import { useAdminUpdateStore } from "@applifyer/medusa-react"
 import { useMemo, useState } from "react"

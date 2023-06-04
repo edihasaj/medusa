@@ -4,7 +4,7 @@ import {
   PaypalEnvironmentPaths,
   PaypalSdkOptions,
 } from "./types"
-import { Logger } from "@medusajs/medusa"
+import { Logger } from "@applifyer/medusa"
 
 const MAX_ATTEMPTS = 2
 

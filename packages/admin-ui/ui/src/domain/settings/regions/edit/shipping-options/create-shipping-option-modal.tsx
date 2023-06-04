@@ -1,4 +1,4 @@
-import { Region } from "@medusajs/medusa"
+import { Region } from "@applifyer/medusa"
 import { useAdminCreateShippingOption } from "@applifyer/medusa-react"
 import { useForm } from "react-hook-form"
 import { getSubmittableMetadata } from "../../../../../components/forms/general/metadata-form"

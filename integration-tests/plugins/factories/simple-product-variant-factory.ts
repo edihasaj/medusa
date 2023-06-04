@@ -2,7 +2,7 @@ import {
   MoneyAmount,
   ProductOptionValue,
   ProductVariant,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import { Connection } from "typeorm"
 import faker from "faker"

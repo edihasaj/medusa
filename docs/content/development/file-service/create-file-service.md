@@ -52,7 +52,7 @@ import {
   FileServiceUploadResult, 
   GetUploadedFileType, 
   UploadStreamDescriptorType, 
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 class LocalFileService extends AbstractFileService {
   async upload(

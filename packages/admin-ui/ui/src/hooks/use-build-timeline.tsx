@@ -5,7 +5,7 @@ import {
   Refund,
   Return,
   Swap,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import {
   useAdminNotes,
   useAdminNotifications,

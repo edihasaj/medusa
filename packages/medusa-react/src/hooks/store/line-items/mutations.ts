@@ -2,7 +2,7 @@ import {
   StoreCartsRes,
   StorePostCartsCartLineItemsItemReq,
   StorePostCartsCartLineItemsReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { useMutation, UseMutationOptions } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"
 

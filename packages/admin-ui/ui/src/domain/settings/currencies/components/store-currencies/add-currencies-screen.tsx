@@ -1,4 +1,4 @@
-import { Currency } from "@medusajs/medusa"
+import { Currency } from "@applifyer/medusa"
 import { useAdminCurrencies, useAdminUpdateStore } from "@applifyer/medusa-react"
 import React, { useContext, useState } from "react"
 import { usePagination, useRowSelect, useSortBy, useTable } from "react-table"

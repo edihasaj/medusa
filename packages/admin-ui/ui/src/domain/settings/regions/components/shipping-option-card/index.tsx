@@ -1,4 +1,4 @@
-import { ShippingOption } from "@medusajs/medusa"
+import { ShippingOption } from "@applifyer/medusa"
 import clsx from "clsx"
 import { useAdminDeleteShippingOption } from "@applifyer/medusa-react"
 import EditIcon from "../../../../../components/fundamentals/icons/edit-icon"

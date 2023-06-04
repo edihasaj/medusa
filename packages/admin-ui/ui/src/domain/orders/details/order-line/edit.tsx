@@ -1,5 +1,5 @@
 import React from "react"
-import { LineItem, OrderItemChange, ProductVariant } from "@medusajs/medusa"
+import { LineItem, OrderItemChange, ProductVariant } from "@applifyer/medusa"
 import {
   useAdminDeleteOrderEditItemChange,
   useAdminOrderEditAddLineItem,

@@ -12,7 +12,7 @@ For example:
 import { Lifetime } from "awilix"
 import { 
   ProductService as MedusaProductService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 // extending ProductService from the core
 class ProductService extends MedusaProductService {
@@ -48,7 +48,7 @@ For that reason, and to avoid other similar situations, make sure to always wrap
 <!-- eslint-disable prefer-rest-params -->
 
 ```ts
-import { TransactionBaseService } from "@medusajs/medusa"
+import { TransactionBaseService } from "@applifyer/medusa"
 
 class CustomService extends TransactionBaseService {
 

@@ -3,7 +3,7 @@ import {
   InventoryItemDTO,
   InventoryLevelDTO,
   ProductVariant,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import React, { useEffect, useMemo, useState } from "react"
 import {
   useAdminInventoryItems,

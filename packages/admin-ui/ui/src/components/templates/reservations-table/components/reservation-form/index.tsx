@@ -4,7 +4,7 @@ import InputField from "../../../../molecules/input"
 import ItemSearch from "../../../../molecules/item-search"
 import LocationDropdown from "../../../../molecules/location-dropdown"
 import { NestedForm } from "../../../../../utils/nested-form"
-import { DecoratedInventoryItemDTO } from "@medusajs/medusa"
+import { DecoratedInventoryItemDTO } from "@applifyer/medusa"
 import React from "react"
 
 export type GeneralFormType = {

@@ -1,6 +1,6 @@
 import { Connection } from "typeorm"
 import faker from "faker"
-import { ShippingMethodTaxLine, ShippingMethod } from "@medusajs/medusa"
+import { ShippingMethodTaxLine, ShippingMethod } from "@applifyer/medusa"
 
 import {
   ShippingOptionFactoryData,

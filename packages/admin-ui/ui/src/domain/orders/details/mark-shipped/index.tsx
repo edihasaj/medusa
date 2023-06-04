@@ -1,4 +1,4 @@
-import { Fulfillment } from "@medusajs/medusa"
+import { Fulfillment } from "@applifyer/medusa"
 import {
   useAdminCreateClaimShipment,
   useAdminCreateShipment,

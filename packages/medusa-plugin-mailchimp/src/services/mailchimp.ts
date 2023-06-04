@@ -1,4 +1,4 @@
-import { TransactionBaseService } from "@medusajs/medusa"
+import { TransactionBaseService } from "@applifyer/medusa"
 import Mailchimp = require("mailchimp-api-v3")
 import * as crypto from "crypto"
 import { MailchimpPluginOptions } from "../types"

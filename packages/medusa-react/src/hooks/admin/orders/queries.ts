@@ -2,7 +2,7 @@ import {
   AdminGetOrdersParams,
   AdminOrdersListRes,
   AdminOrdersRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { FindParams } from "@medusajs/medusa/dist/types/common"
 import { useQuery } from "@tanstack/react-query"

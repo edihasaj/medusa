@@ -1,4 +1,4 @@
-import { SalesChannel } from "@medusajs/medusa"
+import { SalesChannel } from "@applifyer/medusa"
 import clsx from "clsx"
 import { useAdminStore } from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"

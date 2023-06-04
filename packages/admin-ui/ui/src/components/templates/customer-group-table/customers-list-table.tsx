@@ -7,7 +7,7 @@ import {
   useTable,
 } from "react-table"
 
-import { Customer } from "@medusajs/medusa"
+import { Customer } from "@applifyer/medusa"
 
 import { useNavigate } from "react-router-dom"
 import useQueryFilters from "../../../hooks/use-query-filters"

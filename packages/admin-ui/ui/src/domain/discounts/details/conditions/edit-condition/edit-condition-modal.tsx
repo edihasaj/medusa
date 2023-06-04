@@ -10,7 +10,7 @@ import ProductCollectionsConditionsTable from "./add-condition-resources/collect
 import ProductTypesConditionsTable from "./add-condition-resources/product-types/type-conditions-table"
 import ProductTagsConditionsTable from "./add-condition-resources/tags/tags-conditions-table"
 import CustomerGroupsConditionsTable from "./add-condition-resources/customer-groups/customer-groups-conditions-table"
-import { Discount, DiscountCondition } from "@medusajs/medusa"
+import { Discount, DiscountCondition } from "@applifyer/medusa"
 import { capitalize } from "lodash"
 import { getTitle } from "../../../utils"
 

@@ -1,4 +1,4 @@
-import { Discount } from "@medusajs/medusa"
+import { Discount } from "@applifyer/medusa"
 import { useAdminDeleteDiscount, useAdminUpdateDiscount } from "@applifyer/medusa-react"
 import React from "react"
 import { useNavigate } from "react-router-dom"

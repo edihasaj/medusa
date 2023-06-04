@@ -4,7 +4,7 @@ import EditFlowVariantForm, {
 import LayeredModal, {
   LayeredModalContext,
 } from "../../molecules/modal/layered-modal"
-import { Product, ProductVariant, VariantInventory } from "@medusajs/medusa"
+import { Product, ProductVariant, VariantInventory } from "@applifyer/medusa"
 import {
   adminInventoryItemsKeys,
   useAdminVariantsInventory,

@@ -1,4 +1,4 @@
-import { MoneyAmount, Product, ProductVariant } from "@medusajs/medusa"
+import { MoneyAmount, Product, ProductVariant } from "@applifyer/medusa"
 import { useAdminStore } from "@applifyer/medusa-react"
 import * as React from "react"
 import LoadingContainer from "../../../../components/atoms/loading-container"

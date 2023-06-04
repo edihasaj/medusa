@@ -1,5 +1,5 @@
 import React from "react"
-import { LineItem } from "@medusajs/medusa"
+import { LineItem } from "@applifyer/medusa"
 import { sum } from "lodash"
 import { ReservationItemDTO } from "@medusajs/types"
 import { useAdminStockLocations, useAdminVariantsInventory } from "@applifyer/medusa-react"

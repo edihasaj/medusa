@@ -1,4 +1,4 @@
-import { MoneyAmount, Product } from "@medusajs/medusa"
+import { MoneyAmount, Product } from "@applifyer/medusa"
 import { useAdminStore, useAdminUpdatePriceList } from "@applifyer/medusa-react"
 import { useParams } from "react-router-dom"
 import Button from "../../../../../../components/fundamentals/button"

@@ -5,7 +5,7 @@ import {
   ClaimOrder,
   Order,
   Swap,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import CreateFulfillmentItemsTable, {
   getFulfillableQuantity,
 } from "./item-table"

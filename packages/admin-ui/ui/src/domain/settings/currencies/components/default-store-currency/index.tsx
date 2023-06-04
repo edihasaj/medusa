@@ -1,4 +1,4 @@
-import { Store } from "@medusajs/medusa"
+import { Store } from "@applifyer/medusa"
 import DefaultCurrencySelector from "./default-currency-selector"
 
 type Props = {

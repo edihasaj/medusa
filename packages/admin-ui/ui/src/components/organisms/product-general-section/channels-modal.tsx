@@ -1,4 +1,4 @@
-import { Product, SalesChannel } from "@medusajs/medusa"
+import { Product, SalesChannel } from "@applifyer/medusa"
 import { useAdminUpdateProduct } from "@applifyer/medusa-react"
 import SalesChannelsModal from "../../forms/product/sales-channels-modal"
 import useNotification from "../../../hooks/use-notification"

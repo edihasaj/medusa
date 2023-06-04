@@ -3,7 +3,7 @@ import {
   StockLocationAddressDTO,
   StockLocationAddressInput,
   StockLocationDTO,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import GeneralForm, { GeneralFormType } from "../components/general-form"
 import MetadataForm, {
   MetadataFormType,

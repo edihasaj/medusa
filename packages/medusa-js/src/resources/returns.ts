@@ -1,6 +1,6 @@
 import BaseResource from "./base"
 import { ResponsePromise } from "../typings"
-import { StoreReturnsRes, StorePostReturnsReq } from "@medusajs/medusa"
+import { StoreReturnsRes, StorePostReturnsReq } from "@applifyer/medusa"
 
 class ReturnsResource extends BaseResource {
   /**

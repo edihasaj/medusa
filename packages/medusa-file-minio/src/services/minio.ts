@@ -9,7 +9,7 @@ import {
   GetUploadedFileType,
   IFileService,
   UploadStreamDescriptorType,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { MedusaError } from "medusa-core-utils"
 import { ClientConfiguration, PutObjectRequest } from "aws-sdk/clients/s3"
 

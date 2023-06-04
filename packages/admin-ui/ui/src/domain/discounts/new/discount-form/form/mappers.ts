@@ -1,4 +1,4 @@
-import { AdminPostDiscountsReq, AdminUpsertCondition } from "@medusajs/medusa"
+import { AdminPostDiscountsReq, AdminUpsertCondition } from "@applifyer/medusa"
 import { FieldValues } from "react-hook-form"
 import {
   getSubmittableMetadata,

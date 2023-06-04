@@ -1,4 +1,4 @@
-import {ProductCategory, ProductCollection} from "@medusajs/medusa"
+import {ProductCategory, ProductCollection} from "@applifyer/medusa"
 import clsx from "clsx"
 import useNotification from "../../../hooks/use-notification"
 import useToggleState from "../../../hooks/use-toggle-state"

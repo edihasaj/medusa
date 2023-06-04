@@ -1,4 +1,4 @@
-import { AnalyticsConfig } from "@medusajs/medusa"
+import { AnalyticsConfig } from "@applifyer/medusa"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import Button from "../../../../components/fundamentals/button"

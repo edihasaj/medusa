@@ -5,7 +5,7 @@ import {
   DiscountRule,
   DiscountRuleType,
   AllocationType,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 export type DiscountRuleFactoryData = {
   type?: DiscountRuleType

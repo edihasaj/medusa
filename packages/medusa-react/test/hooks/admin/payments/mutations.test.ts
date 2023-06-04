@@ -1,4 +1,4 @@
-import { RefundReason } from "@medusajs/medusa"
+import { RefundReason } from "@applifyer/medusa"
 import { renderHook } from "@testing-library/react-hooks/dom"
 import {
   useAdminPaymentsCapturePayment,

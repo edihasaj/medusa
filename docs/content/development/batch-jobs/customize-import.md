@@ -45,7 +45,7 @@ For example, you can define the following class in the file you created:
 import { 
   AbstractBatchJobStrategy, 
   BatchJobService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { EntityManager } from "typeorm"
 
 class MyImportStrategy extends AbstractBatchJobStrategy {

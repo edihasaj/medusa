@@ -1,5 +1,5 @@
 import path from "path"
-import { Product, ProductCategory } from "@medusajs/medusa"
+import { Product, ProductCategory } from "@applifyer/medusa"
 import { In } from "typeorm"
 
 import startServerWithEnvironment

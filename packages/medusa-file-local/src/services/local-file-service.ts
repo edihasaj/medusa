@@ -3,7 +3,7 @@ import {
   FileServiceGetUploadStreamResult,
   FileServiceUploadResult,
   IFileService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import fs from "fs"
 import { parse } from "path"
 

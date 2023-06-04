@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import { renderHook, screen, waitFor } from "@testing-library/react"
 import { useForm, UseFormReturn } from "react-hook-form"
 import ShippingAddressForm from ".."

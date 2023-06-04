@@ -1,4 +1,4 @@
-import { StorePaymentCollectionsRes } from "@medusajs/medusa"
+import { StorePaymentCollectionsRes } from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"

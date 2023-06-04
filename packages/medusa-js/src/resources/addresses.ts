@@ -2,7 +2,7 @@ import {
   StoreCustomersRes,
   StorePostCustomersCustomerAddressesAddressReq,
   StorePostCustomersCustomerAddressesReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { ResponsePromise } from "../typings"
 import BaseResource from "./base"
 

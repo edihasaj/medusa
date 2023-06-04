@@ -8,7 +8,7 @@ import {
 import {
   StorePostCustomersCustomerAcceptClaimReq,
   StorePostCustomersCustomerOrderClaimReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import { useMedusa } from "../../../contexts"
 import { buildOptions } from "../../utils/buildOptions"

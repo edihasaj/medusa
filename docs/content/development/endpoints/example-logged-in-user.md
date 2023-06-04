@@ -16,7 +16,7 @@ This documentation does not explain the basics of [middlewares](./add-middleware
 Create the file `src/api/middlewares/logged-in-user.ts` with the following content:
 
 ```ts title=src/api/middlewares/logged-in-user.ts
-import { User, UserService } from "@medusajs/medusa"
+import { User, UserService } from "@applifyer/medusa"
 
 export async function registerLoggedInUser(req, res, next) {
   let loggedInUser: User | null = null
@@ -128,7 +128,7 @@ import { Lifetime } from "awilix"
 import { 
   TransactionBaseService, 
   User,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 class HelloService extends TransactionBaseService {
 
@@ -159,7 +159,7 @@ import { Lifetime } from "awilix"
 import { 
   ProductService as MedusaProductService, 
   User, 
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 // extend core product service
 class ProductService extends MedusaProductService {

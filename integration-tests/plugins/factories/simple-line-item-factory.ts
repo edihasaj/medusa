@@ -1,6 +1,6 @@
 import { Connection } from "typeorm"
 import faker from "faker"
-import { LineItem, LineItemTaxLine } from "@medusajs/medusa"
+import { LineItem, LineItemTaxLine } from "@applifyer/medusa"
 
 type TaxLineFactoryData = {
   rate: number

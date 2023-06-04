@@ -43,7 +43,7 @@ import { PriceList } from "../../../../models"
  *     label: JS Client
  *     source: |
  *       import Medusa from "@medusajs/medusa-js"
- *       import { PriceListType } from "@medusajs/medusa"
+ *       import { PriceListType } from "@applifyer/medusa"
  *       const medusa = new Medusa({ baseUrl: MEDUSA_BACKEND_URL, maxRetries: 3 })
  *       // must be previously logged in or use api token
  *       medusa.admin.priceLists.create({

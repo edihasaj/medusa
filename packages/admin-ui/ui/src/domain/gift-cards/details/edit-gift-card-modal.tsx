@@ -1,4 +1,4 @@
-import { GiftCard } from "@medusajs/medusa"
+import { GiftCard } from "@applifyer/medusa"
 import { useAdminUpdateGiftCard } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"

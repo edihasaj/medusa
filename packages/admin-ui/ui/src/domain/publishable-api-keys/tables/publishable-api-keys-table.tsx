@@ -8,7 +8,7 @@ import {
   useAdminPublishableApiKeys,
   useAdminRevokePublishableApiKey,
 } from "@applifyer/medusa-react"
-import { PublishableApiKey } from "@medusajs/medusa"
+import { PublishableApiKey } from "@applifyer/medusa"
 
 import TableContainer from "../../../components/organisms/table-container"
 import Table from "../../../components/molecules/table"

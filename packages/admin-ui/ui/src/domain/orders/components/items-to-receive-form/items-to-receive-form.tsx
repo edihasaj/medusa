@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import { getCoreRowModel, useReactTable } from "@tanstack/react-table"
 import { FieldArrayWithId, useFieldArray } from "react-hook-form"
 import InputError from "../../../../components/atoms/input-error"

@@ -1,4 +1,4 @@
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import { useAdminCreateVariant, useAdminStore } from "@applifyer/medusa-react"
 import { useCallback, useMemo } from "react"
 import { useForm } from "react-hook-form"

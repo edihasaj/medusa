@@ -1,4 +1,4 @@
-import { ClaimItem, LineItem, Order } from "@medusajs/medusa"
+import { ClaimItem, LineItem, Order } from "@applifyer/medusa"
 
 export const getAllReturnableItems = (
   order: Omit<Order, "beforeInserts">,

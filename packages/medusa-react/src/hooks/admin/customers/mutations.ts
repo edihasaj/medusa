@@ -8,7 +8,7 @@ import {
   AdminCustomersRes,
   AdminPostCustomersCustomerReq,
   AdminPostCustomersReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 
 import { useMedusa } from "../../../contexts"

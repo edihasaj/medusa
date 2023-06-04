@@ -1,4 +1,4 @@
-import { SalesChannel, Store } from "@medusajs/medusa"
+import { SalesChannel, Store } from "@applifyer/medusa"
 import faker from "faker"
 import { DataSource, Not, IsNull } from "typeorm"
 

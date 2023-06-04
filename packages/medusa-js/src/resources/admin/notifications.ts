@@ -3,7 +3,7 @@ import {
   AdminNotificationsListRes,
   AdminNotificationsRes,
   AdminPostNotificationsNotificationResendReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import qs from "qs"
 import { ResponsePromise } from "../.."
 import BaseResource from "../base"

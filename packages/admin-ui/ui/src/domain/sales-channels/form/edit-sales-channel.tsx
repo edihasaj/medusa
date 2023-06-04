@@ -1,7 +1,7 @@
 import { useAdminUpdateSalesChannel } from "@applifyer/medusa-react"
 import { useState } from "react"
 
-import { SalesChannel } from "@medusajs/medusa"
+import { SalesChannel } from "@applifyer/medusa"
 
 import Button from "../../../components/fundamentals/button"
 import InputField from "../../../components/molecules/input"

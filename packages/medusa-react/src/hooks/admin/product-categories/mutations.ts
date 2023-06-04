@@ -11,7 +11,7 @@ import {
   AdminPostProductCategoriesReq,
   AdminProductCategoriesCategoryDeleteRes,
   AdminProductCategoriesCategoryRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import { useMedusa } from "../../../contexts"
 import { buildOptions } from "../../utils/buildOptions"

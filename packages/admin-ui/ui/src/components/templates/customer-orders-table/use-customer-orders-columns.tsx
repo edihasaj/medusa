@@ -1,4 +1,4 @@
-import { Order } from "@medusajs/medusa"
+import { Order } from "@applifyer/medusa"
 import moment from "moment"
 import { useMemo, useRef } from "react"
 import { Column } from "react-table"

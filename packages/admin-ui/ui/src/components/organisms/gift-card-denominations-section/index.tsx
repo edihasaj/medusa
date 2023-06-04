@@ -1,4 +1,4 @@
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import useToggleState from "../../../hooks/use-toggle-state"
 import PlusIcon from "../../fundamentals/icons/plus-icon"
 import Section from "../section"
