@@ -1,6 +1,6 @@
 import { ShippingOption } from "@medusajs/medusa"
 import clsx from "clsx"
-import { useAdminDeleteShippingOption } from "medusa-react"
+import { useAdminDeleteShippingOption } from "@applifyer/medusa-react"
 import EditIcon from "../../../../../components/fundamentals/icons/edit-icon"
 import FastDeliveryIcon from "../../../../../components/fundamentals/icons/fast-delivery-icon"
 import TrashIcon from "../../../../../components/fundamentals/icons/trash-icon"

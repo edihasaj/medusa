@@ -4,7 +4,7 @@ import { PublishableApiKey, SalesChannel } from "@medusajs/medusa"
 import {
   useAdminAddPublishableKeySalesChannelsBatch,
   useAdminCreatePublishableApiKey,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import BackButton from "../../../components/atoms/back-button"
 import Fade from "../../../components/atoms/fade-wrapper"

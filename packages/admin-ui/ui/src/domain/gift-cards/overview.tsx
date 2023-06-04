@@ -4,7 +4,7 @@ import {
   useAdminProducts,
   useAdminStore,
   useAdminUpdateProduct,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useMemo, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import PageDescription from "../../components/atoms/page-description"

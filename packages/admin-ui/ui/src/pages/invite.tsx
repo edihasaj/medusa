@@ -1,4 +1,4 @@
-import { useAdminAcceptInvite } from "medusa-react"
+import { useAdminAcceptInvite } from "@applifyer/medusa-react"
 import qs from "qs"
 import { useState } from "react"
 import { useForm } from "react-hook-form"

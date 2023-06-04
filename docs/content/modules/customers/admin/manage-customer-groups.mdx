@@ -66,7 +66,7 @@ medusa.admin.customerGroups.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateCustomerGroup } from "medusa-react"
+import { useAdminCreateCustomerGroup } from "@applifyer/medusa-react"
 
 const CreateCustomerGroup = () => {
   const createCustomerGroup = useAdminCreateCustomerGroup()
@@ -147,8 +147,8 @@ medusa.admin.customerGroups.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { CustomerGroup } from "@medusajs/medusa"
-import { useAdminCustomerGroups } from "medusa-react"
+import { CustomerGroup } from "@applifyer/medusa"
+import { useAdminCustomerGroups } from "@applifyer/medusa-react"
 
 const CustomerGroups = () => {
   const { 
@@ -228,7 +228,7 @@ medusa.admin.customerGroups.retrieve(customerGroupId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCustomerGroup } from "medusa-react"
+import { useAdminCustomerGroup } from "@applifyer/medusa-react"
 
 const CustomerGroup = () => {
   const { customer_group, isLoading } = useAdminCustomerGroup(
@@ -299,7 +299,7 @@ medusa.admin.customerGroups.update(customerGroupId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateCustomerGroup } from "medusa-react"
+import { useAdminUpdateCustomerGroup } from "@applifyer/medusa-react"
 
 const UpdateCustomerGroup = () => {
   const updateCustomerGroup = useAdminUpdateCustomerGroup(
@@ -389,7 +389,7 @@ medusa.admin.customerGroups.delete(customerGroupId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteCustomerGroup } from "medusa-react"
+import { useAdminDeleteCustomerGroup } from "@applifyer/medusa-react"
 
 const CustomerGroup = () => {
   const deleteCustomerGroup = useAdminDeleteCustomerGroup(
@@ -467,7 +467,7 @@ medusa.admin.customerGroups.addCustomers(customerGroupId, {
 ```tsx
 import { 
   useAdminAddCustomersToCustomerGroup,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const CustomerGroup = () => {
   const addCustomers = useAdminAddCustomersToCustomerGroup(
@@ -559,8 +559,8 @@ medusa.admin.customerGroups.listCustomers(customerGroupId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Customer } from "@medusajs/medusa"
-import { useAdminCustomerGroupCustomers } from "medusa-react"
+import { Customer } from "@applifyer/medusa"
+import { useAdminCustomerGroupCustomers } from "@applifyer/medusa-react"
 
 const CustomerGroup = () => {
   const { 
@@ -651,10 +651,10 @@ medusa.admin.customerGroups.removeCustomers(
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Customer } from "@medusajs/medusa"
+import { Customer } from "@applifyer/medusa"
 import { 
   useAdminRemoveCustomersFromCustomerGroup,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const CustomerGroup = () => {
   const removeCustomers = 

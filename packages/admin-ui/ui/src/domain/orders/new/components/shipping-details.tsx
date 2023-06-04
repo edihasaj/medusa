@@ -2,7 +2,7 @@ import qs from "query-string"
 import { useContext, useEffect, useMemo, useState } from "react"
 import { Controller, useWatch } from "react-hook-form"
 
-import { useAdminCustomer } from "medusa-react"
+import { useAdminCustomer } from "@applifyer/medusa-react"
 
 import Button from "../../../../components/fundamentals/button"
 import AddressForm, {

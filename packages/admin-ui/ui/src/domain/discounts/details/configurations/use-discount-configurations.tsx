@@ -8,7 +8,7 @@ import { getErrorMessage } from "../../../../utils/error-messages"
 import moment from "moment"
 import { parse } from "iso8601-duration"
 import { removeFalsy } from "../../../../utils/remove-nullish"
-import { useAdminUpdateDiscount } from "medusa-react"
+import { useAdminUpdateDiscount } from "@applifyer/medusa-react"
 import useNotification from "../../../../hooks/use-notification"
 
 type displaySetting = {

@@ -2,7 +2,7 @@ import clsx from "clsx"
 import {
   useAdminGetDiscountByCode,
   useAdminShippingOptions,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useContext, useEffect, useMemo, useState } from "react"
 import { useWatch } from "react-hook-form"
 import Avatar from "../../../../components/atoms/avatar"

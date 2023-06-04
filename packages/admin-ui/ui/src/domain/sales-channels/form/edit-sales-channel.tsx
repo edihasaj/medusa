@@ -1,4 +1,4 @@
-import { useAdminUpdateSalesChannel } from "medusa-react"
+import { useAdminUpdateSalesChannel } from "@applifyer/medusa-react"
 import { useState } from "react"
 
 import { SalesChannel } from "@medusajs/medusa"

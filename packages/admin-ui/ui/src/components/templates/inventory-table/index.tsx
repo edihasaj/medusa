@@ -11,7 +11,7 @@ import {
   useAdminStore,
   useAdminUpdateLocationLevel,
   useAdminVariant,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useLocation, useNavigate } from "react-router-dom"
 
 import Button from "../../fundamentals/button"

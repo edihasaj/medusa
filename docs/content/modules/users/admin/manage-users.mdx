@@ -69,7 +69,7 @@ medusa.admin.users.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUsers } from "medusa-react"
+import { useAdminUsers } from "@applifyer/medusa-react"
 
 const Users = () => {
   const { users, isLoading } = useAdminUsers()
@@ -143,7 +143,7 @@ medusa.admin.users.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateUser } from "medusa-react"
+import { useAdminCreateUser } from "@applifyer/medusa-react"
 
 const CreateUser = () => {
   const createUser = useAdminCreateUser()
@@ -230,7 +230,7 @@ medusa.admin.users.update(userId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateUser } from "medusa-react"
+import { useAdminUpdateUser } from "@applifyer/medusa-react"
 
 const UpdateUser = () => {
   const updateUser = useAdminUpdateUser(userId)
@@ -309,7 +309,7 @@ medusa.admin.users.delete(userId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteUser } from "medusa-react"
+import { useAdminDeleteUser } from "@applifyer/medusa-react"
 
 const DeleteUser = () => {
   const deleteUser = useAdminDeleteUser(userId)

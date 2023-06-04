@@ -7,7 +7,7 @@ import { ControlProps, OptionProps, SingleValue } from "react-select"
 import Control from "../select/next-select/components/control"
 import { NextSelect } from "../select/next-select"
 import SearchIcon from "../../fundamentals/icons/search-icon"
-import { useAdminInventoryItems } from "medusa-react"
+import { useAdminInventoryItems } from "@applifyer/medusa-react"
 import { useDebounce } from "../../../hooks/use-debounce"
 import { useState } from "react"
 

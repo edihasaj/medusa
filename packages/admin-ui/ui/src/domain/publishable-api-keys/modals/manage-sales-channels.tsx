@@ -6,7 +6,7 @@ import {
   useAdminRemovePublishableKeySalesChannelsBatch,
   useAdminPublishableApiKeySalesChannels,
   useAdminSalesChannels,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import Button from "../../../components/fundamentals/button"
 import SideModal from "../../../components/molecules/modal/side-modal"

@@ -1,5 +1,5 @@
 import { Customer } from "@medusajs/medusa"
-import { useAdminCustomerGroups, useAdminCustomers } from "medusa-react"
+import { useAdminCustomerGroups, useAdminCustomers } from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"
 import {
   HeaderGroup,

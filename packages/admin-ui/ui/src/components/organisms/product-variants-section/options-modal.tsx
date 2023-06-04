@@ -3,7 +3,7 @@ import {
   useAdminCreateProductOption,
   useAdminDeleteProductOption,
   useAdminUpdateProductOption,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 import { useFieldArray, useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"

@@ -4,7 +4,7 @@ import { ProductCategory } from "@medusajs/medusa"
 import {
   adminProductCategoryKeys,
   useAdminCreateProductCategory,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import { useQueryClient } from "@tanstack/react-query"
 import Button from "../../../components/fundamentals/button"

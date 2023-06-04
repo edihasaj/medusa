@@ -4,7 +4,7 @@ import {
   useAdminCancelSwap,
   useAdminOrder,
   useAdminStore,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import React, { useEffect, useState } from "react"
 
 import CreateFulfillmentModal from "../../../domain/orders/details/create-fulfillment"

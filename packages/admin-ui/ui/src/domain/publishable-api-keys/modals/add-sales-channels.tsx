@@ -1,5 +1,5 @@
 import { useRef, useState } from "react"
-import { useAdminSalesChannels } from "medusa-react"
+import { useAdminSalesChannels } from "@applifyer/medusa-react"
 import { SalesChannel } from "@medusajs/medusa"
 
 import SideModal from "../../../components/molecules/modal/side-modal"

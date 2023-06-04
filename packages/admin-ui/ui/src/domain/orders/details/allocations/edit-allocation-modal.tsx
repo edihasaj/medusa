@@ -14,7 +14,7 @@ import {
   useAdminInventoryItem,
   useAdminStockLocations,
   useAdminUpdateReservation,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 
 import { AllocationLineItemForm } from "./allocate-items-modal"

@@ -2,7 +2,7 @@ import {
   AdminGetShippingOptionsParams,
   AdminShippingOptionsListRes,
   AdminShippingOptionsRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"
@@ -28,6 +28,7 @@ export const useAdminShippingOptions = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminShippingOptionKeys.list(query),
+    // @ts-ignore
     () => client.admin.shippingOptions.list(query),
     options
   )
@@ -45,6 +46,7 @@ export const useAdminShippingOption = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminShippingOptionKeys.detail(id),
+    // @ts-ignore
     () => client.admin.shippingOptions.retrieve(id),
     options
   )

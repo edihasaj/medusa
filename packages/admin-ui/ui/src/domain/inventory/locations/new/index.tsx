@@ -11,7 +11,7 @@ import {
 import {
   useAdminAddLocationToSalesChannel,
   useAdminCreateStockLocation,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import Accordion from "../../../../components/organisms/accordion"
 import AddressForm from "../components/address-form"

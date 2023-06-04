@@ -71,7 +71,7 @@ medusa.admin.salesChannels.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateSalesChannel } from "medusa-react"
+import { useAdminCreateSalesChannel } from "@applifyer/medusa-react"
 
 const CreateSalesChannel = () => {
   const createSalesChannel = useAdminCreateSalesChannel()
@@ -151,8 +151,8 @@ medusa.admin.salesChannels.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { SalesChannel } from "@medusajs/medusa"
-import { useAdminSalesChannels } from "medusa-react"
+import { SalesChannel } from "@applifyer/medusa"
+import { useAdminSalesChannels } from "@applifyer/medusa-react"
 
 const SalesChannels = () => {
   const { sales_channels, isLoading } = useAdminSalesChannels()
@@ -223,7 +223,7 @@ medusa.admin.salesChannels.retrieve(salesChannelId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminSalesChannel } from "medusa-react"
+import { useAdminSalesChannel } from "@applifyer/medusa-react"
 
 const SalesChannel = () => {
   const { 
@@ -290,7 +290,7 @@ medusa.admin.salesChannels.update(salesChannelId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateSalesChannel } from "medusa-react"
+import { useAdminUpdateSalesChannel } from "@applifyer/medusa-react"
 
 const UpdateSalesChannel = () => {
   const updateSalesChannel = useAdminUpdateSalesChannel(
@@ -371,7 +371,7 @@ medusa.admin.salesChannels.delete(salesChannelId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteSalesChannel } from "medusa-react"
+import { useAdminDeleteSalesChannel } from "@applifyer/medusa-react"
 
 const SalesChannel = () => {
   const deleteSalesChannel = useAdminDeleteSalesChannel(
@@ -444,7 +444,7 @@ medusa.admin.salesChannels.addProducts(salesChannelId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminAddProductsToSalesChannel } from "medusa-react"
+import { useAdminAddProductsToSalesChannel } from "@applifyer/medusa-react"
 
 const SalesChannel = () => {
   const addProducts = useAdminAddProductsToSalesChannel(
@@ -542,11 +542,11 @@ medusa.admin.products.list({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import { 
   PricedProduct,
 } from "@medusajs/medusa/dist/types/pricing"
-import { useAdminProducts } from "medusa-react"
+import { useAdminProducts } from "@applifyer/medusa-react"
 
 const SalesChannelProducts = () => {
   const { products, isLoading } = useAdminProducts({
@@ -640,7 +640,7 @@ medusa.admin.salesChannels.removeProducts(salesChannelId, {
 ```tsx
 import { 
   useAdminDeleteProductsFromSalesChannel, 
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const SalesChannel = () => {
   const deleteProducts = useAdminDeleteProductsFromSalesChannel(
@@ -742,8 +742,8 @@ medusa.admin.orders.list({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Order } from "@medusajs/medusa"
-import { useAdminOrders } from "medusa-react"
+import { Order } from "@applifyer/medusa"
+import { useAdminOrders } from "@applifyer/medusa-react"
 
 const SalesChannelOrders = () => {
   const { orders, isLoading } = useAdminOrders({

@@ -2,7 +2,7 @@ import {
   useAdminDeleteProduct, useAdminDeleteProductCategory,
   useAdminProduct,
   useAdminUpdateCollection, useAdminUpdateProductCategory,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import { useNavigate } from "react-router-dom"
 import { getErrorMessage } from "../utils/error-messages"

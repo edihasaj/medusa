@@ -11,7 +11,7 @@ import {
   useAdminProduct,
   useAdminUpdateProduct,
   useAdminUpdateVariant,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import { getErrorMessage } from "../utils/error-messages"
 import { removeFalsy } from "../utils/remove-nullish"

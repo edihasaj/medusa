@@ -1,6 +1,6 @@
 import { Currency } from "@medusajs/medusa"
 import { useQueryClient } from "@tanstack/react-query"
-import { adminStoreKeys, useAdminUpdateCurrency } from "medusa-react"
+import { adminStoreKeys, useAdminUpdateCurrency } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { Controller, useForm } from "react-hook-form"
 import Switch from "../../../../components/atoms/switch"

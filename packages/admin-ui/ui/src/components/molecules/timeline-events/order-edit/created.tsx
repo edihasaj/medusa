@@ -5,7 +5,7 @@ import {
   useAdminDeleteOrderEdit,
   useAdminOrderEdit,
   useAdminUser,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import React, { useContext } from "react"
 
 import { OrderEditEvent } from "../../../../hooks/use-build-timeline"

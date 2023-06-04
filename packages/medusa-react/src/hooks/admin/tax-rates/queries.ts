@@ -2,7 +2,7 @@ import {
   AdminGetTaxRatesParams,
   AdminTaxRatesListRes,
   AdminTaxRatesRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"
@@ -26,6 +26,7 @@ export const useAdminTaxRates = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminTaxRateKeys.list(query),
+    // @ts-ignore
     () => client.admin.taxRates.list(query),
     options
   )
@@ -44,6 +45,7 @@ export const useAdminTaxRate = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminTaxRateKeys.detail(id),
+    // @ts-ignore
     () => client.admin.taxRates.retrieve(id, query),
     options
   )

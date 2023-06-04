@@ -1,6 +1,6 @@
 import { AdminPostProductsReq, Product } from "@medusajs/medusa"
 import { omit } from "lodash"
-import { useAdminCreateProduct } from "medusa-react"
+import { useAdminCreateProduct } from "@applifyer/medusa-react"
 import { useNavigate } from "react-router-dom"
 import useNotification from "../../../hooks/use-notification"
 import { ProductStatus } from "../../../types/shared"

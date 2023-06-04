@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { useAdminDeleteNote, useAdminUser } from "medusa-react"
+import { useAdminDeleteNote, useAdminUser } from "@applifyer/medusa-react"
 import React, { useState } from "react"
 import { NoteEvent } from "../../../hooks/use-build-timeline"
 import { useIsMe } from "../../../hooks/use-is-me"

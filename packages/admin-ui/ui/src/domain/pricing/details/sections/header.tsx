@@ -1,4 +1,4 @@
-import { useAdminDeletePriceList } from "medusa-react"
+import { useAdminDeletePriceList } from "@applifyer/medusa-react"
 import moment from "moment"
 import * as React from "react"
 import { useNavigate } from "react-router-dom"

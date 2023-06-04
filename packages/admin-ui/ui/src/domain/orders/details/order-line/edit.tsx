@@ -5,7 +5,7 @@ import {
   useAdminOrderEditAddLineItem,
   useAdminOrderEditDeleteLineItem,
   useAdminOrderEditUpdateLineItem,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import clsx from "clsx"
 
 import ImagePlaceholder from "../../../../components/fundamentals/image-placeholder"

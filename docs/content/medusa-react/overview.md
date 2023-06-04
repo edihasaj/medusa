@@ -52,7 +52,7 @@ The `MedusaProvider` requires two props:
 For example:
 
 ```tsx title=src/App.ts
-import { MedusaProvider } from "medusa-react"
+import { MedusaProvider } from "@applifyer/medusa-react"
 import Storefront from "./Storefront"
 import { QueryClient } from "@tanstack/react-query"
 import React from "react"
@@ -94,7 +94,7 @@ For example, to fetch products from your Medusa backend:
 
 ```tsx title=src/Products.ts
 import { Product } from "@medusajs/medusa"
-import { useProducts } from "medusa-react"
+import { useProducts } from "@applifyer/medusa-react"
 
 const Products = () => {
   const { products, isLoading } = useProducts()
@@ -138,7 +138,7 @@ To create, update, or delete data on the Medusa backend (in other words, perform
 For example, to create a cart:
 
 ```tsx title=src/Cart.ts
-import { useCreateCart } from "medusa-react"
+import { useCreateCart } from "@applifyer/medusa-react"
 
 const Cart = () => {
   const createCart = useCreateCart()
@@ -210,7 +210,7 @@ It accepts an object with the following properties:
 For example:
 
 ```tsx title=src/Products.ts
-import { formatVariantPrice } from "medusa-react"
+import { formatVariantPrice } from "@applifyer/medusa-react"
 import { Product, ProductVariant } from "@medusajs/medusa"
 
 const Products = () => {
@@ -250,7 +250,7 @@ It accepts an object with the following properties:
 For example:
 
 ```tsx title=src/Products.ts
-import { computeVariantPrice } from "medusa-react"
+import { computeVariantPrice } from "@applifyer/medusa-react"
 import { Product, ProductVariant } from "@medusajs/medusa"
 
 const Products = () => {
@@ -295,7 +295,7 @@ It accepts an object with the following properties:
 For example:
 
 ```tsx title=src/MyComponent.ts
-import { formatAmount } from "medusa-react"
+import { formatAmount } from "@applifyer/medusa-react"
 
 const MyComponent = () => {
   // ...
@@ -325,7 +325,7 @@ It accepts an object with the following properties:
 For example:
 
 ```tsx title=src/MyComponent.ts
-import { computeAmount } from "medusa-react"
+import { computeAmount } from "@applifyer/medusa-react"
 
 const MyComponent = () => {
   // ...
@@ -363,7 +363,7 @@ To use `CartProvider`, you first have to insert it somewhere in your component t
 For example:
 
 ```tsx title=src/App.ts
-import { CartProvider, MedusaProvider } from "medusa-react"
+import { CartProvider, MedusaProvider } from "@applifyer/medusa-react"
 import Storefront from "./Storefront"
 import { QueryClient } from "@tanstack/react-query"
 import React from "react"
@@ -405,7 +405,7 @@ For example:
 ```tsx title=src/Cart.ts
 import * as React from "react"
 
-import { useCart } from "medusa-react"
+import { useCart } from "@applifyer/medusa-react"
 
 const Cart = () => {
   const handleClick = () => {
@@ -453,7 +453,7 @@ To use `SessionProvider`, you first have to insert it somewhere in your componen
 For example:
 
 ```tsx title=src/App.ts
-import { SessionProvider, MedusaProvider } from "medusa-react"
+import { SessionProvider, MedusaProvider } from "@applifyer/medusa-react"
 import Storefront from "./Storefront"
 import { QueryClient } from "@tanstack/react-query"
 import React from "react"

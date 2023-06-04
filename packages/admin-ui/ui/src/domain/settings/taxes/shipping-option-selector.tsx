@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react"
-import { useAdminShippingOptions } from "medusa-react"
+import { useAdminShippingOptions } from "@applifyer/medusa-react"
 import { SelectableTable } from "./selectable-table"
 
 export const ShippingOptionSelector = ({ regionId, items, onChange }) => {

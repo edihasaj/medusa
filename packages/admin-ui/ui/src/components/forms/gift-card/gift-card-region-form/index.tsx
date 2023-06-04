@@ -1,4 +1,4 @@
-import { useAdminRegions } from "medusa-react"
+import { useAdminRegions } from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 import { Controller, useWatch } from "react-hook-form"
 import { Option } from "../../../../types/shared"

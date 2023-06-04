@@ -2,7 +2,7 @@ import {
   useAdminCancelClaim,
   useAdminCancelReturn,
   useAdminOrder,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { Fragment } from "react"
 import CreateFulfillmentModal from "../../../../domain/orders/details/create-fulfillment"
 import { ReceiveReturnMenu } from "../../../../domain/orders/details/receive-return"

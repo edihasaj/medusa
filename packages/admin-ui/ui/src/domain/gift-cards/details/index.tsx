@@ -1,4 +1,4 @@
-import { useAdminGiftCard, useAdminUpdateGiftCard } from "medusa-react"
+import { useAdminGiftCard, useAdminUpdateGiftCard } from "@applifyer/medusa-react"
 import moment from "moment"
 import { useParams } from "react-router-dom"
 import BackButton from "../../../components/atoms/back-button"

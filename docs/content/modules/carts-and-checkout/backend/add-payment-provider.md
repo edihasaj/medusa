@@ -66,7 +66,7 @@ import {
   PaymentProcessorError, 
   PaymentProcessorSessionResponse, 
   PaymentSessionStatus,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 class MyPaymentProcessor extends AbstractPaymentProcessor {
   static identifier = "my-payment"
@@ -270,7 +270,7 @@ An example of a minimal implementation of `initiatePayment`:
 import { 
   PaymentContext, 
   PaymentSessionResponse,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 class MyPaymentService extends AbstractPaymentService {
   // ...
@@ -299,7 +299,7 @@ This method must return an object containing the data from the third-party provi
 An example of a minimal implementation of `retrievePayment` where you don’t need to interact with the third-party provider:
 
 ```ts
-import { Data } from "@medusajs/medusa"
+import { Data } from "@applifyer/medusa"
 // ...
 
 class MyPaymentService extends AbstractPaymentService {
@@ -331,7 +331,7 @@ This method returns a string that represents the status. This string can be from
 An example of a minimal implementation of `getPaymentStatus` where you don’t need to interact with the third-party provider:
 
 ```ts
-import { Data, PaymentSessionStatus } from "@medusajs/medusa"
+import { Data, PaymentSessionStatus } from "@applifyer/medusa"
 // ...
 
 class MyPaymentService extends AbstractPaymentService {
@@ -392,7 +392,7 @@ import {
   Cart, 
   PaymentContext, 
   PaymentSessionResponse,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 // ...
 
 class MyPaymentService extends AbstractPaymentService {
@@ -429,7 +429,7 @@ You can use this method to interact with the third-party provider to delete data
 An example of a minimal implementation of `deletePayment` where no interaction with a third-party provider is required:
 
 ```ts
-import { PaymentSession } from "@medusajs/medusa"
+import { PaymentSession } from "@applifyer/medusa"
 // ...
 
 class MyPaymentService extends AbstractPaymentService {
@@ -481,7 +481,7 @@ import {
   PaymentSession, 
   PaymentSessionStatus, 
   PaymentSessionData,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 // ...
 
 class MyPaymentService extends AbstractPaymentService {
@@ -521,7 +521,7 @@ This method must return an object that will be stored in the `data` field of the
 An example of a minimal implementation of `capturePayment` that doesn’t need to interact with a third-party provider:
 
 ```ts
-import { Data, Payment } from "@medusajs/medusa"
+import { Data, Payment } from "@applifyer/medusa"
 // ...
 
 class MyPaymentService extends AbstractPaymentService {
@@ -549,7 +549,7 @@ This method must return an object that is stored in the `data` field of the Paym
 An example of a minimal implementation of `refundPayment` that doesn’t need to interact with a third-party provider:
 
 ```ts
-import { Data, Payment } from "@medusajs/medusa"
+import { Data, Payment } from "@applifyer/medusa"
 // ...
 
 class MyPaymentService extends AbstractPaymentService {
@@ -580,7 +580,7 @@ This method accepts the `data` field of the Payment for its first parameter.
 An example of a minimal implementation of `cancelPayment` that doesn’t need to interact with a third-party provider:
 
 ```ts
-import { Data, Payment } from "@medusajs/medusa"
+import { Data, Payment } from "@applifyer/medusa"
 // ...
 
 class MyPaymentService extends AbstractPaymentService {

@@ -1,5 +1,5 @@
 import { MoneyAmount, Product } from "@medusajs/medusa"
-import { useAdminStore, useAdminUpdatePriceList } from "medusa-react"
+import { useAdminStore, useAdminUpdatePriceList } from "@applifyer/medusa-react"
 import { useParams } from "react-router-dom"
 import Button from "../../../../../../components/fundamentals/button"
 import { CollapsibleTree } from "../../../../../../components/molecules/collapsible-tree"

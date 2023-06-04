@@ -4,7 +4,7 @@ import {
   useAdminCollections,
   useAdminProductCategories,
   useAdminProductTypes,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import { NestedMultiselectOption } from "../../../../domain/categories/components/multiselect"
 import { transformCategoryToNestedFormOptions } from "../../../../domain/categories/utils/transform-response"

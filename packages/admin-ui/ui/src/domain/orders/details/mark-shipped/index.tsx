@@ -3,7 +3,7 @@ import {
   useAdminCreateClaimShipment,
   useAdminCreateShipment,
   useAdminCreateSwapShipment,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import React, { useState } from "react"
 import { Controller, useFieldArray, useForm } from "react-hook-form"
 import Button from "../../../../components/fundamentals/button"

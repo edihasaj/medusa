@@ -23,7 +23,7 @@ Create a TypeScript or JavaScript file in `src/strategies` of your Medusa back
 import { 
   AbstractCartCompletionStrategy,
   CartCompletionResponse,
-  IdempotencyKey } from "@medusajs/medusa"
+  IdempotencyKey } from "@applifyer/medusa"
 import { 
   RequestContext,
 } from "@medusajs/medusa/dist/types/request"
@@ -54,7 +54,7 @@ You can use a constructor to access services and resources registered in the dep
 
 ```ts title=src/strategies/cart-completion.ts
 // ...
-import { IdempotencyKeyService } from "@medusajs/medusa"
+import { IdempotencyKeyService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   idempotencyKeyService: IdempotencyKeyService

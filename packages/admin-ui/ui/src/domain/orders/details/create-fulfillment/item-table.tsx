@@ -5,7 +5,7 @@ import ImagePlaceholder from "../../../../components/fundamentals/image-placehol
 import InputField from "../../../../components/molecules/input"
 import { LineItem } from "@medusajs/medusa"
 import clsx from "clsx"
-import { useAdminVariantsInventory } from "medusa-react"
+import { useAdminVariantsInventory } from "@applifyer/medusa-react"
 import { useFeatureFlag } from "../../../../providers/feature-flag-provider"
 
 export const getFulfillableQuantity = (item: LineItem): number => {

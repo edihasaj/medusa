@@ -1,4 +1,4 @@
-import { useAdminStore } from "medusa-react"
+import { useAdminStore } from "@applifyer/medusa-react"
 import React, { useState } from "react"
 
 import { useFeatureFlag } from "../../../providers/feature-flag-provider"

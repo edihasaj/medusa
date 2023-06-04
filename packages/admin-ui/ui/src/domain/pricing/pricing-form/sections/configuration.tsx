@@ -1,6 +1,6 @@
 import { PriceList } from "@medusajs/medusa"
 import clsx from "clsx"
-import { useAdminCustomerGroups } from "medusa-react"
+import { useAdminCustomerGroups } from "@applifyer/medusa-react"
 import React, { useState } from "react"
 import { Controller } from "react-hook-form"
 import DatePicker from "../../../../components/atoms/date-picker/date-picker"

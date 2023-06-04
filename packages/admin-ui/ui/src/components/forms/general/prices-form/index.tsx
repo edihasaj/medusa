@@ -1,4 +1,4 @@
-import { useAdminRegions, useAdminStore } from "medusa-react"
+import { useAdminRegions, useAdminStore } from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 import { FieldArrayWithId, useFieldArray } from "react-hook-form"
 import { NestedForm } from "../../../../utils/nested-form"

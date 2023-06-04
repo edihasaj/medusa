@@ -1,4 +1,4 @@
-import { useAdminPriceLists } from "medusa-react"
+import { useAdminPriceLists } from "@applifyer/medusa-react"
 import useSetSearchParams from "../../hooks/use-set-search-params"
 import { usePriceListTableColumns } from "../../components/templates/price-list-table/use-price-list-columns"
 import { usePriceListFilters } from "../../components/templates/price-list-table/use-price-list-filters"

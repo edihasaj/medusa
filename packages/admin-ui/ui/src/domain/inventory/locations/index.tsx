@@ -6,7 +6,7 @@ import LocationCard from "./components/location-card"
 import NewLocation from "./new"
 import PlusIcon from "../../../components/fundamentals/icons/plus-icon"
 import Spinner from "../../../components/atoms/spinner"
-import { useAdminStockLocations } from "medusa-react"
+import { useAdminStockLocations } from "@applifyer/medusa-react"
 import useToggleState from "../../../hooks/use-toggle-state"
 
 const Locations = () => {

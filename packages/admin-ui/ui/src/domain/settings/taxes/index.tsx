@@ -1,4 +1,4 @@
-import { useAdminRegions } from "medusa-react"
+import { useAdminRegions } from "@applifyer/medusa-react"
 import { useCallback, useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import BackButton from "../../../components/atoms/back-button"

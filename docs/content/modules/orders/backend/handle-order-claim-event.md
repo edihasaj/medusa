@@ -82,7 +82,7 @@ There are two ways to do this:
 If the notification provider you’re using already implements the logic to handle this event, you can subscribe to the event using the `NotificationService`:
 
 ```ts title=src/subscribers/claim-order.ts
-import { NotificationService } from "@medusajs/medusa"
+import { NotificationService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   notificationService: NotificationService
@@ -113,7 +113,7 @@ You can learn more about handling events with the Notification Service using [th
 If the notification provider you’re using isn’t configured to handle this event, or you want to implement some other custom logic, you can subscribe to the event using the `EventBusService`:
 
 ```ts title=src/subscribers/claim-order.ts
-import { EventBusService } from "@medusajs/medusa"
+import { EventBusService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   eventBusService: EventBusService
@@ -157,7 +157,7 @@ For example, you can implement this subscriber to send emails using SendGrid:
 <!-- eslint-disable max-len -->
 
 ```ts title=src/subscribers/claim-order.ts
-import { EventBusService } from "@medusajs/medusa"
+import { EventBusService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   eventBusService: EventBusService,

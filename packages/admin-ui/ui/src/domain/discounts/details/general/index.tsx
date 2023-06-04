@@ -1,5 +1,5 @@
 import { Discount } from "@medusajs/medusa"
-import { useAdminDeleteDiscount, useAdminUpdateDiscount } from "medusa-react"
+import { useAdminDeleteDiscount, useAdminUpdateDiscount } from "@applifyer/medusa-react"
 import React from "react"
 import { useNavigate } from "react-router-dom"
 import Badge from "../../../../components/fundamentals/badge"

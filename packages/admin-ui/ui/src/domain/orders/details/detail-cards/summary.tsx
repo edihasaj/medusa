@@ -18,7 +18,7 @@ import { Response } from "@medusajs/medusa-js"
 import StatusIndicator from "../../../../components/fundamentals/status-indicator"
 import { sum } from "lodash"
 import { useFeatureFlag } from "../../../../providers/feature-flag-provider"
-import { useMedusa } from "medusa-react"
+import { useMedusa } from "@applifyer/medusa-react"
 import useToggleState from "../../../../hooks/use-toggle-state"
 
 type SummaryCardProps = {

@@ -1,5 +1,5 @@
 import { Region } from "@medusajs/medusa"
-import { useAdminStoreTaxProviders, useAdminUpdateRegion } from "medusa-react"
+import { useAdminStoreTaxProviders, useAdminUpdateRegion } from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 import { Controller, useForm } from "react-hook-form"
 import Checkbox from "../../../components/atoms/checkbox"

@@ -1,5 +1,5 @@
 import { AdminPostProductsReq, ProductVariant } from "@medusajs/medusa"
-import { useAdminCreateProduct, useMedusa } from "medusa-react"
+import { useAdminCreateProduct, useMedusa } from "@applifyer/medusa-react"
 import { useForm, useWatch } from "react-hook-form"
 import CustomsForm, {
   CustomsFormType,

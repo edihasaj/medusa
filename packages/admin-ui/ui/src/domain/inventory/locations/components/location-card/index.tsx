@@ -1,5 +1,5 @@
 import { StockLocationDTO } from "@medusajs/types"
-import { useAdminDeleteStockLocation } from "medusa-react"
+import { useAdminDeleteStockLocation } from "@applifyer/medusa-react"
 import React from "react"
 import IconBadge from "../../../../../components/fundamentals/icon-badge"
 import BuildingsIcon from "../../../../../components/fundamentals/icons/buildings-icon"

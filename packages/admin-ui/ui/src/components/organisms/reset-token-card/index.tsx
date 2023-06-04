@@ -1,4 +1,4 @@
-import { useAdminSendResetPasswordToken } from "medusa-react"
+import { useAdminSendResetPasswordToken } from "@applifyer/medusa-react"
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"

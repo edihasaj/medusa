@@ -9,7 +9,7 @@ import {
   AdminPostTaxRatesTaxRateShippingOptionsReq,
   AdminTaxRatesDeleteRes,
   AdminTaxRatesRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,
@@ -30,6 +30,7 @@ export const useAdminCreateTaxRate = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostTaxRatesReq) => client.admin.taxRates.create(payload),
     buildOptions(queryClient, adminTaxRateKeys.lists(), options)
   )
@@ -47,6 +48,7 @@ export const useAdminUpdateTaxRate = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostTaxRatesTaxRateReq) =>
       client.admin.taxRates.update(id, payload),
     buildOptions(
@@ -86,6 +88,7 @@ export const useAdminCreateProductTaxRates = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostTaxRatesTaxRateProductsReq) =>
       client.admin.taxRates.addProducts(id, payload),
     buildOptions(
@@ -108,6 +111,7 @@ export const useAdminDeleteProductTaxRates = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminDeleteTaxRatesTaxRateProductsReq) =>
       client.admin.taxRates.removeProducts(id, payload),
     buildOptions(
@@ -130,6 +134,7 @@ export const useAdminCreateProductTypeTaxRates = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostTaxRatesTaxRateProductTypesReq) =>
       client.admin.taxRates.addProductTypes(id, payload),
     buildOptions(
@@ -152,6 +157,7 @@ export const useAdminDeleteProductTypeTaxRates = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminDeleteTaxRatesTaxRateProductTypesReq) =>
       client.admin.taxRates.removeProductTypes(id, payload),
     buildOptions(
@@ -174,6 +180,7 @@ export const useAdminCreateShippingTaxRates = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostTaxRatesTaxRateShippingOptionsReq) =>
       client.admin.taxRates.addShippingOptions(id, payload),
     buildOptions(
@@ -196,6 +203,7 @@ export const useAdminDeleteShippingTaxRates = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminDeleteTaxRatesTaxRateShippingOptionsReq) =>
       client.admin.taxRates.removeShippingOptions(id, payload),
     buildOptions(

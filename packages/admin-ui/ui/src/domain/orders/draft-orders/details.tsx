@@ -5,7 +5,7 @@ import {
   useAdminDraftOrderRegisterPayment,
   useAdminStore,
   useAdminUpdateDraftOrder,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import moment from "moment"
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"

@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import { isEmpty } from "lodash"
-import { useAdminGiftCards } from "medusa-react"
+import { useAdminGiftCards } from "@applifyer/medusa-react"
 import qs from "qs"
 import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"

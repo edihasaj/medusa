@@ -1,4 +1,4 @@
-import { useAdminResetPassword } from "medusa-react"
+import { useAdminResetPassword } from "@applifyer/medusa-react"
 import qs from "qs"
 import { useForm } from "react-hook-form"
 import { decodeToken } from "react-jwt"

@@ -2,7 +2,7 @@ import { ProductCollection } from "@applifyer/medusa"
 import {
   useAdminCreateCollection,
   useAdminUpdateCollection,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import React, { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"

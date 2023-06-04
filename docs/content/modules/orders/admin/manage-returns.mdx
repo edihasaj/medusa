@@ -73,7 +73,7 @@ medusa.admin.returnReasons.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminReturnReasons } from "medusa-react"
+import { useAdminReturnReasons } from "@applifyer/medusa-react"
 
 const ReturnReasons = () => {
   const { return_reasons, isLoading } = useAdminReturnReasons()
@@ -149,7 +149,7 @@ medusa.admin.returnReasons.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateReturnReason } from "medusa-react"
+import { useAdminCreateReturnReason } from "@applifyer/medusa-react"
 
 const CreateReturnReason = () => {
   const createReturnReason = useAdminCreateReturnReason()
@@ -234,7 +234,7 @@ medusa.admin.returnReasons.update(returnReasonId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateReturnReason } from "medusa-react"
+import { useAdminUpdateReturnReason } from "@applifyer/medusa-react"
 
 const UpdateReturnReason = () => {
   const updateReturnReason = useAdminUpdateReturnReason(
@@ -313,7 +313,7 @@ medusa.admin.returnReasons.delete(returnReasonId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteReturnReason } from "medusa-react"
+import { useAdminDeleteReturnReason } from "@applifyer/medusa-react"
 
 const DeleteReturnReason = () => {
   const deleteReturnReason = useAdminDeleteReturnReason(
@@ -390,7 +390,7 @@ medusa.admin.orders.retrieve(orderId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminOrder } from "medusa-react"
+import { useAdminOrder } from "@applifyer/medusa-react"
 
 const Order = () => {
   const { 
@@ -490,7 +490,7 @@ medusa.admin.returns.receive(return_id, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminReceiveReturn } from "medusa-react"
+import { useAdminReceiveReturn } from "@applifyer/medusa-react"
 
 const ReceiveReturn = () => {
   const receiveReturn = useAdminReceiveReturn(
@@ -592,7 +592,7 @@ medusa.admin.returns.cancel(returnId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCancelReturn } from "medusa-react"
+import { useAdminCancelReturn } from "@applifyer/medusa-react"
 
 const CancelReturn = () => {
   const cancelReturn = useAdminCancelReturn(

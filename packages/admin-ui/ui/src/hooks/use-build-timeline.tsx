@@ -11,7 +11,7 @@ import {
   useAdminNotifications,
   useAdminOrder,
   useAdminOrderEdits,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import useOrdersExpandParam from "../domain/orders/details/utils/use-admin-expand-paramter"
 import { useFeatureFlag } from "../providers/feature-flag-provider"

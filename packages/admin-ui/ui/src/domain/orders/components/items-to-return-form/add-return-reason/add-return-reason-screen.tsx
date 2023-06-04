@@ -1,4 +1,4 @@
-import { useAdminReturnReasons } from "medusa-react"
+import { useAdminReturnReasons } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { Controller, useForm } from "react-hook-form"
 import { ReturnReasonDetails } from ".."

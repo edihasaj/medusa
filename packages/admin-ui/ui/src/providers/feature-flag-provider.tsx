@@ -4,7 +4,7 @@ import React, {
   useEffect,
   useState,
 } from "react"
-import { useAdminGetSession, useAdminStore } from "medusa-react"
+import { useAdminGetSession, useAdminStore } from "@applifyer/medusa-react"
 
 export enum FeatureFlag {
   PRODUCT_CATEGORIES = "product_categories",

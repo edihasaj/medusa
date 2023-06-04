@@ -98,7 +98,7 @@ medusa.admin.orderEdits.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateOrderEdit } from "medusa-react"
+import { useAdminCreateOrderEdit } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const createOrderEdit = useAdminCreateOrderEdit()
@@ -193,7 +193,7 @@ medusa.admin.orderEdits.addLineItem(orderEditId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminOrderEditAddLineItem } from "medusa-react"
+import { useAdminOrderEditAddLineItem } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const addLineItem = useAdminOrderEditAddLineItem(orderEditId)
@@ -277,7 +277,7 @@ medusa.admin.orderEdits.updateLineItem(orderEditId, itemId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminOrderEditUpdateLineItem } from "medusa-react"
+import { useAdminOrderEditUpdateLineItem } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const updateLineItem = useAdminOrderEditUpdateLineItem(
@@ -358,7 +358,7 @@ medusa.admin.orderEdits.removeLineItem(orderEditId, itemId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminOrderEditDeleteLineItem } from "medusa-react"
+import { useAdminOrderEditDeleteLineItem } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const removeLineItem = useAdminOrderEditDeleteLineItem(
@@ -429,7 +429,7 @@ medusa.admin.orderEdits.deleteItemChange(orderEditId, changeId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteOrderEditItemChange } from "medusa-react"
+import { useAdminDeleteOrderEditItemChange } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const deleteItemChange = useAdminDeleteOrderEditItemChange(
@@ -512,7 +512,7 @@ medusa.admin.orderEdits.requestConfirmation(orderEditId)
 ```tsx
 import { 
   useAdminRequestOrderEditConfirmation,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const requestOrderConfirmation = 
@@ -603,7 +603,7 @@ medusa.admin.orderEdits.confirm(orderEditId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminConfirmOrderEdit } from "medusa-react"
+import { useAdminConfirmOrderEdit } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const confirmOrderEdit = useAdminConfirmOrderEdit(orderEditId)
@@ -686,7 +686,7 @@ medusa.admin.payments.capturePayment(paymentId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminPaymentsCapturePayment } from "medusa-react"
+import { useAdminPaymentsCapturePayment } from "@applifyer/medusa-react"
 
 const OrderEditPayment = () => {
   const capturePayment = useAdminPaymentsCapturePayment(
@@ -742,7 +742,7 @@ To refund the difference to the customer, send a request to the [Refund Payment]
 <TabItem value="client" label="Medusa JS Client" default>
 
 ```ts
-import { RefundReason } from "@medusajs/medusa"
+import { RefundReason } from "@applifyer/medusa"
 // ...
 
 medusa.admin.payments.refundPayment(paymentId, {
@@ -758,8 +758,8 @@ medusa.admin.payments.refundPayment(paymentId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminPaymentsRefundPayment } from "medusa-react"
-import { RefundReason } from "@medusajs/medusa"
+import { useAdminPaymentsRefundPayment } from "@applifyer/medusa-react"
+import { RefundReason } from "@applifyer/medusa"
 
 const OrderEditPayment = () => {
   const refundPayment = useAdminPaymentsRefundPayment(paymentId)

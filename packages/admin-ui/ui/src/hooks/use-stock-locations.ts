@@ -1,4 +1,4 @@
-import { useAdminStockLocations } from "medusa-react"
+import { useAdminStockLocations } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { useFeatureFlag } from "../providers/feature-flag-provider"
 

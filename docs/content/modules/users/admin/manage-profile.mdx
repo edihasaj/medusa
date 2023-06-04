@@ -71,7 +71,7 @@ medusa.admin.auth.createSession({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminLogin } from "medusa-react"
+import { useAdminLogin } from "@applifyer/medusa-react"
 
 const Login = () => {
   const adminLogin = useAdminLogin()
@@ -151,7 +151,7 @@ medusa.admin.auth.deleteSession()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteSession } from "medusa-react"
+import { useAdminDeleteSession } from "@applifyer/medusa-react"
 
 const Logout = () => {
   const adminLogout = useAdminDeleteSession()
@@ -216,7 +216,7 @@ medusa.admin.auth.getSession()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminGetSession } from "medusa-react"
+import { useAdminGetSession } from "@applifyer/medusa-react"
 
 const Profile = () => {
   const { user, isLoading } = useAdminGetSession()
@@ -285,7 +285,7 @@ medusa.admin.users.update(userId, {
 import {
   useAdminDeleteSession,
   useAdminUpdateUser,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const Profile = () => {
   const updateUser = useAdminUpdateUser(userId)
@@ -378,7 +378,7 @@ medusa.admin.users.sendResetPasswordToken({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminSendResetPasswordToken } from "medusa-react"
+import { useAdminSendResetPasswordToken } from "@applifyer/medusa-react"
 
 const Login = () => {
   const requestPasswordReset = useAdminSendResetPasswordToken()
@@ -457,7 +457,7 @@ medusa.admin.users.resetPassword({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminResetPassword } from "medusa-react"
+import { useAdminResetPassword } from "@applifyer/medusa-react"
 
 const ResetPassword = () => {
   const resetPassword = useAdminResetPassword()

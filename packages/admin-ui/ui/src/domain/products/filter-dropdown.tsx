@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import { useMemo, useEffect, useState } from "react"
-import { useAdminProductTags, useAdminCollections } from "medusa-react"
+import { useAdminProductTags, useAdminCollections } from "@applifyer/medusa-react"
 import CheckIcon from "../../components/fundamentals/icons/check-icon"
 import PlusIcon from "../../components/fundamentals/icons/plus-icon"
 import FilterDropdownContainer from "../../components/molecules/filter-dropdown/container"

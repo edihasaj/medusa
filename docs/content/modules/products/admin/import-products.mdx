@@ -79,7 +79,7 @@ medusa.admin.uploads.create(file) // file is an instance of File
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUploadFile } from "medusa-react"
+import { useAdminUploadFile } from "@applifyer/medusa-react"
 
 const ImportProducts = () => {
   const uploadFile = useAdminUploadFile()
@@ -159,7 +159,7 @@ medusa.admin.batchJobs.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateBatchJob } from "medusa-react"
+import { useAdminCreateBatchJob } from "@applifyer/medusa-react"
 
 const ImportProducts = () => {
   const createBatchJob = useAdminCreateBatchJob()
@@ -261,7 +261,7 @@ medusa.admin.batchJobs.retrieve(batchJobId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminBatchJob } from "medusa-react"
+import { useAdminBatchJob } from "@applifyer/medusa-react"
 
 const ImportProducts = () => {
   const { batch_job, isLoading } = useAdminBatchJob(batchJobId)
@@ -351,7 +351,7 @@ medusa.admin.batchJobs.confirm(batchJobId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminConfirmBatchJob } from "medusa-react"
+import { useAdminConfirmBatchJob } from "@applifyer/medusa-react"
 
 const ImportProducts = () => {
   const confirmBatchJob = useAdminConfirmBatchJob(batchJobId)

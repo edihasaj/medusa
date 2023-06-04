@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import clsx from "clsx"
 
 import { ProductCategory } from "@medusajs/medusa"
-import { useAdminDeleteProductCategory } from "medusa-react"
+import { useAdminDeleteProductCategory } from "@applifyer/medusa-react"
 
 import { ProductCategoriesContext } from "../pages"
 import Tooltip from "../../../components/atoms/tooltip"

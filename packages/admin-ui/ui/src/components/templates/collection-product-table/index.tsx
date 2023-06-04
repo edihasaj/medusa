@@ -1,4 +1,4 @@
-import { useAdminProducts } from "medusa-react"
+import { useAdminProducts } from "@applifyer/medusa-react"
 import React, { useEffect, useState } from "react"
 import { Column, usePagination, useRowSelect, useTable } from "react-table"
 import { useDebounce } from "../../../hooks/use-debounce"

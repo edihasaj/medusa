@@ -83,7 +83,7 @@ For example, sending the following request creates a price list with two prices:
 import { 
   PriceListStatus, 
   PriceListType, 
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 medusa.admin.priceLists.create({
   name: "New Price List",
@@ -117,8 +117,8 @@ medusa.admin.priceLists.create({
 import { 
   PriceListStatus, 
   PriceListType, 
-} from "@medusajs/medusa"
-import { useAdminCreatePriceList } from "medusa-react"
+} from "@applifyer/medusa"
+import { useAdminCreatePriceList } from "@applifyer/medusa-react"
 
 const CreatePriceList = () => {
   const createPriceList = useAdminCreatePriceList()
@@ -246,8 +246,8 @@ medusa.admin.priceLists.retrieve(priceListId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { CustomerGroup } from "@medusajs/medusa"
-import { useAdminPriceList } from "medusa-react"
+import { CustomerGroup } from "@applifyer/medusa"
+import { useAdminPriceList } from "@applifyer/medusa-react"
 
 const PriceList = () => {
   const { 
@@ -317,8 +317,8 @@ medusa.admin.priceLists.update(priceListId, {
 import { 
   PriceListStatus, 
   PriceListType,
-} from "@medusajs/medusa"
-import { useAdminUpdatePriceList } from "medusa-react"
+} from "@applifyer/medusa"
+import { useAdminUpdatePriceList } from "@applifyer/medusa-react"
 
 const CreatePriceList = () => {
   const updatePriceList = useAdminUpdatePriceList(priceListId)
@@ -409,7 +409,7 @@ medusa.admin.priceLists.addPrices(priceListId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreatePriceListPrices } from "medusa-react"
+import { useAdminCreatePriceListPrices } from "@applifyer/medusa-react"
 
 const PriceList = () => {
   const addPrice = useAdminCreatePriceListPrices(priceListId)
@@ -509,7 +509,7 @@ medusa
 ```tsx
 import { 
   useAdminDeletePriceListProductPrices,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const PriceList = () => {
   const deletePrices = useAdminDeletePriceListProductPrices(
@@ -583,7 +583,7 @@ medusa
 ```tsx
 import { 
   useAdminDeletePriceListVariantPrices,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const PriceList = () => {
   const deleteVariantPrices = 
@@ -655,7 +655,7 @@ medusa.admin.priceLists.delete(priceListId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeletePriceList } from "medusa-react"
+import { useAdminDeletePriceList } from "@applifyer/medusa-react"
 
 const PriceList = () => {
   const deletePriceList = useAdminDeletePriceList(priceListId)

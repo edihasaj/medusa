@@ -3,7 +3,7 @@ import {
   AdminResetPasswordRequest,
   AdminResetPasswordTokenRequest,
   AdminUserRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import {
   AdminCreateUserPayload,
   AdminUpdateUserPayload,

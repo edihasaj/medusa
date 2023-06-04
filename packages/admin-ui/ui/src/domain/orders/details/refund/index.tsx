@@ -1,5 +1,5 @@
 import { Order } from "@medusajs/medusa"
-import { useAdminRefundPayment } from "medusa-react"
+import { useAdminRefundPayment } from "@applifyer/medusa-react"
 import { useMemo, useState } from "react"
 import { Controller, useForm } from "react-hook-form"
 

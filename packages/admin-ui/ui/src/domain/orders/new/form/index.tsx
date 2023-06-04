@@ -4,7 +4,7 @@ import {
   useAdminShippingOption,
   useAdminShippingOptions,
   useMedusa,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { createContext, ReactNode, useContext, useEffect, useMemo } from "react"
 import {
   FormProvider,

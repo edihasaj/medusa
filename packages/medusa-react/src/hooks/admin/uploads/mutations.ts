@@ -4,7 +4,7 @@ import {
   AdminPostUploadsDownloadUrlReq,
   AdminUploadsDownloadUrlRes,
   AdminUploadsRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { AdminCreateUploadPayload, Response } from "@applifyer/medusa-js"
 import {
   useMutation,

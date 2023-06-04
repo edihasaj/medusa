@@ -73,8 +73,8 @@ medusa.products.list({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Product } from "@medusajs/medusa"
-import { useProducts } from "medusa-react"
+import { Product } from "@applifyer/medusa"
+import { useProducts } from "@applifyer/medusa-react"
 
 const Products = () => {
   const { products, isLoading } = useProducts({
@@ -146,7 +146,7 @@ medusa.carts.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useCart } from "medusa-react"
+import { useCart } from "@applifyer/medusa-react"
 
 const Cart = () => {
   const { cart, createCart } = useCart()
@@ -214,7 +214,7 @@ medusa.carts.update(cartId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useCart } from "medusa-react"
+import { useCart } from "@applifyer/medusa-react"
 
 const Cart = () => {
   // ...

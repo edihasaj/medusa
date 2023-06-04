@@ -1,5 +1,5 @@
 import { FulfillmentProvider, PaymentProvider, Store } from "@medusajs/medusa"
-import { useAdminStore } from "medusa-react"
+import { useAdminStore } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { countries } from "../../../../../utils/countries"
 import fulfillmentProvidersMapper from "../../../../../utils/fulfillment-providers.mapper"

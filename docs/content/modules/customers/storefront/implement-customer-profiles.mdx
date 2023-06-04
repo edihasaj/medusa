@@ -79,7 +79,7 @@ medusa.customers.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useCreateCustomer } from "medusa-react"
+import { useCreateCustomer } from "@applifyer/medusa-react"
 
 const RegisterCustomer = () => {
   const createCustomer = useCreateCustomer()
@@ -368,7 +368,7 @@ medusa.customers.update({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useUpdateMe } from "medusa-react"
+import { useUpdateMe } from "@applifyer/medusa-react"
 
 const UpdateCustomer = () => {
   const updateCustomer = useUpdateMe()
@@ -611,8 +611,8 @@ medusa.customers.listOrders()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useCustomerOrders } from "medusa-react"
-import { Order } from "@medusajs/medusa"
+import { useCustomerOrders } from "@applifyer/medusa-react"
+import { Order } from "@applifyer/medusa"
 
 const Orders = () => {
   // refetch a function that can be used to

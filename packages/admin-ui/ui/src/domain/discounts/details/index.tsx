@@ -1,4 +1,4 @@
-import { useAdminDeleteDiscount, useAdminDiscount } from "medusa-react"
+import { useAdminDeleteDiscount, useAdminDiscount } from "@applifyer/medusa-react"
 import { useState } from "react"
 import { useParams } from "react-router-dom"
 import BackButton from "../../../components/atoms/back-button"

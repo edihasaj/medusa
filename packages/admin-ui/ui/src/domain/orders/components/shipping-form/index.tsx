@@ -1,7 +1,7 @@
 import { Order } from "@medusajs/medusa"
 import { PricedShippingOption } from "@medusajs/medusa/dist/types/pricing"
 import clsx from "clsx"
-import { useAdminShippingOptions } from "medusa-react"
+import { useAdminShippingOptions } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { Controller, useWatch } from "react-hook-form"
 import PriceFormInput from "../../../../components/forms/general/prices-form/price-form-input"

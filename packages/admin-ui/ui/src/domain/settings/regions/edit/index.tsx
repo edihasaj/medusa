@@ -1,4 +1,4 @@
-import { useAdminRegion } from "medusa-react"
+import { useAdminRegion } from "@applifyer/medusa-react"
 import Spinner from "../../../../components/atoms/spinner"
 import GeneralSection from "./general-section"
 import ReturnShippingOptions from "./return-shipping-options"

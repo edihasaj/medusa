@@ -1,4 +1,4 @@
-import { useAdminOrder, useAdminOrderEdits } from "medusa-react"
+import { useAdminOrder, useAdminOrderEdits } from "@applifyer/medusa-react"
 import React, { useState } from "react"
 
 import { RefundRequiredEvent } from "../../../../hooks/use-build-timeline"

@@ -1,5 +1,5 @@
 import { Order } from "@medusajs/medusa"
-import { useAdminOrders } from "medusa-react"
+import { useAdminOrders } from "@applifyer/medusa-react"
 import { useState } from "react"
 import { useTable, usePagination } from "react-table"
 import RefreshIcon from "../../fundamentals/icons/refresh-icon"

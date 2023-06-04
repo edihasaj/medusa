@@ -1,5 +1,5 @@
 import { Discount } from "@medusajs/medusa"
-import { useAdminRegions } from "medusa-react"
+import { useAdminRegions } from "@applifyer/medusa-react"
 import React, { useEffect, useMemo, useState } from "react"
 import { Controller, useWatch } from "react-hook-form"
 import Checkbox from "../../../../../components/atoms/checkbox"

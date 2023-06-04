@@ -1,5 +1,5 @@
 import { AnalyticsBrowser } from "@segment/analytics-next"
-import { useAdminGetSession, useAdminStore, useAdminUsers } from "medusa-react"
+import { useAdminGetSession, useAdminStore, useAdminUsers } from "@applifyer/medusa-react"
 import React, {
   createContext,
   useCallback,

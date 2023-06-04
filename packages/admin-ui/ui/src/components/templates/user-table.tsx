@@ -1,6 +1,6 @@
 import { Invite, User } from "@medusajs/medusa"
 import copy from "copy-to-clipboard"
-import { useAdminStore } from "medusa-react"
+import { useAdminStore } from "@applifyer/medusa-react"
 import React, { useEffect, useMemo, useState } from "react"
 import useNotification from "../../hooks/use-notification"
 import Medusa from "../../services/api"

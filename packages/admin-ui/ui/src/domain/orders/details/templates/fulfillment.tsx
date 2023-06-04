@@ -3,7 +3,7 @@ import {
   useAdminCancelClaimFulfillment,
   useAdminCancelFulfillment,
   useAdminCancelSwapFulfillment,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import IconBadge from "../../../../components/fundamentals/icon-badge"
 import BuildingsIcon from "../../../../components/fundamentals/icons/buildings-icon"
 import CancelIcon from "../../../../components/fundamentals/icons/cancel-icon"

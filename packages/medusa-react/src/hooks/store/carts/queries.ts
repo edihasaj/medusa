@@ -1,4 +1,4 @@
-import { StoreCartsRes } from "@medusajs/medusa"
+import { StoreCartsRes } from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts/medusa"
@@ -21,6 +21,7 @@ export const useGetCart = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     cartKeys.detail(id),
+    // @ts-ignore
     () => client.carts.retrieve(id),
     options
   )

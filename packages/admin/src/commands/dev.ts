@@ -1,5 +1,5 @@
-import type { AdminDevConfig } from "@medusajs/admin-ui"
-import { dev as devAdmin } from "@medusajs/admin-ui"
+import type { AdminDevConfig } from "@applifyer/admin-ui"
+import { dev as devAdmin } from "@applifyer/admin-ui"
 
 export default async function dev(args: AdminDevConfig) {
   await devAdmin(args)

@@ -12,7 +12,7 @@ import CrossIcon from "../../../fundamentals/icons/cross-icon"
 import FocusModal from "../../../molecules/modal/focus-modal"
 import { getErrorMessage } from "../../../../utils/error-messages"
 import { nestedForm } from "../../../../utils/nested-form"
-import { useAdminCreateReservation } from "medusa-react"
+import { useAdminCreateReservation } from "@applifyer/medusa-react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../../hooks/use-notification"
 

@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react"
-import { useAdminProductTypes } from "medusa-react"
+import { useAdminProductTypes } from "@applifyer/medusa-react"
 import { SelectableTable } from "./selectable-table"
 
 export const ProductTypeSelector = ({ items, onChange }) => {

@@ -9,7 +9,7 @@ import {
   AdminPaymentRes,
   AdminPostPaymentRefundsReq,
   AdminRefundRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import { useMedusa } from "../../../contexts"
 import { buildOptions } from "../../utils/buildOptions"
@@ -22,6 +22,7 @@ export const useAdminPaymentsCapturePayment = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
 
+  // @ts-ignore
   return useMutation(
     () => client.admin.payments.capturePayment(id),
     buildOptions(
@@ -44,6 +45,7 @@ export const useAdminPaymentsRefundPayment = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostPaymentRefundsReq) =>
       client.admin.payments.refundPayment(id, payload),
     buildOptions(

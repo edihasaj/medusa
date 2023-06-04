@@ -1,5 +1,5 @@
 import { Product } from "@medusajs/medusa"
-import { useAdminProducts } from "medusa-react"
+import { useAdminProducts } from "@applifyer/medusa-react"
 import * as React from "react"
 import Button from "../../fundamentals/button"
 import Modal from "../../molecules/modal"

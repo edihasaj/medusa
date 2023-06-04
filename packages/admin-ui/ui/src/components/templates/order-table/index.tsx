@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import { isEmpty } from "lodash"
-import { useAdminOrders } from "medusa-react"
+import { useAdminOrders } from "@applifyer/medusa-react"
 import qs from "qs"
 import React, { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"

@@ -1,4 +1,4 @@
-import { useAdminSalesChannels } from "medusa-react"
+import { useAdminSalesChannels } from "@applifyer/medusa-react"
 import React, { useMemo, useState } from "react"
 import { usePagination, useRowSelect, useTable } from "react-table"
 import { useDebounce } from "../../../../hooks/use-debounce"

@@ -1,4 +1,4 @@
-import { useAdminGetDiscountCondition } from "medusa-react"
+import { useAdminGetDiscountCondition } from "@applifyer/medusa-react"
 import React, { useEffect, useMemo, useState } from "react"
 import Badge from "../../../../../../components/fundamentals/badge"
 import EditIcon from "../../../../../../components/fundamentals/icons/edit-icon"

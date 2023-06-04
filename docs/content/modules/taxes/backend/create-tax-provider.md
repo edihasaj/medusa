@@ -25,7 +25,7 @@ import {
   ItemTaxCalculationLine,
   ShippingTaxCalculationLine,
   TaxCalculationContext,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { 
   ProviderTaxLine,
 } from "@medusajs/medusa/dist/types/tax-service"
@@ -51,7 +51,7 @@ You can use a constructor to access services and resources registered in the dep
 
 ```ts title=src/services/my-tax.ts
 // ...
-import { LineItemService } from "@medusajs/medusa"
+import { LineItemService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   lineItemService: LineItemService

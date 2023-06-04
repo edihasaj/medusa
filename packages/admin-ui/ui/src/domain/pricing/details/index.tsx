@@ -1,4 +1,4 @@
-import { useAdminPriceList } from "medusa-react"
+import { useAdminPriceList } from "@applifyer/medusa-react"
 import { useParams } from "react-router-dom"
 import BackButton from "../../../components/atoms/back-button"
 import RawJSON from "../../../components/organisms/raw-json"

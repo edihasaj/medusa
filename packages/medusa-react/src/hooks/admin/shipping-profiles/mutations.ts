@@ -2,7 +2,7 @@ import {
   AdminDeleteShippingProfileRes,
   AdminPostShippingProfilesReq,
   AdminShippingProfilesRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,
@@ -23,6 +23,7 @@ export const useAdminCreateShippingProfile = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostShippingProfilesReq) =>
       client.admin.shippingProfiles.create(payload),
     buildOptions(queryClient, adminShippingProfileKeys.lists(), options)
@@ -41,6 +42,7 @@ export const useAdminUpdateShippingProfile = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostShippingProfilesReq) =>
       client.admin.shippingProfiles.update(id, payload),
     buildOptions(

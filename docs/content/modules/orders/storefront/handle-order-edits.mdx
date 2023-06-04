@@ -87,7 +87,7 @@ medusa.orderEdits.retrieve(orderEditId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useOrderEdit } from "medusa-react"
+import { useOrderEdit } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const { order_edit, isLoading } = useOrderEdit(orderEditId)
@@ -218,7 +218,7 @@ medusa.paymentCollections.managePaymentSession(paymentCollectionId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useManagePaymentSession } from "medusa-react"
+import { useManagePaymentSession } from "@applifyer/medusa-react"
 
 const OrderEditPayment = () => {
   const managePaymentSession = useManagePaymentSession(
@@ -288,7 +288,7 @@ medusa
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAuthorizePaymentSession } from "medusa-react"
+import { useAuthorizePaymentSession } from "@applifyer/medusa-react"
 
 const OrderEditPayment = () => {
   const authorizePaymentSession = useAuthorizePaymentSession(
@@ -351,7 +351,7 @@ medusa.orderEdits.complete(orderEditId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useCompleteOrderEdit } from "medusa-react"
+import { useCompleteOrderEdit } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const completeOrderEdit = useCompleteOrderEdit(orderEditId)
@@ -420,7 +420,7 @@ medusa.orderEdits.decline(orderEditId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useDeclineOrderEdit } from "medusa-react"
+import { useDeclineOrderEdit } from "@applifyer/medusa-react"
 
 const OrderEdit = () => {
   const declineOrderEdit = useDeclineOrderEdit(orderEditId)

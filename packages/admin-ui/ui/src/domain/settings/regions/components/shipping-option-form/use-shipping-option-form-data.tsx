@@ -1,7 +1,7 @@
 import {
   useAdminRegionFulfillmentOptions,
   useAdminShippingProfiles,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { ShippingOptionFormType } from "."
 import { Option } from "../../../../../types/shared"

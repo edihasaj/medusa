@@ -1,4 +1,4 @@
-import { useAdminDraftOrders } from "medusa-react"
+import { useAdminDraftOrders } from "@applifyer/medusa-react"
 import { Fragment, useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
 import { usePagination, useTable } from "react-table"

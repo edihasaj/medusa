@@ -1,5 +1,5 @@
 import { User } from "@medusajs/medusa"
-import { useAdminUpdateUser } from "medusa-react"
+import { useAdminUpdateUser } from "@applifyer/medusa-react"
 import React, { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"

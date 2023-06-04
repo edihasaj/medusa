@@ -68,7 +68,7 @@ medusa.admin.draftOrders.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDraftOrders } from "medusa-react"
+import { useAdminDraftOrders } from "@applifyer/medusa-react"
 
 const DraftOrders = () => {
   const { draft_orders, isLoading } = useAdminDraftOrders()
@@ -164,7 +164,7 @@ medusa.admin.draftOrders.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateDraftOrder } from "medusa-react"
+import { useAdminCreateDraftOrder } from "@applifyer/medusa-react"
 
 const CreateDraftOrder = () => {
   const createDraftOrder = useAdminCreateDraftOrder()
@@ -314,7 +314,7 @@ medusa.admin.draftOrders.retrieve(draftOrderId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDraftOrder } from "medusa-react"
+import { useAdminDraftOrder } from "@applifyer/medusa-react"
 
 const DraftOrder = () => {
   const { 
@@ -384,7 +384,7 @@ medusa.admin.draftOrders.update(draftOrderId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateDraftOrder } from "medusa-react"
+import { useAdminUpdateDraftOrder } from "@applifyer/medusa-react"
 
 const UpdateDraftOrder = () => {
   const updateDraftOrder = useAdminUpdateDraftOrder(
@@ -469,7 +469,7 @@ medusa.admin.draftOrders.addLineItem(draftOrderId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDraftOrderAddLineItem } from "medusa-react"
+import { useAdminDraftOrderAddLineItem } from "@applifyer/medusa-react"
 
 const AddLineItem = () => {
   const addLineItem = useAdminDraftOrderAddLineItem(
@@ -559,7 +559,7 @@ medusa.admin.draftOrders.updateLineItem(draftOrderId, itemId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDraftOrderUpdateLineItem } from "medusa-react"
+import { useAdminDraftOrderUpdateLineItem } from "@applifyer/medusa-react"
 
 const UpdateLineItem = () => {
   const updateLineItem = useAdminDraftOrderUpdateLineItem(
@@ -641,7 +641,7 @@ medusa.admin.draftOrders.removeLineItem(draftOrderId, itemId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDraftOrderRemoveLineItem } from "medusa-react"
+import { useAdminDraftOrderRemoveLineItem } from "@applifyer/medusa-react"
 
 const DeleteLineItem = () => {
   const deleteLineItem = useAdminDraftOrderRemoveLineItem(
@@ -712,7 +712,7 @@ medusa.admin.draftOrders.markPaid(draftOrderId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDraftOrderRegisterPayment } from "medusa-react"
+import { useAdminDraftOrderRegisterPayment } from "@applifyer/medusa-react"
 
 const RegisterPayment = () => {
   const registerPayment = useAdminDraftOrderRegisterPayment(
@@ -779,7 +779,7 @@ medusa.admin.draftOrders.delete(draftOrderId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteDraftOrder } from "medusa-react"
+import { useAdminDeleteDraftOrder } from "@applifyer/medusa-react"
 
 const DeleteDraftOrder = () => {
   const deleteDraftOrder = useAdminDeleteDraftOrder(

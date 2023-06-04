@@ -68,7 +68,7 @@ medusa.admin.products.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminProducts } from "medusa-react"
+import { useAdminProducts } from "@applifyer/medusa-react"
 
 const Products = () => {
   const { products, isLoading } = useAdminProducts()
@@ -186,7 +186,7 @@ medusa.admin.products.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateProduct } from "medusa-react"
+import { useAdminCreateProduct } from "@applifyer/medusa-react"
 
 const CreateProduct = () => {
   const createProduct = useAdminCreateProduct()
@@ -415,7 +415,7 @@ medusa.admin.products.retrieve(productId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminProduct } from "medusa-react"
+import { useAdminProduct } from "@applifyer/medusa-react"
 
 const Product = () => {
   const { 
@@ -485,7 +485,7 @@ medusa.admin.products.update(productId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateProduct } from "medusa-react"
+import { useAdminUpdateProduct } from "@applifyer/medusa-react"
 
 const UpdateProduct = () => {
   const updateProduct = useAdminUpdateProduct(
@@ -576,7 +576,7 @@ medusa.admin.products.addOption(productId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateProductOption } from "medusa-react"
+import { useAdminCreateProductOption } from "@applifyer/medusa-react"
 
 const CreateProductOption = () => {
   const createOption = useAdminCreateProductOption(
@@ -655,7 +655,7 @@ medusa.admin.products.updateOption(productId, optionId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateProductOption } from "medusa-react"
+import { useAdminUpdateProductOption } from "@applifyer/medusa-react"
 
 const UpdateProductOption = () => {
   const updateOption = useAdminUpdateProductOption(
@@ -737,7 +737,7 @@ medusa.admin.products.deleteOption(productId, optionId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteProductOption } from "medusa-react"
+import { useAdminDeleteProductOption } from "@applifyer/medusa-react"
 
 const DeleteProductOption = () => {
   const deleteOption = useAdminDeleteProductOption(
@@ -833,7 +833,7 @@ medusa.admin.products.createVariant(product_id, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateVariant } from "medusa-react"
+import { useAdminCreateVariant } from "@applifyer/medusa-react"
 
 const CreateProductVariant = () => {
   const createVariant = useAdminCreateVariant(
@@ -956,7 +956,7 @@ medusa.admin.products.updateVariant(productId, variantId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateVariant } from "medusa-react"
+import { useAdminUpdateVariant } from "@applifyer/medusa-react"
 
 const UpdateProductVariant = () => {
   const updateVariant = useAdminUpdateVariant(
@@ -1038,7 +1038,7 @@ medusa.admin.products.deleteVariant(productId, variantId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteVariant } from "medusa-react"
+import { useAdminDeleteVariant } from "@applifyer/medusa-react"
 
 const DeleteProductVariant = () => {
   const deleteVariant = useAdminDeleteVariant(
@@ -1112,7 +1112,7 @@ medusa.admin.products.delete(productId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteProduct } from "medusa-react"
+import { useAdminDeleteProduct } from "@applifyer/medusa-react"
 
 const DeleteProduct = () => {
   const deleteProduct = useAdminDeleteProduct(

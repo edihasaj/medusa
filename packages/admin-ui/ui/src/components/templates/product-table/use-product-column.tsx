@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { useAdminStore } from "medusa-react"
+import { useAdminStore } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { defaultChannelsSorter } from "../../../utils/sales-channel-compare-operator"
 import DelimitedList from "../../molecules/delimited-list"

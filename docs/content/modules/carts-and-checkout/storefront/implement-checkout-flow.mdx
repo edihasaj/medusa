@@ -89,7 +89,7 @@ medusa.carts.update(cartId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```ts
-import { useCart } from "medusa-react"
+import { useCart } from "@applifyer/medusa-react"
 
 const Cart = () => {
   // ...
@@ -180,8 +180,8 @@ medusa.shippingOptions.listCartOptions(cartId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { ShippingOption } from "@medusajs/medusa"
-import { useCartShippingOptions } from "medusa-react"
+import { ShippingOption } from "@applifyer/medusa"
+import { useCartShippingOptions } from "@applifyer/medusa-react"
 
 type Props = {
   cartId: string
@@ -253,7 +253,7 @@ medusa.carts.addShippingMethod(cartId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```ts
-import { useAddShippingMethodToCart } from "medusa-react"
+import { useAddShippingMethodToCart } from "@applifyer/medusa-react"
 // ...
 
 const ShippingOptions = ({ cartId }: Props) => {
@@ -326,7 +326,7 @@ medusa.carts.createPaymentSessions(cartId)
 
 ```tsx
 import { PaymentSession } from "@medusajs/medusa"
-import { useCart } from "medusa-react"
+import { useCart } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 
 const PaymentProviders = () => {
@@ -397,7 +397,7 @@ medusa.carts.setPaymentSession(cartId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```ts
-import { useCart } from "medusa-react"
+import { useCart } from "@applifyer/medusa-react"
 
 const PaymentProviders = () => {
   const { cart, startCheckout, pay } = useCart()
@@ -475,7 +475,7 @@ medusa.carts.updatePaymentSession(cartId, paymentProviderId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```ts
-import { useUpdatePaymentSession, useCart } from "medusa-react"
+import { useUpdatePaymentSession, useCart } from "@applifyer/medusa-react"
 // ...
 
 const PaymentProviders = () => {
@@ -555,7 +555,7 @@ medusa.carts.complete(cartId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```ts
-import { useCart } from "medusa-react"
+import { useCart } from "@applifyer/medusa-react"
 // ...
 
 const Cart = () => {

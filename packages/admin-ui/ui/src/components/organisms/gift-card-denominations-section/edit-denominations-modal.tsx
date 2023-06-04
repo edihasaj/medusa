@@ -4,7 +4,7 @@ import {
   adminProductKeys,
   useAdminStore,
   useAdminUpdateVariant,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useCallback, useEffect } from "react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"

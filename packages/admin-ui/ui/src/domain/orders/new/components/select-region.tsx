@@ -1,4 +1,4 @@
-import { useAdminRegions } from "medusa-react"
+import { useAdminRegions } from "@applifyer/medusa-react"
 import React, { useEffect, useMemo } from "react"
 import { Controller, useWatch } from "react-hook-form"
 import { SteppedContext } from "../../../../components/molecules/modal/stepped-modal"

@@ -23,7 +23,7 @@ import {
   IPriceSelectionStrategy, 
   PriceSelectionContext, 
   PriceSelectionResult,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import { EntityManager } from "typeorm"
 
@@ -57,7 +57,7 @@ import {
   IPriceSelectionStrategy, 
   PriceSelectionContext, 
   PriceSelectionResult, 
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 export default class MyStrategy extends 
   AbstractPriceSelectionStrategy {

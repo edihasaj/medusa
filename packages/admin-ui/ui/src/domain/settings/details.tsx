@@ -1,5 +1,5 @@
 import { Store } from "@medusajs/medusa"
-import { useAdminStore, useAdminUpdateStore } from "medusa-react"
+import { useAdminStore, useAdminUpdateStore } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import BackButton from "../../components/atoms/back-button"

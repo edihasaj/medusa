@@ -1,5 +1,5 @@
 import { isEmpty } from "lodash"
-import { useAdminDiscounts } from "medusa-react"
+import { useAdminDiscounts } from "@applifyer/medusa-react"
 import qs from "qs"
 import React, { useEffect, useState } from "react"
 import { usePagination, useTable } from "react-table"

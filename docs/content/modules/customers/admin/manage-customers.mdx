@@ -68,8 +68,8 @@ medusa.admin.customers.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Customer } from "@medusajs/medusa"
-import { useAdminCustomers } from "medusa-react"
+import { Customer } from "@applifyer/medusa"
+import { useAdminCustomers } from "@applifyer/medusa-react"
 
 const Customers = () => {
   const { customers, isLoading } = useAdminCustomers()
@@ -160,7 +160,7 @@ medusa.admin.customers.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateCustomer } from "medusa-react"
+import { useAdminCreateCustomer } from "@applifyer/medusa-react"
 
 const CreateCustomer = () => {
   const createCustomer = useAdminCreateCustomer()
@@ -264,7 +264,7 @@ medusa.admin.customers.update(customerId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateCustomer } from "medusa-react"
+import { useAdminUpdateCustomer } from "@applifyer/medusa-react"
 
 const UpdateCustomer = () => {
   const updateCustomer = useAdminUpdateCustomer(customerId)

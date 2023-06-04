@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react"
 import { Route, Routes, useNavigate } from "react-router-dom"
 
-import { useAdminCreateBatchJob } from "medusa-react"
+import { useAdminCreateBatchJob } from "@applifyer/medusa-react"
 import Spacer from "../../components/atoms/spacer"
 import Button from "../../components/fundamentals/button"
 import ExportIcon from "../../components/fundamentals/icons/export-icon"

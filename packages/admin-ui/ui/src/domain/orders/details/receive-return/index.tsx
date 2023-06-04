@@ -8,7 +8,7 @@ import {
   Return,
   StockLocationDTO,
 } from "@medusajs/medusa"
-import { useAdminOrder, useAdminReceiveReturn, useMedusa } from "medusa-react"
+import { useAdminOrder, useAdminReceiveReturn, useMedusa } from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 import { useForm, useWatch } from "react-hook-form"
 import Button from "../../../../components/fundamentals/button"
@@ -23,7 +23,7 @@ import { RefundAmountFormType } from "../../components/refund-amount-form"
 import { ReceiveReturnSummary } from "../../components/rma-summaries/receive-return-summary"
 import { getDefaultReceiveReturnValues } from "../utils/get-default-values"
 import useOrdersExpandParam from "../utils/use-admin-expand-paramter"
-import { useAdminStockLocations } from "medusa-react"
+import { useAdminStockLocations } from "@applifyer/medusa-react"
 import Select from "../../../../components/molecules/select/next-select/select"
 import Spinner from "../../../../components/atoms/spinner"
 

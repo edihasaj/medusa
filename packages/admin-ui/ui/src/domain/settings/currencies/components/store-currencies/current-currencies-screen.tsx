@@ -1,6 +1,6 @@
 import { Currency } from "@medusajs/medusa"
 import clsx from "clsx"
-import { useAdminUpdateStore } from "medusa-react"
+import { useAdminUpdateStore } from "@applifyer/medusa-react"
 import { useMemo, useState } from "react"
 import { usePagination, useRowSelect, useSortBy, useTable } from "react-table"
 import Button from "../../../../../components/fundamentals/button"

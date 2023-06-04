@@ -1,6 +1,6 @@
 import { SalesChannel } from "@medusajs/medusa"
 import clsx from "clsx"
-import { useAdminStore } from "medusa-react"
+import { useAdminStore } from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"
 import { useFieldArray } from "react-hook-form"
 import Switch from "../../../components/atoms/switch"

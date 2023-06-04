@@ -67,7 +67,7 @@ medusa.admin.taxRates.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminTaxRates } from "medusa-react"
+import { useAdminTaxRates } from "@applifyer/medusa-react"
 
 const TaxRates = () => {
   const { tax_rates, isLoading } = useAdminTaxRates()
@@ -140,7 +140,7 @@ medusa.admin.taxRates.list({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminTaxRates } from "medusa-react"
+import { useAdminTaxRates } from "@applifyer/medusa-react"
 
 const TaxRates = () => {
   const { tax_rates, isLoading } = useAdminTaxRates({
@@ -211,7 +211,7 @@ medusa.admin.taxRates.list({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminTaxRates } from "medusa-react"
+import { useAdminTaxRates } from "@applifyer/medusa-react"
 
 const TaxRates = () => {
   const { tax_rates, isLoading } = useAdminTaxRates({
@@ -289,7 +289,7 @@ medusa.admin.taxRates.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateTaxRate } from "medusa-react"
+import { useAdminCreateTaxRate } from "@applifyer/medusa-react"
 
 const CreateTaxRate = () => {
   const createTaxRate = useAdminCreateTaxRate()
@@ -389,7 +389,7 @@ medusa.admin.taxRates.update(taxRateId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateTaxRate } from "medusa-react"
+import { useAdminUpdateTaxRate } from "@applifyer/medusa-react"
 
 const UpdateTaxRate = () => {
   const updateTaxRate = useAdminUpdateTaxRate(taxRateId)
@@ -476,7 +476,7 @@ medusa.admin.taxRates.addProducts(taxRateId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateProductTaxRates } from "medusa-react"
+import { useAdminCreateProductTaxRates } from "@applifyer/medusa-react"
 
 const AddProduct = () => {
   const addProduct = useAdminCreateProductTaxRates(taxRateId)
@@ -565,7 +565,7 @@ medusa.admin.taxRates.removeProducts(taxRateId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteProductTaxRates } from "medusa-react"
+import { useAdminDeleteProductTaxRates } from "@applifyer/medusa-react"
 
 const RemoveProduct = () => {
   const removeProduct = useAdminDeleteProductTaxRates(taxRateId)
@@ -662,7 +662,7 @@ medusa.admin.taxRates.addProductTypes(taxRateId, {
 ```tsx
 import { 
   useAdminCreateProductTypeTaxRates,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const AddProductTypes = () => {
   const addProductTypes = useAdminCreateProductTypeTaxRates(
@@ -755,7 +755,7 @@ medusa.admin.taxRates.removeProductTypes(taxRateId, {
 ```tsx
 import { 
   useAdminDeleteProductTypeTaxRates,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const RemoveProductTypes = () => {
   const removeProductTypes = useAdminDeleteProductTypeTaxRates(
@@ -852,7 +852,7 @@ medusa.admin.taxRates.addShippingOptions(taxRateId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateShippingTaxRates } from "medusa-react"
+import { useAdminCreateShippingTaxRates } from "@applifyer/medusa-react"
 
 const AddShippingOptions = () => {
   const addShippingOption = useAdminCreateShippingTaxRates(
@@ -943,7 +943,7 @@ medusa.admin.taxRates.removeShippingOptions(taxRateId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteShippingTaxRates } from "medusa-react"
+import { useAdminDeleteShippingTaxRates } from "@applifyer/medusa-react"
 
 const RemoveShippingOptions = () => {
   const removeShippingOptions = useAdminDeleteShippingTaxRates(
@@ -1032,7 +1032,7 @@ medusa.admin.taxRates.delete(taxRateId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteTaxRate } from "medusa-react"
+import { useAdminDeleteTaxRate } from "@applifyer/medusa-react"
 
 const DeleteTaxRate = () => {
   const deleteTaxRate = useAdminDeleteTaxRate(taxRateId)

@@ -2,7 +2,7 @@ import {
   useAdminCreateProduct,
   useAdminProducts,
   useAdminStore,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { Controller, useFieldArray, useForm, useWatch } from "react-hook-form"
 import { useNavigate } from "react-router-dom"
 import FileUploadField from "../../components/atoms/file-upload-field"

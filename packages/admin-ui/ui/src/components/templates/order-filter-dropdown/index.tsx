@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { useAdminRegions, useAdminSalesChannels } from "medusa-react"
+import { useAdminRegions, useAdminSalesChannels } from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"
 import FilterDropdownContainer from "../../../components/molecules/filter-dropdown/container"
 import FilterDropdownItem from "../../../components/molecules/filter-dropdown/item"

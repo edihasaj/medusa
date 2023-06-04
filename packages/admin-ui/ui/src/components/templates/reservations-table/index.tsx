@@ -4,7 +4,7 @@ import {
   useAdminReservations,
   useAdminStockLocations,
   useAdminStore,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import Button from "../../fundamentals/button"
 import DeletePrompt from "../../organisms/delete-prompt"
@@ -19,7 +19,7 @@ import TableContainer from "../../../components/organisms/table-container"
 import TrashIcon from "../../fundamentals/icons/trash-icon"
 import { isEmpty } from "lodash"
 import qs from "qs"
-import { useAdminDeleteReservation } from "medusa-react"
+import { useAdminDeleteReservation } from "@applifyer/medusa-react"
 import { useLocation } from "react-router-dom"
 import { useReservationFilters } from "./use-reservation-filters"
 import useReservationsTableColumns from "./use-reservations-columns"

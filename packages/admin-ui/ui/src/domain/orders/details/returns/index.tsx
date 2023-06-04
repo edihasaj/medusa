@@ -15,7 +15,7 @@ import {
   useAdminShippingOptions,
   useAdminStockLocations,
   useMedusa,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import Button from "../../../../components/fundamentals/button"
 import CheckIcon from "../../../../components/fundamentals/icons/check-icon"

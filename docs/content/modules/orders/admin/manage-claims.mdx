@@ -74,7 +74,7 @@ medusa.admin.orders.retrieve(orderId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminOrder } from "medusa-react"
+import { useAdminOrder } from "@applifyer/medusa-react"
 
 const Order = () => {
   const { 
@@ -161,7 +161,7 @@ medusa.admin.orders.createClaim(orderId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateClaim } from "medusa-react"
+import { useAdminCreateClaim } from "@applifyer/medusa-react"
 
 const CreateClaim = () => {
   const createClaim = useAdminCreateClaim(orderId)
@@ -273,7 +273,7 @@ medusa.admin.orders.updateClaim(orderId, claimId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateClaim } from "medusa-react"
+import { useAdminUpdateClaim } from "@applifyer/medusa-react"
 
 const UpdateClaim = () => {
   const updateClaim = useAdminUpdateClaim(orderId)
@@ -363,7 +363,7 @@ medusa.admin.orders.fulfillClaim(orderId, claimId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminFulfillClaim } from "medusa-react"
+import { useAdminFulfillClaim } from "@applifyer/medusa-react"
 
 const FulfillClaim = () => {
   const fulfillClaim = useAdminFulfillClaim(orderId)
@@ -434,7 +434,7 @@ medusa.admin.orders.createClaimShipment(orderId, claimId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateClaimShipment } from "medusa-react"
+import { useAdminCreateClaimShipment } from "@applifyer/medusa-react"
 
 const CreateShipment = () => {
   const createShipment = useAdminCreateClaimShipment(orderId)
@@ -528,7 +528,7 @@ medusa.admin.orders.cancelClaimFulfillment(
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCancelClaimFulfillment } from "medusa-react"
+import { useAdminCancelClaimFulfillment } from "@applifyer/medusa-react"
 
 const CancelFulfillment = () => {
   const cancelFulfillment = useAdminCancelClaimFulfillment(
@@ -608,7 +608,7 @@ medusa.admin.orders.cancelClaim(orderId, claimId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCancelClaim } from "medusa-react"
+import { useAdminCancelClaim } from "@applifyer/medusa-react"
 
 const CancelClaim = () => {
   const cancelClaim = useAdminCancelClaim(orderId)

@@ -1,5 +1,5 @@
 import { AdminGetBatchParams, BatchJob } from "@medusajs/medusa"
-import { useAdminBatchJobs } from "medusa-react"
+import { useAdminBatchJobs } from "@applifyer/medusa-react"
 import React, { PropsWithChildren, useCallback, useMemo } from "react"
 
 type IPollingContext = {

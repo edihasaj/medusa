@@ -3,7 +3,7 @@ import {
   useAdminDiscount,
   useAdminDiscountRemoveCondition,
   useAdminGetDiscountCondition,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useState } from "react"
 import EditIcon from "../../../../components/fundamentals/icons/edit-icon"
 import TrashIcon from "../../../../components/fundamentals/icons/trash-icon"

@@ -9,7 +9,7 @@ import {
   SortingState,
   useReactTable,
 } from "@tanstack/react-table"
-import { useAdminVariants } from "medusa-react"
+import { useAdminVariants } from "@applifyer/medusa-react"
 import { useMemo, useState } from "react"
 import Button from "../../../../../components/fundamentals/button"
 import Modal from "../../../../../components/molecules/modal"

@@ -28,7 +28,7 @@ import {
   LineItemTaxLine,
   ShippingMethodTaxLine,
   TaxCalculationContext,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 class TaxCalculationStrategy 
   implements ITaxCalculationStrategy {
@@ -56,7 +56,7 @@ You can use a constructor to access services and resources registered in the dep
 // ...
 import {
   LineItemService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 type InjectedDependencies = {
   lineItemService: LineItemService

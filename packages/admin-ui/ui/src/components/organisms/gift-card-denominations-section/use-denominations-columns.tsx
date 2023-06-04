@@ -1,6 +1,6 @@
 import { MoneyAmount, ProductVariant } from "@medusajs/medusa"
 import { createColumnHelper } from "@tanstack/react-table"
-import { useAdminDeleteVariant, useAdminStore } from "medusa-react"
+import { useAdminDeleteVariant, useAdminStore } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import useImperativeDialog from "../../../hooks/use-imperative-dialog"
 import useNotification from "../../../hooks/use-notification"

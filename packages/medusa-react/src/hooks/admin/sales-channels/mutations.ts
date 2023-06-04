@@ -5,7 +5,7 @@ import {
   AdminPostSalesChannelsSalesChannelReq,
   AdminSalesChannelsDeleteRes,
   AdminSalesChannelsRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,
@@ -36,6 +36,7 @@ export const useAdminCreateSalesChannel = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostSalesChannelsReq) =>
       client.admin.salesChannels.create(payload),
     buildOptions(queryClient, [adminSalesChannelsKeys.list()], options)
@@ -59,6 +60,7 @@ export const useAdminUpdateSalesChannel = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostSalesChannelsSalesChannelReq) =>
       client.admin.salesChannels.update(id, payload),
     buildOptions(
@@ -115,6 +117,7 @@ export const useAdminDeleteProductsFromSalesChannel = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
   return useMutation(
+    // @ts-ignore
     (payload: AdminDeleteSalesChannelsChannelProductsBatchReq) => {
       return client.admin.salesChannels.removeProducts(id, payload)
     },
@@ -149,6 +152,7 @@ export const useAdminAddProductsToSalesChannel = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostSalesChannelsChannelProductsBatchReq) => {
       return client.admin.salesChannels.addProducts(id, payload)
     },
@@ -183,6 +187,7 @@ export const useAdminAddLocationToSalesChannel = (
 ) => {
   const { client } = useMedusa()
   const queryClient = useQueryClient()
+  // @ts-ignore
   return useMutation(({ sales_channel_id, location_id }) => {
     return client.admin.salesChannels.addLocation(sales_channel_id, {
       location_id,
@@ -218,6 +223,7 @@ export const useAdminRemoveLocationFromSalesChannel = (
 ) => {
   const { client } = useMedusa()
   const queryClient = useQueryClient()
+  // @ts-ignore
   return useMutation(({ sales_channel_id, location_id }) => {
     return client.admin.salesChannels.removeLocation(sales_channel_id, {
       location_id,

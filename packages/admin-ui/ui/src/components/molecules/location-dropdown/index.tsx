@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from "react"
-import { useAdminStockLocations } from "medusa-react"
+import { useAdminStockLocations } from "@applifyer/medusa-react"
 import { NextSelect } from "../select/next-select"
 
 const LocationDropdown = ({

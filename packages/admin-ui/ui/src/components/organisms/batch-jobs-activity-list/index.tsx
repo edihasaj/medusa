@@ -6,7 +6,7 @@ import {
   useAdminCreatePresignedDownloadUrl,
   useAdminDeleteFile,
   useAdminStore,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useEffect, useMemo, useRef, useState } from "react"
 import useNotification from "../../../hooks/use-notification"
 import { bytesConverter } from "../../../utils/bytes-converter"

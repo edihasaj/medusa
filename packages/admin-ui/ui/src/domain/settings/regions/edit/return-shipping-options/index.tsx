@@ -1,5 +1,5 @@
 import { Region } from "@medusajs/medusa"
-import { useAdminShippingOptions } from "medusa-react"
+import { useAdminShippingOptions } from "@applifyer/medusa-react"
 import Section from "../../../../../components/organisms/section"
 import useToggleState from "../../../../../hooks/use-toggle-state"
 import ShippingOptionCard from "../../components/shipping-option-card"

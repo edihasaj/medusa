@@ -2,7 +2,7 @@ import {
   useAdminCollection,
   useAdminDeleteCollection,
   useAdminUpdateCollection,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import BackButton from "../../../components/atoms/back-button"

@@ -1,4 +1,4 @@
-import { useAdminProduct } from "medusa-react"
+import { useAdminProduct } from "@applifyer/medusa-react"
 import { useNavigate, useParams } from "react-router-dom"
 import BackButton from "../../../components/atoms/back-button"
 import Spinner from "../../../components/atoms/spinner"

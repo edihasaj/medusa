@@ -1,4 +1,4 @@
-import { useAdminTaxRate } from "medusa-react"
+import { useAdminTaxRate } from "@applifyer/medusa-react"
 import { useContext } from "react"
 import Spinner from "../../../components/atoms/spinner"
 import Modal from "../../../components/molecules/modal"

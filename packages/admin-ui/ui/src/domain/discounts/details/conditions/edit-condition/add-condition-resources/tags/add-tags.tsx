@@ -1,4 +1,4 @@
-import { useAdminProductTags } from "medusa-react"
+import { useAdminProductTags } from "@applifyer/medusa-react"
 import { useContext, useState } from "react"
 import Button from "../../../../../../../components/fundamentals/button"
 import Modal from "../../../../../../../components/molecules/modal"

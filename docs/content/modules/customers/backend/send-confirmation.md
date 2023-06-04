@@ -78,7 +78,7 @@ There are two ways to do this:
 If the notification provider you’re using already implements the logic to handle this event, you can subscribe to the event using the `NotificationService`:
 
 ```ts title=src/subscribers/customer-confirmation.ts
-import { NotificationService } from "@medusajs/medusa"
+import { NotificationService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   notificationService: NotificationService
@@ -109,7 +109,7 @@ You can learn more about handling events with the Notification Service using [t
 If the notification provider you’re using isn’t configured to handle this event, or you want to implement some other custom logic, you can subscribe to the event using the `EventBusService`:
 
 ```ts title=src/subscribers/customer-confirmation.ts
-import { Customer, EventBusService } from "@medusajs/medusa"
+import { Customer, EventBusService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   eventBusService: EventBusService
@@ -144,7 +144,7 @@ In this method, you should typically send an email to the customer. You can plac
 For example, you can implement this subscriber to send emails using SendGrid:
 
 ```ts title=src/subscribers/customer-confirmation.ts
-import { Customer, EventBusService } from "@medusajs/medusa"
+import { Customer, EventBusService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   eventBusService: EventBusService,

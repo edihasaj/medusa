@@ -1,4 +1,4 @@
-import { useAdminCollections } from "medusa-react"
+import { useAdminCollections } from "@applifyer/medusa-react"
 import { useContext, useState } from "react"
 import Button from "../../../../../../../components/fundamentals/button"
 import Modal from "../../../../../../../components/molecules/modal"

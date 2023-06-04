@@ -70,7 +70,7 @@ medusa.admin.invites.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminInvites } from "medusa-react"
+import { useAdminInvites } from "@applifyer/medusa-react"
 
 const Invites = () => {
   const { invites, isLoading } = useAdminInvites()
@@ -144,7 +144,7 @@ medusa.admin.invites.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateInvite } from "medusa-react"
+import { useAdminCreateInvite } from "@applifyer/medusa-react"
 
 const CreateInvite = () => {
   const createInvite = useAdminCreateInvite()
@@ -236,7 +236,7 @@ medusa.admin.invites.accept({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminAcceptInvite } from "medusa-react"
+import { useAdminAcceptInvite } from "@applifyer/medusa-react"
 
 const AcceptInvite = () => {
   const acceptInvite = useAdminAcceptInvite()
@@ -333,7 +333,7 @@ medusa.admin.invites.resend(inviteId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminResendInvite } from "medusa-react"
+import { useAdminResendInvite } from "@applifyer/medusa-react"
 
 const ResendInvite = () => {
   const resendInvite = useAdminResendInvite(inviteId)
@@ -398,7 +398,7 @@ medusa.admin.invites.delete(inviteId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteInvite } from "medusa-react"
+import { useAdminDeleteInvite } from "@applifyer/medusa-react"
 
 const DeleteInvite = () => {
   const deleteInvite = useAdminDeleteInvite(inviteId)

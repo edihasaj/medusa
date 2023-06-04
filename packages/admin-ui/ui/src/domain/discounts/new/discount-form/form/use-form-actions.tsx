@@ -1,4 +1,4 @@
-import { useAdminCreateDiscount } from "medusa-react"
+import { useAdminCreateDiscount } from "@applifyer/medusa-react"
 import { useNavigate } from "react-router-dom"
 import { useDiscountForm } from "./discount-form-context"
 import { DiscountFormValues, formValuesToCreateDiscountMapper } from "./mappers"

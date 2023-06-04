@@ -82,7 +82,7 @@ There are two ways to do this:
 If the notification provider you’re using already implements the logic to handle this event, you can subscribe to the event using the `NotificationService`:
 
 ```ts title=src/subscribers/gift-card.ts
-import { NotificationService } from "@medusajs/medusa"
+import { NotificationService } from "@applifyer/medusa"
 
 type InjectedDependencies = {
   notificationService: NotificationService
@@ -116,7 +116,7 @@ If the notification provider you’re using isn’t configured to handle this ev
 import { 
   EventBusService,
   GiftCardService,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 type InjectedDependencies = {
   eventBusService: EventBusService

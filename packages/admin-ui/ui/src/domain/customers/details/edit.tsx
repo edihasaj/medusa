@@ -1,5 +1,5 @@
 import { Customer } from "@medusajs/medusa"
-import { useAdminUpdateCustomer } from "medusa-react"
+import { useAdminUpdateCustomer } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import MetadataForm, {

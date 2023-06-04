@@ -1,4 +1,4 @@
-import { useAdminVariants } from "medusa-react"
+import { useAdminVariants } from "@applifyer/medusa-react"
 import React, { useContext, useEffect, useMemo, useState } from "react"
 import { usePagination, useRowSelect, useTable } from "react-table"
 import Spinner from "../../../../components/atoms/spinner"

@@ -1,4 +1,4 @@
-import { useAdminOrder, useAdminOrderEdits } from "medusa-react"
+import { useAdminOrder, useAdminOrderEdits } from "@applifyer/medusa-react"
 import React from "react"
 
 import { PaymentRequiredEvent } from "../../../../hooks/use-build-timeline"

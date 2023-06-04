@@ -1,5 +1,5 @@
 import { Order } from "@medusajs/medusa"
-import { useAdminRegion } from "medusa-react"
+import { useAdminRegion } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { useWatch } from "react-hook-form"
 import Button from "../../../../components/fundamentals/button"

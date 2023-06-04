@@ -1,4 +1,4 @@
-import { useAdminRegions } from "medusa-react"
+import { useAdminRegions } from "@applifyer/medusa-react"
 import React, { useCallback, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import Fade from "../../../../components/atoms/fade-wrapper"

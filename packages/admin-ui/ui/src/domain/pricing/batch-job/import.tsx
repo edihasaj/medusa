@@ -8,7 +8,7 @@ import {
   useAdminCreateBatchJob,
   useAdminDeleteFile,
   useAdminUploadFile,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import UploadModal from "../../../components/organisms/upload-modal"
 import useNotification from "../../../hooks/use-notification"

@@ -20,7 +20,7 @@ import {
 import RMASelectProductSubModal from "../../details/rma-sub-modals/products"
 import { useNewOrderForm } from "../form"
 import CustomItemSubModal from "./custom-item-sub-modal"
-import { useMedusa } from "medusa-react"
+import { useMedusa } from "@applifyer/medusa-react"
 
 const Items = () => {
   const { enableNextPage, disableNextPage, nextStepEnabled } =

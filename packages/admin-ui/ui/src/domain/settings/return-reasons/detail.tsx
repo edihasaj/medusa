@@ -2,7 +2,7 @@ import { ReturnReason } from "@medusajs/medusa"
 import {
   useAdminDeleteReturnReason,
   useAdminUpdateReturnReason,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import DuplicateIcon from "../../../components/fundamentals/icons/duplicate-icon"

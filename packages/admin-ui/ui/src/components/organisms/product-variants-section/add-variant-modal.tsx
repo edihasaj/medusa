@@ -7,7 +7,7 @@ import LayeredModal, {
   useLayeredModal,
 } from "../../molecules/modal/layered-modal"
 
-import { useMedusa } from "medusa-react"
+import { useMedusa } from "@applifyer/medusa-react"
 import { useForm } from "react-hook-form"
 import useEditProductActions from "../../../hooks/use-edit-product-actions"
 import { getSubmittableMetadata } from "../../forms/general/metadata-form"

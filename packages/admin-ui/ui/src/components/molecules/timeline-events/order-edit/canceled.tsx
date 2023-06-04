@@ -1,4 +1,4 @@
-import { useAdminUser } from "medusa-react"
+import { useAdminUser } from "@applifyer/medusa-react"
 import React from "react"
 import { ByLine } from "."
 import { OrderEditEvent } from "../../../../hooks/use-build-timeline"

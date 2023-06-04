@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { useAdminRegion, useAdminTaxRates } from "medusa-react"
+import { useAdminRegion, useAdminTaxRates } from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"
 import { useTable } from "react-table"
 import Spinner from "../../../components/atoms/spinner"

@@ -81,7 +81,7 @@ medusa.admin.orders.retrieve(orderId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminOrder } from "medusa-react"
+import { useAdminOrder } from "@applifyer/medusa-react"
 
 const Order = () => {
   const { 
@@ -161,7 +161,7 @@ medusa.admin.orders.processSwapPayment(orderId, swapId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminProcessSwapPayment } from "medusa-react"
+import { useAdminProcessSwapPayment } from "@applifyer/medusa-react"
 
 const ProcessPayment = () => {
   const processPayment = useAdminProcessSwapPayment(
@@ -237,7 +237,7 @@ medusa.admin.orders.fulfillSwap(orderId, swapId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminFulfillSwap } from "medusa-react"
+import { useAdminFulfillSwap } from "@applifyer/medusa-react"
 
 const FulfillSwap = () => {
   const fulfillSwap = useAdminFulfillSwap(
@@ -310,7 +310,7 @@ medusa.admin.orders.createSwapShipment(orderId, swapId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateSwapShipment } from "medusa-react"
+import { useAdminCreateSwapShipment } from "@applifyer/medusa-react"
 
 const CreateShipment = () => {
   const createShipment = useAdminCreateSwapShipment(
@@ -406,7 +406,7 @@ medusa.admin.orders.cancelSwapFulfillment(
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCancelSwapFulfillment } from "medusa-react"
+import { useAdminCancelSwapFulfillment } from "@applifyer/medusa-react"
 
 const CancelFulfillment = () => {
   const cancelFulfillment = useAdminCancelSwapFulfillment(
@@ -486,7 +486,7 @@ medusa.admin.orders.cancelSwap(orderId, swapId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCancelSwap } from "medusa-react"
+import { useAdminCancelSwap } from "@applifyer/medusa-react"
 
 const CancelSwap = () => {
   const cancelSwap = useAdminCancelSwap(

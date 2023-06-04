@@ -3,7 +3,7 @@ import {
   AdminPostOrdersOrderSwapsReq,
   AdminPostOrdersOrderSwapsSwapFulfillmentsReq,
   AdminPostOrdersOrderSwapsSwapShipmentsReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,
@@ -26,6 +26,7 @@ export const useAdminCreateSwap = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostOrdersOrderSwapsReq) =>
       client.admin.orders.createSwap(orderId, payload),
     buildOptions(
@@ -44,6 +45,7 @@ export const useAdminCancelSwap = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (swapId: string) => client.admin.orders.cancelSwap(orderId, swapId),
     buildOptions(
       queryClient,
@@ -65,6 +67,7 @@ export const useAdminFulfillSwap = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     ({
       swap_id,
       ...payload
@@ -95,6 +98,7 @@ export const useAdminCreateSwapShipment = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     ({
       swap_id,
       ...payload
@@ -112,6 +116,7 @@ export const useAdminProcessSwapPayment = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (swapId: string) => client.admin.orders.processSwapPayment(orderId, swapId),
     buildOptions(
       queryClient,
@@ -133,6 +138,7 @@ export const useAdminCancelSwapFulfillment = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     ({
       swap_id,
       fulfillment_id,

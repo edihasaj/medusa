@@ -1,4 +1,4 @@
-import { useAdminReturnReasons } from "medusa-react"
+import { useAdminReturnReasons } from "@applifyer/medusa-react"
 import { useState } from "react"
 import BackButton from "../../../components/atoms/back-button"
 import Spinner from "../../../components/atoms/spinner"

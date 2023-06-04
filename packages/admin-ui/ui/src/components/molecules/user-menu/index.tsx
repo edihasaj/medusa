@@ -1,5 +1,5 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
-import { useAdminDeleteSession, useAdminGetSession } from "medusa-react"
+import { useAdminDeleteSession, useAdminGetSession } from "@applifyer/medusa-react"
 import React from "react"
 import { useNavigate } from "react-router-dom"
 import useNotification from "../../../hooks/use-notification"

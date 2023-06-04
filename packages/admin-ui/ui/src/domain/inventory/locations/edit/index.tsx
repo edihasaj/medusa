@@ -16,7 +16,7 @@ import Button from "../../../../components/fundamentals/button"
 import Modal from "../../../../components/molecules/modal"
 import { getErrorMessage } from "../../../../utils/error-messages"
 import { nestedForm } from "../../../../utils/nested-form"
-import { useAdminUpdateStockLocation } from "medusa-react"
+import { useAdminUpdateStockLocation } from "@applifyer/medusa-react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../../hooks/use-notification"
 

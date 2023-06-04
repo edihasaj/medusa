@@ -1,4 +1,4 @@
-import { useAdminCreateInvite } from "medusa-react"
+import { useAdminCreateInvite } from "@applifyer/medusa-react"
 import React from "react"
 import { Controller, useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"

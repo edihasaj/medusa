@@ -1,4 +1,4 @@
-import { useAdminCreatePriceList } from "medusa-react"
+import { useAdminCreatePriceList } from "@applifyer/medusa-react"
 import { useNavigate } from "react-router-dom"
 import useNotification from "../../../hooks/use-notification"
 import { getErrorMessage } from "../../../utils/error-messages"

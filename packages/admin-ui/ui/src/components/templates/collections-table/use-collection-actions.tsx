@@ -1,4 +1,4 @@
-import { useAdminDeleteCollection } from "medusa-react"
+import { useAdminDeleteCollection } from "@applifyer/medusa-react"
 import { useNavigate } from "react-router-dom"
 import useImperativeDialog from "../../../hooks/use-imperative-dialog"
 import EditIcon from "../../fundamentals/icons/edit-icon"

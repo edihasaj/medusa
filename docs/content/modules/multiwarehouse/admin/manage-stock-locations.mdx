@@ -75,7 +75,7 @@ medusa.admin.stockLocations.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminStockLocations } from "medusa-react"
+import { useAdminStockLocations } from "@applifyer/medusa-react"
 
 function StockLocations() {
   const { 
@@ -154,7 +154,7 @@ medusa.admin.stockLocations.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateStockLocation } from "medusa-react"
+import { useAdminCreateStockLocation } from "@applifyer/medusa-react"
 
 const CreateStockLocation = () => {
   const createStockLocation = useAdminCreateStockLocation()
@@ -231,7 +231,7 @@ medusa.admin.stockLocations.retrieve(stockLocationId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminStockLocation } from "medusa-react"
+import { useAdminStockLocation } from "@applifyer/medusa-react"
 
 function StockLocation() {
   const { 
@@ -303,7 +303,7 @@ medusa.admin.salesChannels.addLocation(salesChannelId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminAddLocationToSalesChannel } from "medusa-react"
+import { useAdminAddLocationToSalesChannel } from "@applifyer/medusa-react"
 
 function StockLocation() {
   const addLocation = useAdminAddLocationToSalesChannel()
@@ -391,7 +391,7 @@ medusa.admin.salesChannels.removeLocation(salesChannelId, {
 ```tsx
 import { 
   useAdminRemoveLocationFromSalesChannel,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 function StockLocation() {
   const removeLocation = 
@@ -482,7 +482,7 @@ medusa.admin.stockLocations.update(stockLocationId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateStockLocation } from "medusa-react"
+import { useAdminUpdateStockLocation } from "@applifyer/medusa-react"
 
 function StockLocation() {
   const updateLocation = useAdminUpdateStockLocation(
@@ -561,7 +561,7 @@ medusa.admin.stockLocations.delete(stockLocationId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteStockLocation } from "medusa-react"
+import { useAdminDeleteStockLocation } from "@applifyer/medusa-react"
 
 function StockLocation() {
   const deleteLocation = useAdminDeleteStockLocation(

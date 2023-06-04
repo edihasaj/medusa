@@ -6,7 +6,7 @@ import LayeredModal, {
   LayeredModalContext,
 } from "../../molecules/modal/layered-modal"
 
-import { useMedusa } from "medusa-react"
+import { useMedusa } from "@applifyer/medusa-react"
 import { useContext } from "react"
 import { useForm } from "react-hook-form"
 import useEditProductActions from "../../../hooks/use-edit-product-actions"

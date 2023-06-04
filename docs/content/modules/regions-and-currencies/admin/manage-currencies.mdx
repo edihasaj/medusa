@@ -76,8 +76,8 @@ medusa.admin.currencies.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Currency } from "@medusajs/medusa"
-import { useAdminCurrencies } from "medusa-react"
+import { Currency } from "@applifyer/medusa"
+import { useAdminCurrencies } from "@applifyer/medusa-react"
 
 const Currencies = () => {
   const { currencies, isLoading } = useAdminCurrencies()
@@ -152,7 +152,7 @@ medusa.admin.currencies.update(code, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateCurrency } from "medusa-react"
+import { useAdminUpdateCurrency } from "@applifyer/medusa-react"
 
 const UpdateCode = () => {
   const updateCode = useAdminUpdateCurrency(code)
@@ -241,8 +241,8 @@ medusa.admin.store.retrieve()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Currency } from "@medusajs/medusa"
-import { useAdminStore } from "medusa-react"
+import { Currency } from "@applifyer/medusa"
+import { useAdminStore } from "@applifyer/medusa-react"
 
 const StoreCurrencies = () => {
   const { store, isLoading } = useAdminStore()
@@ -319,7 +319,7 @@ medusa.admin.store.addCurrency(code)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminAddStoreCurrency } from "medusa-react"
+import { useAdminAddStoreCurrency } from "@applifyer/medusa-react"
 
 const AddCurrency = () => {
   const addCode = useAdminAddStoreCurrency()
@@ -382,7 +382,7 @@ medusa.admin.store.deleteCurrency(code)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteStoreCurrency } from "medusa-react"
+import { useAdminDeleteStoreCurrency } from "@applifyer/medusa-react"
 
 const DeleteCurrency = () => {
   const deleteCurrency = useAdminDeleteStoreCurrency()

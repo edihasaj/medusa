@@ -4,7 +4,7 @@ import {
   useAdminAddProductsToSalesChannel,
   useAdminDeleteProductsFromSalesChannel,
   useAdminProducts,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import React, {
   forwardRef,
   useEffect,

@@ -1,4 +1,4 @@
-import { useAdminDeleteTaxRate } from "medusa-react"
+import { useAdminDeleteTaxRate } from "@applifyer/medusa-react"
 import EditIcon from "../../../components/fundamentals/icons/edit-icon"
 import TrashIcon from "../../../components/fundamentals/icons/trash-icon"
 import { ActionType } from "../../../components/molecules/actionables"

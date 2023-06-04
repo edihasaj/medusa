@@ -1,4 +1,4 @@
-import { useAdminResendNotification } from "medusa-react"
+import { useAdminResendNotification } from "@applifyer/medusa-react"
 import React from "react"
 import { useForm } from "react-hook-form"
 import Button from "../../../../components/fundamentals/button"

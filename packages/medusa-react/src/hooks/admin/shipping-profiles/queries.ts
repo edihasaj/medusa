@@ -1,7 +1,7 @@
 import {
   AdminShippingProfilesListRes,
   AdminShippingProfilesRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"
@@ -26,6 +26,7 @@ export const useAdminShippingProfiles = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminShippingProfileKeys.lists(),
+    // @ts-ignore
     () => client.admin.shippingProfiles.list(),
     options
   )
@@ -43,6 +44,7 @@ export const useAdminShippingProfile = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminShippingProfileKeys.detail(id),
+    // @ts-ignore
     () => client.admin.shippingProfiles.retrieve(id),
     options
   )

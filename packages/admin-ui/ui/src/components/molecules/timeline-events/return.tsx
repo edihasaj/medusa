@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { useAdminCancelReturn } from "medusa-react"
+import { useAdminCancelReturn } from "@applifyer/medusa-react"
 import React, { useState } from "react"
 import { ReceiveReturnMenu } from "../../../domain/orders/details/receive-return"
 import { ReturnEvent } from "../../../hooks/use-build-timeline"

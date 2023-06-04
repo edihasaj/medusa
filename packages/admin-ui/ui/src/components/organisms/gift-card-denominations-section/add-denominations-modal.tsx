@@ -1,5 +1,5 @@
 import { Product } from "@medusajs/medusa"
-import { useAdminCreateVariant, useAdminStore } from "medusa-react"
+import { useAdminCreateVariant, useAdminStore } from "@applifyer/medusa-react"
 import { useCallback, useMemo } from "react"
 import { useForm } from "react-hook-form"
 import useNotification from "../../../hooks/use-notification"

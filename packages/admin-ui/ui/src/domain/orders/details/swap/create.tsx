@@ -5,12 +5,12 @@ import {
   ReturnReason,
   StockLocationDTO,
 } from "@medusajs/medusa"
-import { useAdminStockLocations } from "medusa-react"
+import { useAdminStockLocations } from "@applifyer/medusa-react"
 import {
   useAdminCreateSwap,
   useAdminOrder,
   useAdminShippingOptions,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import React, { useContext, useEffect, useMemo, useState } from "react"
 import Spinner from "../../../../components/atoms/spinner"
 import Button from "../../../../components/fundamentals/button"

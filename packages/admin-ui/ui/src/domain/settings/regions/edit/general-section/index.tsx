@@ -1,5 +1,5 @@
 import { Region } from "@medusajs/medusa"
-import { useAdminDeleteRegion } from "medusa-react"
+import { useAdminDeleteRegion } from "@applifyer/medusa-react"
 import React from "react"
 import { useNavigate } from "react-router-dom"
 import Tooltip from "../../../../../components/atoms/tooltip"

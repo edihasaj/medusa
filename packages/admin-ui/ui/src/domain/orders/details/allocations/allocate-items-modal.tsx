@@ -6,7 +6,7 @@ import {
   useAdminStockLocations,
   useAdminVariantsInventory,
   useMedusa,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import Button from "../../../../components/fundamentals/button"
 import CrossIcon from "../../../../components/fundamentals/icons/cross-icon"

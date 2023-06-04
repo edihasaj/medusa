@@ -78,7 +78,7 @@ medusa.admin.publishableApiKeys.list()
 
 ```tsx
 import { PublishableApiKey } from "@medusajs/medusa"
-import { useAdminPublishableApiKeys } from "medusa-react"
+import { useAdminPublishableApiKeys } from "@applifyer/medusa-react"
 
 const PublishabelApiKeys = () => {
   const { publishable_api_keys, isLoading } = 
@@ -170,7 +170,7 @@ medusa.admin.publishableApiKeys.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreatePublishableApiKey } from "medusa-react"
+import { useAdminCreatePublishableApiKey } from "@applifyer/medusa-react"
 
 const CreatePublishableApiKey = () => {
   const createKey = useAdminCreatePublishableApiKey()
@@ -249,7 +249,7 @@ medusa.admin.publishableApiKeys.update(publishableApiKeyId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdatePublishableApiKey } from "medusa-react"
+import { useAdminUpdatePublishableApiKey } from "@applifyer/medusa-react"
 
 const UpdatePublishableApiKey = () => {
   const updateKey = useAdminUpdatePublishableApiKey(
@@ -332,7 +332,7 @@ medusa.admin.publishableApiKeys.revoke(publishableApiKeyId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminRevokePublishableApiKey } from "medusa-react"
+import { useAdminRevokePublishableApiKey } from "@applifyer/medusa-react"
 
 const PublishableApiKey = () => {
   const revokeKey = useAdminRevokePublishableApiKey(
@@ -402,7 +402,7 @@ medusa.admin.publishableApiKeys.delete(publishableApiKeyId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeletePublishableApiKey } from "medusa-react"
+import { useAdminDeletePublishableApiKey } from "@applifyer/medusa-react"
 
 const PublishableApiKey = () => {
   const deleteKey = useAdminDeletePublishableApiKey(
@@ -483,7 +483,7 @@ medusa.admin.publishableApiKeys
 import { SalesChannel } from "@medusajs/medusa"
 import { 
   useAdminPublishableApiKeySalesChannels,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const SalesChannels = () => {
   const { sales_channels, isLoading } = 
@@ -573,7 +573,7 @@ medusa.admin.publishableApiKeys.addSalesChannelsBatch(
 ```tsx
 import {
   useAdminAddPublishableKeySalesChannelsBatch,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const PublishableApiKey = () => {
   const addSalesChannels = 
@@ -683,7 +683,7 @@ medusa.admin.publishableApiKeys.deleteSalesChannelsBatch(
 ```tsx
 import { 
   useAdminRemovePublishableKeySalesChannelsBatch,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const PublishableApiKey = () => {
   const deleteSalesChannels = 

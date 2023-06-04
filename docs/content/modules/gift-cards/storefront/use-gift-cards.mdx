@@ -81,8 +81,8 @@ medusa.products.list({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Product } from "@medusajs/medusa"
-import { useProducts } from "medusa-react"
+import { Product } from "@applifyer/medusa"
+import { useProducts } from "@applifyer/medusa-react"
 
 const GiftCards = () => {
   const { products, isLoading } = useProducts({
@@ -166,7 +166,7 @@ medusa.giftCards.retrieve(code)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useGiftCard } from "medusa-react"
+import { useGiftCard } from "@applifyer/medusa-react"
 
 const GiftCard = () => {
   const { gift_card, isLoading, isError } = useGiftCard("code")
@@ -247,7 +247,7 @@ medusa.carts.update(cartId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useCart } from "medusa-react"
+import { useCart } from "@applifyer/medusa-react"
 
 const Cart = () => {
   // ...

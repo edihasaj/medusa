@@ -1,4 +1,4 @@
-import { useAdminDeleteProduct, useAdminUpdateCollection } from "medusa-react"
+import { useAdminDeleteProduct, useAdminUpdateCollection } from "@applifyer/medusa-react"
 
 import { useNavigate } from "react-router-dom"
 import { getErrorMessage } from "../utils/error-messages"

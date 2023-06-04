@@ -1,4 +1,4 @@
-import { useAdminCustomer } from "medusa-react"
+import { useAdminCustomer } from "@applifyer/medusa-react"
 import moment from "moment"
 import { useState } from "react"
 import { useParams } from "react-router-dom"

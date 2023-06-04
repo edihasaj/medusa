@@ -73,7 +73,7 @@ You can create a discount by sending a request to the [Create Discount](/api/adm
 import { 
   AllocationType,
   DiscountRuleType,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 // ...
 medusa.admin.discounts.create({
   code,
@@ -99,11 +99,11 @@ medusa.admin.discounts.create({
 ```tsx
 import { 
   useAdminCreateDiscount,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { 
   AllocationType, 
   DiscountRuleType,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 const CreateDiscount = () => {
   const createDiscount = useAdminCreateDiscount()
@@ -222,7 +222,7 @@ medusa.admin.discounts.update(discountId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateDiscount } from "medusa-react"
+import { useAdminUpdateDiscount } from "@applifyer/medusa-react"
 
 const UpdateDiscount = () => {
   const updateDiscount = useAdminUpdateDiscount(discount_id)
@@ -300,7 +300,7 @@ You can send a request to the [Create Condition](/api/admin/#tag/Discount-Condit
 <TabItem value="client" label="Medusa JS Client" default>
 
 ```ts
-import { DiscountConditionOperator } from "@medusajs/medusa"
+import { DiscountConditionOperator } from "@applifyer/medusa"
 // ...
 medusa.admin.discounts.createCondition(discount_id, {
   operator: DiscountConditionOperator.IN,
@@ -317,8 +317,8 @@ medusa.admin.discounts.createCondition(discount_id, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDiscountCreateCondition } from "medusa-react"
-import { DiscountConditionOperator } from "@medusajs/medusa"
+import { useAdminDiscountCreateCondition } from "@applifyer/medusa-react"
+import { DiscountConditionOperator } from "@applifyer/medusa"
 
 const Discount = () => {
   const createCondition = useAdminDiscountCreateCondition(
@@ -432,8 +432,8 @@ medusa.admin.discounts.getCondition(
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminGetDiscountCondition } from "medusa-react"
-import { Product } from "@medusajs/medusa"
+import { useAdminGetDiscountCondition } from "@applifyer/medusa-react"
+import { Product } from "@applifyer/medusa"
 
 const DiscountCondition = () => {
   const { 
@@ -532,8 +532,8 @@ medusa.admin.discounts.updateCondition(
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDiscountUpdateCondition } from "medusa-react"
-import { Product } from "@medusajs/medusa"
+import { useAdminDiscountUpdateCondition } from "@applifyer/medusa-react"
+import { Product } from "@applifyer/medusa"
 
 const DiscountCondition = () => {
   const updateCondition = useAdminDiscountUpdateCondition(
@@ -627,7 +627,7 @@ medusa.admin.discounts.deleteCondition(
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDiscountRemoveCondition } from "medusa-react"
+import { useAdminDiscountRemoveCondition } from "@applifyer/medusa-react"
 
 const Discount = () => {
   const deleteCondition = useAdminDiscountRemoveCondition(
@@ -699,7 +699,7 @@ medusa.admin.discounts.delete(discount_id)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteDiscount } from "medusa-react"
+import { useAdminDeleteDiscount } from "@applifyer/medusa-react"
 
 const Discount = () => {
   const deleteDiscount = useAdminDeleteDiscount(discount_id)

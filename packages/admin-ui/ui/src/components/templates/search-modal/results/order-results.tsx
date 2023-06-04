@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import SectionCollapsible from "../section-collapsible"
-import { useAdminOrders } from "medusa-react"
+import { useAdminOrders } from "@applifyer/medusa-react"
 import useKeyboardNavigationList from "../use-keyboard-navigation-list"
 import { Link } from "react-router-dom"
 

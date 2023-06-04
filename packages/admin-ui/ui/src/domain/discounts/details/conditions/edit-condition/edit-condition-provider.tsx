@@ -2,7 +2,7 @@ import { Discount, DiscountCondition } from "@medusajs/medusa"
 import {
   useAdminAddDiscountConditionResourceBatch,
   useAdminDeleteDiscountConditionResourceBatch,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { createContext, ReactNode, useContext } from "react"
 import { LayeredModalContext } from "../../../../../components/molecules/modal/layered-modal"
 import useNotification from "../../../../../hooks/use-notification"

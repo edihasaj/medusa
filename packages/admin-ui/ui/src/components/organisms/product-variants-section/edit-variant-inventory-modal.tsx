@@ -9,7 +9,7 @@ import {
   adminInventoryItemsKeys,
   useAdminVariantsInventory,
   useMedusa,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import Button from "../../fundamentals/button"
 import { InventoryLevelDTO } from "@medusajs/types"

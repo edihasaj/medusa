@@ -2,7 +2,7 @@ import {
   AdminPostShippingOptionsOptionReq,
   AdminPostShippingOptionsReq,
   AdminShippingOptionsRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,
@@ -24,6 +24,7 @@ export const useAdminCreateShippingOption = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostShippingOptionsReq) =>
       client.admin.shippingOptions.create(payload),
     buildOptions(queryClient, adminShippingOptionKeys.lists(), options)
@@ -42,6 +43,7 @@ export const useAdminUpdateShippingOption = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminPostShippingOptionsOptionReq) =>
       client.admin.shippingOptions.update(id, payload),
     buildOptions(

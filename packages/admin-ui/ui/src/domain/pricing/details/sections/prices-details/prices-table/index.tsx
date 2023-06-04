@@ -2,7 +2,7 @@ import { Product } from "@medusajs/medusa"
 import {
   useAdminDeletePriceListProductPrices,
   useAdminPriceListProducts,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { HeaderGroup, Row } from "react-table"
 import CancelIcon from "../../../../../../components/fundamentals/icons/cancel-icon"
 import EditIcon from "../../../../../../components/fundamentals/icons/edit-icon"

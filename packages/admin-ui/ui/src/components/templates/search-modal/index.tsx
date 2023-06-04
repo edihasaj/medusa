@@ -3,7 +3,7 @@ import {
   useAdminDiscounts,
   useAdminOrders,
   useAdminProducts,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import React from "react"
 import { useDebounce } from "../../../hooks/use-debounce"
 import Spinner from "../../atoms/spinner"

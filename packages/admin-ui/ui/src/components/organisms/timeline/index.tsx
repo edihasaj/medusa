@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { useAdminCreateNote, useAdminOrder } from "medusa-react"
+import { useAdminCreateNote, useAdminOrder } from "@applifyer/medusa-react"
 import React, { useState } from "react"
 
 import RegisterClaimMenu from "../../../domain/orders/details/claim/register-claim-menu"

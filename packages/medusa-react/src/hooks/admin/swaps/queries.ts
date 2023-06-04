@@ -2,7 +2,7 @@ import {
   AdminGetSwapsParams,
   AdminSwapsListRes,
   AdminSwapsRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"
@@ -26,6 +26,7 @@ export const useAdminSwaps = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminSwapKeys.list(query),
+    // @ts-ignore
     () => client.admin.swaps.list(query),
     options
   )
@@ -43,6 +44,7 @@ export const useAdminSwap = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminSwapKeys.detail(id),
+    // @ts-ignore
     () => client.admin.swaps.retrieve(id),
     options
   )

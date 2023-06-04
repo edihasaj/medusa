@@ -6,7 +6,7 @@ import {
   useAdminOrderEditAddLineItem,
   useAdminRequestOrderEditConfirmation,
   useAdminUpdateOrderEdit,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import clsx from "clsx"
 
 import LayeredModal, {

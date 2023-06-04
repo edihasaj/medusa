@@ -1,4 +1,4 @@
-import { useAdminCreateTaxRate } from "medusa-react"
+import { useAdminCreateTaxRate } from "@applifyer/medusa-react"
 import { useContext } from "react"
 import { useForm } from "react-hook-form"
 import Button from "../../../components/fundamentals/button"

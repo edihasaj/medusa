@@ -77,8 +77,8 @@ medusa.admin.regions.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Region } from "@medusajs/medusa"
-import { useAdminRegions } from "medusa-react"
+import { Region } from "@applifyer/medusa"
+import { useAdminRegions } from "@applifyer/medusa-react"
 
 const Regions = () => {
   const { regions, isLoading } = useAdminRegions()
@@ -163,7 +163,7 @@ medusa.admin.regions.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateRegion } from "medusa-react"
+import { useAdminCreateRegion } from "@applifyer/medusa-react"
 
 const CreateRegion = () => {
   const createRegion = useAdminCreateRegion()
@@ -289,7 +289,7 @@ medusa.admin.regions.update(regionId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateRegion } from "medusa-react"
+import { useAdminUpdateRegion } from "@applifyer/medusa-react"
 
 const UpdateRegion = () => {
   const updateRegion = useAdminUpdateRegion(regionId)
@@ -391,7 +391,7 @@ medusa.admin.shippingOptions.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateShippingOption } from "medusa-react"
+import { useAdminCreateShippingOption } from "@applifyer/medusa-react"
 
 const Region = () => {
   const createShippingOption = useAdminCreateShippingOption()
@@ -502,7 +502,7 @@ medusa.admin.regions.delete(regionId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteRegion } from "medusa-react"
+import { useAdminDeleteRegion } from "@applifyer/medusa-react"
 
 const Region = () => {
   const deleteRegion = useAdminDeleteRegion(regionId)

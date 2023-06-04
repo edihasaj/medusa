@@ -68,8 +68,8 @@ medusa.admin.productCategories.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminProductCategories } from "medusa-react"
-import { ProductCategory } from "@medusajs/medusa"
+import { useAdminProductCategories } from "@applifyer/medusa-react"
+import { ProductCategory } from "@applifyer/medusa"
 
 function Categories() {
   const { 
@@ -149,7 +149,7 @@ medusa.admin.productCategories.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateProductCategory } from "medusa-react"
+import { useAdminCreateProductCategory } from "@applifyer/medusa-react"
 
 const CreateCategory = () => {
   const createCategory = useAdminCreateProductCategory()
@@ -231,7 +231,7 @@ medusa.admin.productCategories.retrieve(productCategoryId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminProductCategory } from "medusa-react"
+import { useAdminProductCategory } from "@applifyer/medusa-react"
 
 const Category = () => {
   const { 
@@ -303,7 +303,7 @@ medusa.admin.productCategories.update(productCategoryId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateProductCategory } from "medusa-react"
+import { useAdminUpdateProductCategory } from "@applifyer/medusa-react"
 
 const UpdateCategory = () => {
   const updateCategory = useAdminUpdateProductCategory(
@@ -405,7 +405,7 @@ medusa.admin.productCategories.addProducts(productCategoryId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminAddProductsToCategory } from "medusa-react"
+import { useAdminAddProductsToCategory } from "@applifyer/medusa-react"
 
 const UpdateProductsInCategory = () => {
   const addProductsToCategory = useAdminAddProductsToCategory(
@@ -521,7 +521,7 @@ medusa.admin.productCategories.removeProducts(
 ```tsx
 import { 
   useAdminDeleteProductsFromCategory,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 const DeleteProductsFromCategory = () => {
   const deleteProductsFromCategory = 
@@ -624,7 +624,7 @@ medusa.admin.productCategories.delete(productCategoryId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteProductCategory } from "medusa-react"
+import { useAdminDeleteProductCategory } from "@applifyer/medusa-react"
 
 const Category = () => {
   const deleteCategory = useAdminDeleteProductCategory(

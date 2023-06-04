@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { useAdminRegions } from "medusa-react"
+import { useAdminRegions } from "@applifyer/medusa-react"
 import { useMemo } from "react"
 import { Controller, useWatch } from "react-hook-form"
 import { Option } from "../../../../types/shared"

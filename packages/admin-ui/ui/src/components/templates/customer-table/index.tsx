@@ -1,5 +1,5 @@
 import { isEmpty } from "lodash"
-import { useAdminCustomers } from "medusa-react"
+import { useAdminCustomers } from "@applifyer/medusa-react"
 import qs from "qs"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"

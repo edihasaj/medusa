@@ -7,7 +7,7 @@ import {
   useAdminSalesChannels,
   useAdminStore,
   useAdminUpdateSalesChannel,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 
 import { useNavigate, useParams } from "react-router-dom"
 import BackButton from "../../../components/atoms/back-button"

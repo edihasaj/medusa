@@ -97,7 +97,7 @@ medusa.admin.reservations.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateReservation } from "medusa-react"
+import { useAdminCreateReservation } from "@applifyer/medusa-react"
 
 const CreateReservation = () => {
   const createReservation = useAdminCreateReservation()
@@ -190,7 +190,7 @@ medusa.admin.reservations.list({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminReservations } from "medusa-react"
+import { useAdminReservations } from "@applifyer/medusa-react"
 
 function Reservations() {
   const { reservations, isLoading } = useAdminReservations({
@@ -265,7 +265,7 @@ medusa.admin.reservations.retrieve(reservationId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminReservation } from "medusa-react"
+import { useAdminReservation } from "@applifyer/medusa-react"
 
 function Reservation() {
   const { 
@@ -333,7 +333,7 @@ medusa.admin.reservations.update(reservationId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateReservation } from "medusa-react"
+import { useAdminUpdateReservation } from "@applifyer/medusa-react"
 
 const UpdateReservation = () => {
   const updateReservation = useAdminUpdateReservation(
@@ -418,7 +418,7 @@ medusa.admin.reservations.delete(reservationId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteReservation } from "medusa-react"
+import { useAdminDeleteReservation } from "@applifyer/medusa-react"
 
 const DeleteReservation = () => {
   const deleteReservation = useAdminDeleteReservation(
@@ -498,7 +498,7 @@ medusa.admin.orders.createFulfillment(orderId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateFulfillment } from "medusa-react"
+import { useAdminCreateFulfillment } from "@applifyer/medusa-react"
 
 const CreateFulfillment = () => {
   const createFulfillment = useAdminCreateFulfillment(orderId)
@@ -604,7 +604,7 @@ medusa.admin.orders.requestReturn(orderId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminRequestReturn } from "medusa-react"
+import { useAdminRequestReturn } from "@applifyer/medusa-react"
 
 const RequestReturn = () => {
   const requestReturn = useAdminRequestReturn(orderId)

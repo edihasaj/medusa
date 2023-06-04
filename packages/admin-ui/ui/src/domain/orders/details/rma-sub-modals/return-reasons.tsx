@@ -1,4 +1,4 @@
-import { useAdminReturnReasons } from "medusa-react"
+import { useAdminReturnReasons } from "@applifyer/medusa-react"
 import React, { useContext, useState } from "react"
 import FileUploadField from "../../../../components/atoms/file-upload-field"
 import Button from "../../../../components/fundamentals/button"

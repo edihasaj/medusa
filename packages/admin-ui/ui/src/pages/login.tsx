@@ -1,4 +1,4 @@
-import { useAdminGetSession } from "medusa-react"
+import { useAdminGetSession } from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import LoginCard from "../components/organisms/login-card"

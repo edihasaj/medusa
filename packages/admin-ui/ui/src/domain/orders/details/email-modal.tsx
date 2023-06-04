@@ -1,4 +1,4 @@
-import { useAdminUpdateOrder } from "medusa-react"
+import { useAdminUpdateOrder } from "@applifyer/medusa-react"
 import React from "react"
 import { useForm } from "react-hook-form"
 

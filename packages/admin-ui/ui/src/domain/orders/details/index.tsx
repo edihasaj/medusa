@@ -12,7 +12,7 @@ import {
   useAdminRegion,
   useAdminReservations,
   useAdminUpdateOrder,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import { useNavigate, useParams } from "react-router-dom"
 import OrderEditProvider, { OrderEditContext } from "../edit/context"
 import {

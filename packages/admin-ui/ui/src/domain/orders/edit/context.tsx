@@ -1,5 +1,5 @@
 import { createContext, PropsWithChildren, useEffect } from "react"
-import { useAdminOrderEdits } from "medusa-react"
+import { useAdminOrderEdits } from "@applifyer/medusa-react"
 import { OrderEdit } from "@medusajs/medusa"
 
 import useToggleState from "../../../hooks/use-toggle-state"

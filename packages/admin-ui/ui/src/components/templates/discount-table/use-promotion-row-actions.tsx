@@ -1,4 +1,4 @@
-import { useAdminDeleteDiscount, useAdminUpdateDiscount } from "medusa-react"
+import { useAdminDeleteDiscount, useAdminUpdateDiscount } from "@applifyer/medusa-react"
 import useImperativeDialog from "../../../hooks/use-imperative-dialog"
 import useNotification from "../../../hooks/use-notification"
 import { getErrorMessage } from "../../../utils/error-messages"

@@ -1,4 +1,4 @@
-import { useAdminProducts } from "medusa-react"
+import { useAdminProducts } from "@applifyer/medusa-react"
 import { useEffect, useState } from "react"
 import Modal from "../../../../../../../components/molecules/modal"
 import { SelectableTable } from "../../../../../../../components/templates/selectable-table"

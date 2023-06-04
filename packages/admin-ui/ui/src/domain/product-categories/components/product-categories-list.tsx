@@ -6,7 +6,7 @@ import "react-nestable/dist/styles/index.css"
 import "../styles/product-categories.css"
 
 import { ProductCategory } from "@medusajs/medusa"
-import { adminProductCategoryKeys, useMedusa } from "medusa-react"
+import { adminProductCategoryKeys, useMedusa } from "@applifyer/medusa-react"
 
 import { useQueryClient } from "@tanstack/react-query"
 import ReorderIcon from "../../../components/fundamentals/icons/reorder-icon"

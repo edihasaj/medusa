@@ -1,4 +1,4 @@
-import { useAdminCreateGiftCard } from "medusa-react"
+import { useAdminCreateGiftCard } from "@applifyer/medusa-react"
 import React, { useEffect } from "react"
 import { useForm, useWatch } from "react-hook-form"
 import GiftCardBalanceForm, {

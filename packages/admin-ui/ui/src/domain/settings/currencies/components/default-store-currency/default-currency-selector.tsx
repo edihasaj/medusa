@@ -1,5 +1,5 @@
 import { Store } from "@medusajs/medusa"
-import { useAdminUpdateStore } from "medusa-react"
+import { useAdminUpdateStore } from "@applifyer/medusa-react"
 import { useEffect, useMemo } from "react"
 import { Controller, useForm } from "react-hook-form"
 import { NextSelect } from "../../../../../components/molecules/select/next-select"

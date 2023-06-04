@@ -1,4 +1,4 @@
-import { useAdminGetSession } from "medusa-react"
+import { useAdminGetSession } from "@applifyer/medusa-react"
 import BackButton from "../../../components/atoms/back-button"
 import { useFeatureFlag } from "../../../providers/feature-flag-provider"
 import EditUserInformation from "./edit-user-information"

@@ -1,4 +1,4 @@
-import { useAdminVariants, useAdminVariantsInventory } from "medusa-react"
+import { useAdminVariants, useAdminVariantsInventory } from "@applifyer/medusa-react"
 import React, { useEffect, useMemo, useState } from "react"
 import { usePagination, useRowSelect, useTable } from "react-table"
 import { InventoryLevelDTO, ProductVariant } from "@medusajs/medusa"

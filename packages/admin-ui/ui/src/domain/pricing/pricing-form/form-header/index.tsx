@@ -1,4 +1,4 @@
-import { useAdminCreatePriceList, useAdminUpdatePriceList } from "medusa-react"
+import { useAdminCreatePriceList, useAdminUpdatePriceList } from "@applifyer/medusa-react"
 import { useNavigate } from "react-router-dom"
 import Button from "../../../../components/fundamentals/button"
 import CrossIcon from "../../../../components/fundamentals/icons/cross-icon"

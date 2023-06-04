@@ -85,11 +85,11 @@ medusa.admin.products.list({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import { 
   PricedProduct,
 } from "@medusajs/medusa/dist/types/pricing"
-import { useAdminProducts } from "medusa-react"
+import { useAdminProducts } from "@applifyer/medusa-react"
 
 const GiftCard = () => {
   const { products, isLoading } = useAdminProducts({
@@ -158,7 +158,7 @@ You can create a gift card product by sending a request to the [Create a Product
 <TabItem value="client" label="Medusa JS Client" default>
 
 ```ts
-import { ProductStatus } from "@medusajs/medusa"
+import { ProductStatus } from "@applifyer/medusa"
 // ...
 
 medusa.admin.products.create({
@@ -199,8 +199,8 @@ medusa.admin.products.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateProduct } from "medusa-react"
-import { ProductStatus } from "@medusajs/medusa"
+import { useAdminCreateProduct } from "@applifyer/medusa-react"
+import { ProductStatus } from "@applifyer/medusa"
 
 const CreateGiftCard = () => {
   const createGiftCard = useAdminCreateProduct()
@@ -371,7 +371,7 @@ medusa.admin.products.update(giftCardId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateProduct } from "medusa-react"
+import { useAdminUpdateProduct } from "@applifyer/medusa-react"
 
 const UpdateGiftCard = () => {
   const createGiftCard = useAdminUpdateProduct(giftCardId)
@@ -448,7 +448,7 @@ medusa.admin.products.delete(giftCardId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteProduct } from "medusa-react"
+import { useAdminDeleteProduct } from "@applifyer/medusa-react"
 
 const GiftCard = () => {
   const deleteGiftCard = useAdminDeleteProduct(giftCardId)
@@ -521,8 +521,8 @@ medusa.admin.giftCards.list()
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { GiftCard } from "@medusajs/medusa"
-import { useAdminGiftCards } from "medusa-react"
+import { GiftCard } from "@applifyer/medusa"
+import { useAdminGiftCards } from "@applifyer/medusa-react"
 
 const CustomGiftCards = () => {
   const { gift_cards, isLoading } = useAdminGiftCards()
@@ -598,7 +598,7 @@ medusa.admin.giftCards.create({
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminCreateGiftCard } from "medusa-react"
+import { useAdminCreateGiftCard } from "@applifyer/medusa-react"
 
 const CreateCustomGiftCards = () => {
   const createGiftCard = useAdminCreateGiftCard()
@@ -682,7 +682,7 @@ medusa.admin.giftCards.update(giftCardId, {
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminUpdateGiftCard } from "medusa-react"
+import { useAdminUpdateGiftCard } from "@applifyer/medusa-react"
 
 const UpdateCustomGiftCards = () => {
   const updateGiftCard = useAdminUpdateGiftCard(
@@ -761,7 +761,7 @@ medusa.admin.giftCards.delete(giftCardId)
 <TabItem value="medusa-react" label="Medusa React">
 
 ```tsx
-import { useAdminDeleteGiftCard } from "medusa-react"
+import { useAdminDeleteGiftCard } from "@applifyer/medusa-react"
 
 const CustomGiftCard = () => {
   const deleteGiftCard = useAdminDeleteGiftCard(

@@ -1,5 +1,5 @@
 import { AdminPostRegionsRegionReq, Region } from "@medusajs/medusa"
-import { useAdminUpdateRegion } from "medusa-react"
+import { useAdminUpdateRegion } from "@applifyer/medusa-react"
 import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import MetadataForm, {

@@ -3,7 +3,7 @@ import {
   useAdminCustomer,
   useAdminCustomers,
   useAdminUpdateOrder,
-} from "medusa-react"
+} from "@applifyer/medusa-react"
 import moment from "moment"
 import React from "react"
 import {

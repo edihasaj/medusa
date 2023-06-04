@@ -1,4 +1,4 @@
-import { useAdminLogin } from "medusa-react"
+import { useAdminLogin } from "@applifyer/medusa-react"
 import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router-dom"
 import InputError from "../../atoms/input-error"
