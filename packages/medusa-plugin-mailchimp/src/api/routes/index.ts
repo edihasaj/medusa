@@ -3,7 +3,7 @@ import * as cors from "cors"
 import * as bodyParser from "body-parser"
 import configLoader from "@medusajs/medusa/dist/loaders/config"
 import { parseCorsOrigins } from "medusa-core-utils"
-import { wrapHandler } from "@medusajs/medusa"
+import { wrapHandler } from "@applifyer/medusa"
 import {
   update as subscribeNewsletterUpdate,
   add as subscribeNewsletterAdd,

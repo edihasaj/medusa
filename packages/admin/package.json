@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/admin",
+  "name": "@applifyer/admin",
   "version": "6.0.0",
   "bin": {
     "medusa-admin": "./bin/medusa-admin.js"
@@ -26,7 +26,7 @@
     "directory": "packages/admin"
   },
   "dependencies": {
-    "@medusajs/admin-ui": "1.8.7",
+    "@applifyer/admin-ui": "1.8.7",
     "commander": "^10.0.0",
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
@@ -36,8 +36,11 @@
     "picocolors": "^1.0.0",
     "ts-dedent": "^2.2.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
-    "@medusajs/medusa": "1.12.0"
+    "@applifyer/medusa": "1.12.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",

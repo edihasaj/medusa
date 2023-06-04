@@ -1,4 +1,4 @@
-import { AdminBuildConfig, build as buildAdmin } from "@medusajs/admin-ui"
+import { AdminBuildConfig, build as buildAdmin } from "@applifyer/admin-ui"
 import dotenv from "dotenv"
 import fse from "fs-extra"
 import ora from "ora"

@@ -1,5 +1,5 @@
 import { StoreGetOrdersParams, StoreOrdersRes } from "@medusajs/medusa"
-import { Response } from "@medusajs/medusa-js"
+import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"
 import { UseQueryOptionsWrapper } from "../../../types"

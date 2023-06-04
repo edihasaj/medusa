@@ -1,8 +1,8 @@
 import {
   StoreGetShippingOptionsParams,
   StoreShippingOptionsListRes,
-} from "@medusajs/medusa"
-import { Response } from "@medusajs/medusa-js"
+} from "@applifyer/medusa"
+import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"
 import { UseQueryOptionsWrapper } from "../../../types"
@@ -28,6 +28,7 @@ export const useShippingOptions = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     shippingOptionKey.list(query),
+    // @ts-ignore
     async () => client.shippingOptions.list(query),
     options
   )
@@ -45,6 +46,7 @@ export const useCartShippingOptions = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     shippingOptionKey.cart(cartId),
+    // @ts-ignore
     async () => client.shippingOptions.listCartOptions(cartId),
     options
   )

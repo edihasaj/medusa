@@ -1,4 +1,4 @@
-import { ProductCollection } from "@medusajs/medusa"
+import { ProductCollection } from "@applifyer/medusa"
 import useToggleState from "../../../hooks/use-toggle-state"
 import { ActionType } from "../../molecules/actionables"
 import Section from "../../organisms/section"

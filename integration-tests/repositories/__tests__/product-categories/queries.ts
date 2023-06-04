@@ -9,6 +9,7 @@ describe("Product Categories", () => {
 
   beforeAll(async () => {
     const cwd = path.resolve(path.join(__dirname, "..", ".."))
+    // @ts-ignore
     dbConnection = await initDb({ cwd })
   })
 

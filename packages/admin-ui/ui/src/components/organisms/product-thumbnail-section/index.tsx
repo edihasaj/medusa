@@ -1,4 +1,4 @@
-import { Product } from "@medusajs/medusa"
+import { Product } from "@applifyer/medusa"
 import clsx from "clsx"
 import useEditProductActions from "../../../hooks/use-edit-product-actions"
 import useNotification from "../../../hooks/use-notification"

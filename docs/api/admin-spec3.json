@@ -3345,7 +3345,7 @@ paths:
           source: >
             import Medusa from "@medusajs/medusa-js"
 
-            import { DiscountConditionOperator } from "@medusajs/medusa"
+            import { DiscountConditionOperator } from "@applifyer/medusa"
 
             const medusa = new Medusa({ baseUrl: MEDUSA_BACKEND_URL, maxRetries:
             3 })
@@ -3429,7 +3429,7 @@ paths:
           source: >
             import Medusa from "@medusajs/medusa-js"
 
-            import { AllocationType, DiscountRuleType } from "@medusajs/medusa"
+            import { AllocationType, DiscountRuleType } from "@applifyer/medusa"
 
             const medusa = new Medusa({ baseUrl: MEDUSA_BACKEND_URL, maxRetries:
             3 })
@@ -10776,9 +10776,9 @@ paths:
         - lang: JavaScript
           label: JS Client
           source: >
-            import Medusa from "@medusajs/medusa-js"
+            import Medusa from "@applifyer/medusa-js"
 
-            import { PriceListType } from "@medusajs/medusa"
+            import { PriceListType } from "@applifyer/medusa"
 
             const medusa = new Medusa({ baseUrl: MEDUSA_BACKEND_URL, maxRetries:
             3 })

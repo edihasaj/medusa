@@ -2,7 +2,7 @@ import {
   ProductVariant as ProductVariantEntity,
   Region,
   StoreCartsRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import { QueryKey, UseQueryOptions } from "@tanstack/react-query"
 
 export type UseQueryOptionsWrapper<

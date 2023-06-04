@@ -1,14 +1,10 @@
-import {
-  useAdminDeleteProduct,
-  useAdminProduct,
-  useAdminUpdateCollection,
-} from "medusa-react"
+import { useAdminDeleteProduct, useAdminUpdateCollection } from "medusa-react"
 
 import { useNavigate } from "react-router-dom"
 import { getErrorMessage } from "../utils/error-messages"
 import useImperativeDialog from "./use-imperative-dialog"
 import useNotification from "./use-notification"
-import { AdminPostCollectionsCollectionReq } from "@medusajs/medusa"
+import { AdminPostCollectionsCollectionReq } from "@applifyer/medusa"
 
 const useEditProductCollectionActions = (collectionId: string) => {
   const dialog = useImperativeDialog()
@@ -26,7 +22,11 @@ const useEditProductCollectionActions = (collectionId: string) => {
     if (shouldDelete) {
       deleteProduct.mutate(undefined, {
         onSuccess: () => {
-          notification("Success", "Product collection deleted successfully", "success")
+          notification(
+            "Success",
+            "Product collection deleted successfully",
+            "success"
+          )
           navigate("/a/products?view=collections")
         },
         onError: (err) => {
@@ -41,18 +41,15 @@ const useEditProductCollectionActions = (collectionId: string) => {
     onSuccess: () => void,
     successMessage = "Product collection was successfully updated"
   ) => {
-    update(
-      payload,
-      {
-        onSuccess: () => {
-          notification("Success", successMessage, "success")
-          onSuccess()
-        },
-        onError: (err) => {
-          notification("Error", getErrorMessage(err), "error")
-        },
-      }
-    )
+    update(payload, {
+      onSuccess: () => {
+        notification("Success", successMessage, "success")
+        onSuccess()
+      },
+      onError: (err) => {
+        notification("Error", getErrorMessage(err), "error")
+      },
+    })
   }
 
   return {

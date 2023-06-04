@@ -4,7 +4,7 @@ import BaseResource from "./base"
 import {
   StoreGetProductOptionsParams,
   StoreProductOptionsListRes
-} from "@medusajs/medusa/dist/api/routes/store/product-options";
+} from "@applifyer/medusa/dist/api/routes/store/product-options";
 
 class ProductOptionsResource extends BaseResource {
   list(

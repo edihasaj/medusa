@@ -3,14 +3,14 @@ import {
   AdminPostReservationsReservationReq,
   AdminReservationsDeleteRes,
   AdminReservationsRes,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 import {
   UseMutationOptions,
   useMutation,
   useQueryClient,
 } from "@tanstack/react-query"
 
-import { Response } from "@medusajs/medusa-js/src"
+import { Response } from "@applifyer/medusa-js"
 import { adminInventoryItemsKeys } from "../inventory-item"
 import { adminReservationsKeys } from "./queries"
 import { adminVariantKeys } from "../variants"

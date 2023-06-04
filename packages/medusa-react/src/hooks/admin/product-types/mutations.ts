@@ -1,8 +1,8 @@
 import {
   AdminProductTypesDeleteRes,
   AdminProductTypesRes,
-} from "@medusajs/medusa"
-import { Response } from "@medusajs/medusa-js"
+} from "@applifyer/medusa"
+import { Response } from "@applifyer/medusa-js"
 // @ts-ignore
 import { useMutation, UseMutationOptions, useQueryClient } from "@tanstack/react-query"
 import { adminProductTypeKeys } from "."
@@ -11,7 +11,7 @@ import { buildOptions } from "../../utils/buildOptions"
 import {
   CreateProductType,
   UpdateProductType,
-} from "@medusajs/medusa/dist/types/product-type"
+} from "@applifyer/medusa/dist/types/product-type"
 
 export const useAdminCreateProductType = (
   options?: UseMutationOptions<

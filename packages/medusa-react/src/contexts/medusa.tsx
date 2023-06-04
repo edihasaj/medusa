@@ -1,4 +1,4 @@
-import Medusa from "@medusajs/medusa-js"
+import Medusa from "@applifyer/medusa-js"
 import {
   QueryClientProvider,
   QueryClientProviderProps,

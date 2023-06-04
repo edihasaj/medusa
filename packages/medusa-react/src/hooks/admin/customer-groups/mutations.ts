@@ -6,7 +6,7 @@ import {
   AdminPostCustomerGroupsGroupReq,
   AdminPostCustomerGroupsReq,
 } from "@medusajs/medusa"
-import { Response } from "@medusajs/medusa-js"
+import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,
   UseMutationOptions,

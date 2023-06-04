@@ -1,4 +1,4 @@
-import { Response } from "@medusajs/medusa-js"
+import { Response } from "@applifyer/medusa-js"
 import {
   useMutation,
   UseMutationOptions,
@@ -9,7 +9,7 @@ import {
   AdminPaymentCollectionDeleteRes,
   AdminPaymentCollectionsRes,
   AdminUpdatePaymentCollectionsReq,
-} from "@medusajs/medusa"
+} from "@applifyer/medusa"
 
 import { useMedusa } from "../../../contexts"
 import { buildOptions } from "../../utils/buildOptions"
@@ -51,6 +51,7 @@ export const useAdminUpdatePaymentCollection = (
   const queryClient = useQueryClient()
 
   return useMutation(
+    // @ts-ignore
     (payload: AdminUpdatePaymentCollectionsReq) =>
       client.admin.paymentCollections.update(id, payload),
     buildOptions(
@@ -75,6 +76,7 @@ export const useAdminMarkPaymentCollectionAsAuthorized = (
   const { client } = useMedusa()
   const queryClient = useQueryClient()
 
+  // @ts-ignore
   return useMutation(
     () => client.admin.paymentCollections.markAsAuthorized(id),
     buildOptions(

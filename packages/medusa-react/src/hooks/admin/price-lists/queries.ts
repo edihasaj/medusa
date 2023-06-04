@@ -4,8 +4,8 @@ import {
   AdminPriceListRes,
   AdminPriceListsListRes,
   AdminProductsListRes,
-} from "@medusajs/medusa"
-import { Response } from "@medusajs/medusa-js"
+} from "@applifyer/medusa"
+import { Response } from "@applifyer/medusa-js"
 import { useQuery } from "@tanstack/react-query"
 import { useMedusa } from "../../../contexts"
 import { UseQueryOptionsWrapper } from "../../../types"
@@ -37,6 +37,7 @@ export const useAdminPriceLists = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminPriceListKeys.list(query),
+    // @ts-ignore
     () => client.admin.priceLists.list(query),
     options
   )
@@ -72,6 +73,7 @@ export const useAdminPriceList = (
   const { client } = useMedusa()
   const { data, ...rest } = useQuery(
     adminPriceListKeys.detail(id),
+    // @ts-ignore
     () => client.admin.priceLists.retrieve(id),
     options
   )

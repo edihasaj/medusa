@@ -1,6 +1,6 @@
 {
-  "name": "@medusajs/medusa",
-  "version": "1.12.0",
+  "name": "@applifyer/medusa",
+  "version": "1.12.0-next",
   "description": "Building blocks for digital commerce",
   "main": "dist/index.js",
   "bin": "./cli.js",

@@ -1,4 +1,4 @@
-import { ProductCollection } from "@medusajs/medusa"
+import { ProductCollection } from "@applifyer/medusa"
 import {
   useAdminCreateCollection,
   useAdminUpdateCollection,
@@ -172,7 +172,7 @@ const CollectionModal: React.FC<CollectionModalProps> = ({
                   }
                 />
               </div>
-              <div className="gap-x-base flex items-center mt-5">
+              <div className="gap-x-base mt-5 flex items-center">
                 <InputField
                   label="Description"
                   placeholder="This is a collection of sunglasses"

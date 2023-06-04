@@ -6,7 +6,7 @@ import { queryKeysFactory } from "../../utils"
 import {
   StoreGetProductOptionsParams,
   StoreProductOptionsListRes,
-} from "@medusajs/medusa/dist/api/routes/store/product-options"
+} from "@applifyer/medusa/dist/api/routes/store/product-options"
 
 const PRODUCT_OPTIONS_QUERY_KEY = `product_options` as const
 

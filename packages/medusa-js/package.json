@@ -1,5 +1,5 @@
 {
-  "name": "@medusajs/medusa-js",
+  "name": "@applifyer/medusa-js",
   "version": "6.0.0",
   "description": "Client for Medusa Commerce Rest API",
   "main": "dist/index.js",
@@ -20,6 +20,9 @@
     "prepare": "cross-env NODE_ENV=production yarn run build",
     "test": "jest --passWithNoTests"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Oliver Juhl",
   "license": "MIT",
   "engines": {
@@ -32,7 +35,7 @@
     "uuid": "^9.0.0"
   },
   "peerDependencies": {
-    "@medusajs/medusa": "1.12.0"
+    "@applifyer/medusa": "1.12.0"
   },
   "repository": {
     "type": "git",
@@ -43,7 +46,7 @@
     "url": "https://github.com/medusajs/medusa/issues"
   },
   "devDependencies": {
-    "@medusajs/medusa": "1.12.0",
+    "@applifyer/medusa": "1.12.0",
     "@types/uuid": "^9.0.0",
     "cross-env": "^7.0.3",
     "jest": "^27.4.7",
